@@ -230,7 +230,7 @@ gap: 2.5rem;
   display: flex;
   align-items: center;
   cursor: pointer;
-box-shadow: 10px 10px 10px #8382823f ,-10px -10px 10px rgba(255, 255, 255, 1);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   width: 6.5rem;
   border-radius: 50%;
   height: 6.5rem;
@@ -254,6 +254,10 @@ box-shadow: 10px 10px 10px #8382823f ,-10px -10px 10px rgba(255, 255, 255, 1);
 }
 .logos ul li:nth-child(3) {
   color: rgba(223, 184, 8, 0.767);
+}
+
+.logos ul li:nth-child(5) {
+  color: rgb(255, 108, 132);
 }
 
 .same{
