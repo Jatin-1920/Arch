@@ -191,7 +191,7 @@ li{
     padding-bottom:3rem;
       }
 .img{
-    height:100%;
+    height:60vh;
 }
 .img1{
     background:url(arch27.jpg);
@@ -210,6 +210,6 @@ li{
 .img3{
     background:url(arch17.jpg);
     background-size:cover;
-    height:60%;
+    height:30vh;
     background-position:center center;
 }
