@@ -10,9 +10,5 @@ gsap.to(scroll,{
     start:"top 20%",
     end:"max"
   }})
-  gsap.to(".child",{y:-x,scrollTrigger:{
-    trigger:".root",
-    scrub:true,
-    start:"top 20%",
-  }})
+  
 
