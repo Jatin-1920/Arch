@@ -155,6 +155,7 @@ li{
     position:fixed;
     top:0;
     padding:2rem;
+    z-index:999;
 }
 .root{
     height:500vh;
