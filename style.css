@@ -179,12 +179,12 @@ li{
     z-index:15;
 }
 .topC{
-    gap:2rem;
+    gap:1rem;
 }
 .trigger{
     width:100%;
     display:flex;
-    height:100%;
+    min-height:70vh;
     padding-bottom:3rem;
 }
 .trigger>*{
@@ -199,7 +199,7 @@ li{
     background-position:center center;
 }
 .gsapImg{
-    gap:4rem;
+    gap:1rem;
 }
 
 .img2{
