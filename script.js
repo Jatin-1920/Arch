@@ -15,18 +15,17 @@ let container = document.querySelector(".container")
         toggleActions: "play none none reverse",
       }
     });
-const trigger= document.querySelectorAll(".trigger")
+const trigger= document.querySelectorAll(".img")
 trigger.forEach(e=>{
-    const img = e.querySelectorAll(".img")
-    gsap.fromTo(img,{
+    gsap.fromTo(e,{
         scaleY:0, },{
         scaleY:1,
         transformOrigin:"bottom",
         duration:1,
         ease:"power3.inOut",
         scrollTrigger: {
-        trigger: e,
-        start: 'top 20%',
+        trigger: ".root",
+        start: 'top 40%',
         }
         })
 })
