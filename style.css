@@ -184,7 +184,7 @@ li{
 .trigger{
     width:100%;
     display:flex;
-    min-height:70vh;
+    min-height:80vh;
 }
 .trigger>*{
     flex:1;
