@@ -162,12 +162,12 @@ li{
 .root{
     height:500vh;
     width:90%;
-    background:wheat;
+    background:  #F9F6EE ;
     position: relative;
     z-index:10;
     margin-inline:auto;
     overflow:clip;
-    margin-top:80vh;
+    margin-top:90vh;
     padding:2rem 1rem;
 }
 
