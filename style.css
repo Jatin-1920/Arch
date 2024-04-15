@@ -168,4 +168,5 @@ li{
 }
 .child{
     background:inherit;
+    height:30vh;
 }
