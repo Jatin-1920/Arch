@@ -179,12 +179,10 @@ li{
     z-index:15;
 }
 .topC{
-    
     gap:2rem;
-    
-    
 }
 .trigger{
+    width:100%;
     display:flex;
     min-height:70vh;
 }
