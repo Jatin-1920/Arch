@@ -163,6 +163,6 @@ li{
     background:red;
     position: sticky;
     z-index:10;
-    top:50px;
+    top:35vh;
     margin-inline:auto;
 }
