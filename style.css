@@ -166,7 +166,8 @@ li{
     z-index:10;
     margin-inline:auto;
     overflow:clip;
-    margin-top:70vh
+    margin-top:70vh;
+    padding-inline:1rem;
 }
 .child{
     
@@ -176,4 +177,40 @@ li{
     background:var(--bg-1);
     position: relative;
     z-index:15;
+}
+.topC{
+    
+    gap:2rem;
+    
+    
+}
+.trigger{
+    display:flex;
+    min-height:70vh;
+}
+.trigger>*{
+    flex:1;
+    padding-block:3rem;
+}
+.img1{
+    background:url(arch27.jpg);
+    background-size:cover;
+    height:100%;
+    background-position:center center;
+}
+.gsapImg{
+    gap:4rem;
+}
+
+.img2{
+    background:url(arch31.jpg);
+    background-size:cover;
+    height:100%;
+    background-position:center center;
+}
+.img3{
+    background:url(arch17.jpg);
+    background-size:cover;
+    height:60%;
+    background-position:center center;
 }
