@@ -167,6 +167,9 @@ li{
     overflow:clip;
 }
 .child{
-    background:white;
+    
     height:30vh;
+}
+.container{
+    background:white;
 }
