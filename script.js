@@ -8,6 +8,6 @@ gsap.to(scroll,{
     pin:scroll,
     scrub:true,
     start:"top 20%",
-    end:()=>`+=${x}`
+    end:"max"
   }
 })
