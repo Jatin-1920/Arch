@@ -161,7 +161,7 @@ li{
 .root{
     height:500vh;
     width:80%;
-    background:red;
+    background:wheat;
     position: relative;
     z-index:10;
     margin-inline:auto;
