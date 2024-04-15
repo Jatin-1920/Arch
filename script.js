@@ -25,7 +25,7 @@ trigger.forEach(e=>{
         ease:"power3.inOut",
         scrollTrigger: {
         trigger:e,
-        start: 'top 50%',
+        start: 'top 70%',
         }
         })
 })
