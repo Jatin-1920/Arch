@@ -8,6 +8,6 @@ gsap.to(scroll,{
     pin:true,
     scrub:true,
     start:"top 20%",
-    end:"+=8000px"
+    end:`+=${x}`
   }
 })
