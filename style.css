@@ -96,7 +96,7 @@ html {
 :root{
     --h1-font:clamp(1.75rem,2vw + 1rem,3rem);
     --bg-1:white;
-    --bg-2: white;
+    --bg-2:#F9F6EE   ;
     --bg-3:#EDEADE;
     --bg-4:#151515;
     --bg-5:white;
@@ -162,7 +162,7 @@ li{
 .root{
     height:500vh;
     width:90%;
-    background:  #F9F6EE ;
+    background: var(--bg-2) ;
     position: relative;
     z-index:10;
     margin-inline:auto;
@@ -199,7 +199,7 @@ li{
     position: absolute;
     height:100%;
     width:100%;
-    background:inherit;
+    background: var(--bg-2) ;
 }
 .img2{
     background:url(arch31.jpg);
