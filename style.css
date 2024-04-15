@@ -192,6 +192,7 @@ li{
       }
 .img{
     height:40vh;
+    position:relative;
 }
 .img1{
     background:url(arch27.jpg);
@@ -201,7 +202,12 @@ li{
 .gsapImg{
     gap:1rem;
 }
-
+.over{
+    position: absolute;
+    height:100%;
+    width:100%;
+    background:wheat;
+}
 .img2{
     background:url(arch31.jpg);
     background-size:cover;
