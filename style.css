@@ -160,7 +160,7 @@ li{
 }
 .root{
     height:500vh;
-    width:80%;
+    width:90%;
     background:wheat;
     position: relative;
     z-index:10;
@@ -184,14 +184,14 @@ li{
 .trigger{
     width:100%;
     display:flex;
-    min-height:80vh;
+    min-height:70vh;
 }
 .trigger>*{
     flex:1;
     padding-bottom:3rem;
       }
 .img{
-    height:70vh;
+    height:100%;
 }
 .img1{
     background:url(arch27.jpg);
@@ -210,6 +210,6 @@ li{
 .img3{
     background:url(arch17.jpg);
     background-size:cover;
-    height:40vh;
+    height:60%;
     background-position:center center;
 }
