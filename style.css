@@ -167,6 +167,5 @@ li{
     overflow:clip;
 }
 .child{
-    height:500vh;
-background:wheat;
+    background:inherit;
 }
