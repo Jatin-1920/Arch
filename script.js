@@ -2,8 +2,7 @@ gsap.registerPlugin(ScrollTrigger)
 let scroll = document.querySelector(".child")
 
 let x = scroll.offsetHeight
-gsap.to(".child",{
-  y:-x,
+gsap.to(scroll,{
   scrollTrigger:{
     trigger:".root",
     pin:true,
