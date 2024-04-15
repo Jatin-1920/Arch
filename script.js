@@ -1,4 +1,4 @@
-gsap.registerPlugin(ScrollTrigger)
+/*gsap.registerPlugin(ScrollTrigger)
 let scroll = document.querySelector(".root")
 
 let x = scroll.offsetHeight
@@ -11,3 +11,4 @@ gsap.to(scroll,{
     end:"max"
   }
 })
+*/
