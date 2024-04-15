@@ -5,7 +5,7 @@ let x = scroll.offsetHeight
 gsap.to(scroll,{
   scrollTrigger:{
     trigger:".root",
-    pin:true,
+    pin:scroll,
     scrub:true,
     start:"top 20%",
     end:()=>`+=${x}`
