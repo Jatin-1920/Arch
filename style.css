@@ -191,7 +191,7 @@ li{
     flex:1;
       }
 .img{
-    height:50vh;
+    height:40vh;
 }
 .img1{
     background:url(arch27.jpg);
@@ -210,6 +210,6 @@ li{
 .img3{
     background:url(arch17.jpg);
     background-size:cover;
-    height:30vh;
+    height:25vh;
     background-position:center center;
 }
