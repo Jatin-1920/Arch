@@ -23,6 +23,7 @@ trigger.forEach(e=>{
         transformOrigin:"bottom",
         duration:1,
         ease:"power3.inOut",
+        stagger:0.045,
         scrollTrigger: {
         trigger:e,
         start: 'top 70%',
