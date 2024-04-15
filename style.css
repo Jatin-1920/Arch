@@ -158,6 +158,7 @@ li{
     z-index:999;
     width:100%;
     height:25vh;
+    background:var(--bg-1);
 }
 .root{
     height:500vh;
