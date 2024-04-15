@@ -172,4 +172,6 @@ li{
 }
 .container{
     background:white;
+    position: relative;
+    z-index:15;
 }
