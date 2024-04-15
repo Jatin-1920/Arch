@@ -1,5 +1,5 @@
 gsap.registerPlugin(ScrollTrigger)
-const scroll = document.querySelector(".root")
+let scroll = document.querySelector(".root")
 
 let x = scroll.scrollHeight
 gsap.to(scroll,{
