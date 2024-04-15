@@ -161,8 +161,7 @@ li{
     height:500vh;
     width:80%;
     background:red;
-    position: sticky;
+    position: relative;
     z-index:10;
-    top:35vh;
     margin-inline:auto;
 }
