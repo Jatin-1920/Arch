@@ -184,14 +184,13 @@ li{
 .trigger{
     width:100%;
     display:flex;
-    min-height:70vh;
 }
 .trigger>*{
     flex:1;
     padding-bottom:3rem;
       }
 .img{
-    height:60vh;
+    height:50vh;
 }
 .img1{
     background:url(arch27.jpg);
