@@ -6,8 +6,8 @@ const tween = gsap.to(child,{
       tween.scrollTrigger.spacer.style.height
       = child.offsetHeight+"px",
   scrollTrigger:{
-    padding:"30vh",
-    trigger:child,
+    padding:40,
+    trigger:".container",
     pin:true,
     scrub:true,
     start:"top top",
