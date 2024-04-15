@@ -17,9 +17,8 @@ let container = document.querySelector(".container")
     });
 const trigger= document.querySelectorAll(".over")
 trigger.forEach(e=>{
-    gsap.fromTo(e,{
-        scaleY:0, },{
-        scaleY:1,
+    gsap.to(e,{
+        height:0,
         transformOrigin:"bottom",
         duration:1,
         ease:"power3.inOut",
