@@ -15,7 +15,7 @@ let container = document.querySelector(".container")
         toggleActions: "play none none reverse",
       }
     });
-const trigger= document.querySelectorAll(".img")
+const trigger= document.querySelectorAll(".over")
 trigger.forEach(e=>{
     gsap.fromTo(e,{
         scaleY:0, },{
