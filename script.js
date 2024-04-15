@@ -1,14 +1,18 @@
 gsap.registerPlugin(ScrollTrigger)
-let scroll = document.querySelector(".child")
+let child = document.querySelector(".child")
 
-let x = scroll.offsetHeight
-gsap.to(scroll,{
+const tween = gsap.to(scroll,{
+  onUpdate:()=>
+      tween.scrollTrigger.spacer.style.height
+      = child.offsetHeight+"px",
   scrollTrigger:{
+    padding:"30vh",
     trigger:".root",
     pin:true,
     scrub:true,
-    start:"top 20%",
-    end:"max"
+    start:"top top",
+    end:"max",
+    pinSpacing:false
   }})
 
   
