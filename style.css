@@ -85,12 +85,12 @@ html {
   }
 
     @font-face{
-        font-family:thunder;
-        src:url("stretch.otf");
+        font-family:stretch;
+        src:url("stretch.ttf");
     }
     @font-face{
         font-family:j2;
-        src:url("coc.otf");
+        src:url("coco.ttf");
     }
 
 :root{
@@ -147,6 +147,9 @@ li{
     list-style:none;
 }
 
+h1{
+    font-family:stretch;
+}
 
 .header{
     display:flex;
