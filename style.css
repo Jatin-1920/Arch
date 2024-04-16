@@ -336,10 +336,9 @@ h1{
 }
 .prlx-section{
     height:100vh;
-    width:calc(100%-2rem);
     overflow:clip; 
     position:relative;
-    margin-inline:auto;
+    margin-inline:2rem;
     border-radius:1rem;
 }
 .prlx-item{
