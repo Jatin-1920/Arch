@@ -18,7 +18,7 @@ trigger.forEach(e=>{
 })
   
 
-let photos = gsap.utils.toArray(".imgDiv:not(:last-child)")
+let photos = gsap.utils.toArray(".imgDiv:not(:first-child)")
 const allPhotos = gsap.utils.toArray(".imgDiv")
 const content = gsap.utils.toArray(".pinh1:not(:first-child)")
 gsap.set(photos,{
