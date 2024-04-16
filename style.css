@@ -250,8 +250,16 @@ h1{
     background-size:100% 100%;
     background-repeat:no-repeat;
     background:url(arch4.jpg);
-    height:40vh;
+    height:60vh;
+    border-radius:2rem;
+    position:relative;
     clip-path: polygon(0 30%, 70% 30%, 70% 0, 100% 0, 100% 28%, 100% 67%, 100% 100%, 84% 100%, 65% 100%, 35% 100%, 22% 100%, 0 100%);
+}
+.clippySection h1{
+    position: absolute;
+    top:0;
+    left:0;
+    font-size:var(--l-text);
 }
 .pinSection{
     width:100%;
