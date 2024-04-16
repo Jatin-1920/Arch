@@ -324,11 +324,11 @@ h1{
     display:grid;
     place-items:center;
     padding-inline: 1rem;
-    padding-block:5rem;
     background:var(--bg-2);
 }
 .service-content{
     max-width:50rem;
+    padding-block:5rem;
 }
 .service-content p {
     margin-top:1rem;
