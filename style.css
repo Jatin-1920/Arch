@@ -180,6 +180,7 @@ li{
 .topContent{
     display:flex;
     flex-direction:column;
+    max-width:70rem;
     justify-content:space-between;
 }
 .topContent h1{
@@ -193,7 +194,6 @@ li{
     min-height:40vh;
     padding-bottom:3rem;
     padding-inline:1rem;
-    max-width:63rem;
     margin-inline:auto;
 }
 .topC>*{
