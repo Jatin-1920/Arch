@@ -246,11 +246,6 @@ h1{
     flex-direction: column;
 }
 .clippySection{
-    background-size:cover;
-    background-position:center center;
-    background-repeat:no-repeat;
-    background:url(arch3.jpg);
-    height:60vh;
     border-radius:1rem;
     margin-bottom:2rem;
     clip-path: polygon(0 30%, 70% 30%, 70% 0, 100% 0, 100% 28%, 100% 67%, 100% 100%, 84% 100%, 65% 100%, 35% 100%, 22% 100%, 0 100%);
