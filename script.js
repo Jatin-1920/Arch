@@ -32,7 +32,7 @@ ScrollTrigger.create({
         pin:".pinImg"
     })
 content.forEach((e,index)=>{
-    const animation = gsap.timline().to(photos[index],{
+    const animation = gsap.timline().to(photos,{
         clipPath: function () {
             return "inset(0px 0px 100% 0px)"
         },
