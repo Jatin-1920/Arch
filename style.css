@@ -219,13 +219,12 @@ li{
     width:100%;
 }
 .pinContainer{
-    display:flex;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
     gap:2rem;
     width:100%;
 }
-.pinContainer>*{
-    flex:1;
-}
+
 .pinContent{
     width:100%;
     padding-inline:1rem;
