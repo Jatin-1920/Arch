@@ -86,11 +86,11 @@ html {
 
     @font-face{
         font-family:thunder;
-        src:url("thunder.otf");
+        src:url("stretch.otf");
     }
     @font-face{
         font-family:j2;
-        src:url("tarif.otf");
+        src:url("coc.otf");
     }
 
 :root{
@@ -253,7 +253,7 @@ li{
     display:flex;
     align-items:center;
     justify-content:center;
-    font-size:var(--h2-text);
+    font-size:var(--h1-text);
 }
 
 .pinImg{
