@@ -221,6 +221,7 @@ li{
 .pinContainer{
     display:flex;
     gap:2rem;
+    width:100%;
 }
 .pinContainer>*{
     flex:1;
