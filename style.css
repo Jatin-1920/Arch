@@ -213,3 +213,43 @@ li{
     height:25vh;
     background-position:center center;
 }
+
+.pinSection{
+    width:100%;
+}
+.pinContainer{
+    display:flex;
+    gap:2rem;
+}
+.pinContainer>*{
+    flex:1;
+}
+
+.pinContent h1{
+    height:100vh;
+    display:flex;
+    align-items:center;
+}
+
+.pinImg{
+    height:100vh;
+    overflow:clip;
+}
+.imgDiv{
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center center;
+}
+.imgDiv1{
+    background:url(arch34.jpg);
+}
+.imgDiv2{
+    background:url(arch16.jpg);
+}
+.imgDiv3{
+    background:url(arch23.jpg);
+}
+
+.imgDiv4{
+    background:url(arch20.jpg);
+}
