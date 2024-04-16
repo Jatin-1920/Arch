@@ -173,6 +173,7 @@ li{
 
 .topC{
     gap:1rem;
+    max-width:70rem;
 }
 .p{
     max-width:30rem;
@@ -180,7 +181,6 @@ li{
 .topContent{
     display:flex;
     flex-direction:column;
-    max-width:66rem;
     justify-content:space-between;
 }
 .topContent h1{
