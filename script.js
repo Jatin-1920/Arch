@@ -1,7 +1,16 @@
 gsap.registerPlugin(ScrollTrigger)
 
-
-
+const h1 = document.querySelectorAll("h1")
+h1.forEach(li=>{
+    li.addEventListener("mouseover",(e)=>{
+        gsap.to(e.target,{skewX:4,y:3,duration:0.3,ease:"Power3.inOut"
+    })
+    })
+    li.addEventListener("mouseleave",(e)=>{
+        gsap.to(e.target,{skewX:0,y:-3,duration:0.3,ease:"Power3.inOut"
+    })
+    })
+})
 const trigger= document.querySelectorAll(".over")
 trigger.forEach(e=>{
     gsap.to(e,{
