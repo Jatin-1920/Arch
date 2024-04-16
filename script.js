@@ -40,6 +40,6 @@ content.forEach((e,index)=>{
         start:"top 80%",
         end:"top 20%",
         animation:animation,
-        scrub:1
+        scrub:true
     })
 })
