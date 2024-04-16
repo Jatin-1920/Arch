@@ -19,7 +19,8 @@ trigger.forEach(e=>{
   
 
 let photos = gsap.utils.toArray(".imgDiv:not(:first-child)")
-const content = gsap.utils.toArray(".pinh1")
+const allPhotos = gsap.utils.toArray(".imgDiv")
+const content = gsap.utils.toArray(".pinh1:not(:first-child)")
 gsap.set(photos,{
     scale:0,
 })
@@ -33,7 +34,7 @@ content.forEach((e,index)=>{
     const animation = gsap.timline().to(photos[index],{
         scale:1,
         ease:"none"
-    })
+    }).to(allPhotos[index],{autoAlpha:0})
     ScrollTrigger.create({
         trigger:".pinSection",
         start:"top 80%",
