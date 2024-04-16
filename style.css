@@ -193,6 +193,8 @@ li{
     min-height:40vh;
     padding-bottom:3rem;
     padding-inline:1rem;
+    max-width:63rem;
+    margin-inline:auto;
 }
 .topC>*{
     flex:1;
