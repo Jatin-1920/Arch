@@ -234,22 +234,31 @@ li{
 .pinImg{
     height:100vh;
     overflow:clip;
+    position:relative;
 }
 .imgDiv{
+    position: absolute;
+    height:100%;
+    width:100%;
     background-repeat:no-repeat;
     background-size:cover;
     background-position:center center;
 }
 .imgDiv1{
     background:url(arch34.jpg);
+    z-index:1;
+    
 }
 .imgDiv2{
     background:url(arch16.jpg);
+    z-index:2;
 }
 .imgDiv3{
     background:url(arch23.jpg);
+    z-index:3;
 }
 
 .imgDiv4{
     background:url(arch20.jpg);
+    z-index:4;
 }
