@@ -263,7 +263,6 @@ h1{
 .pinSection{
     width:100%;
     height:100%;
-    margin-block:5rem;
 }
 .pinContainer{
     display:grid;
@@ -338,7 +337,7 @@ h1{
     width:100%;
     overflow:clip; 
     position:relative;
-    margin-block:5rem;
+    margin-top:10rem;
 }
 .prlx-item{
     position: absolute;
