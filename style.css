@@ -179,7 +179,7 @@ li{
 }
 .topContent h1{
     max-width:30rem;
-    transform:translateX(-10%)
+    transform:translateX(-20%);
     display:flex;
     margin-top:auto;
 }
