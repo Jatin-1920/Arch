@@ -266,9 +266,8 @@ li{
     height:100%;
     inset:0;
     width:100%;
+    background-size:100% 100%;
     background-repeat:no-repeat;
-    background-size: 100% 100%;
-    background-position:center;
 }
 .imgDiv1{
     background:url(arch2.jpg);
