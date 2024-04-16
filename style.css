@@ -336,6 +336,7 @@ h1{
     width:100%;
     overflow:clip; 
     position:relative;
+    margin-block:5rem;
 }
 .prlx-item{
     position: absolute;
