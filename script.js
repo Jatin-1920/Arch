@@ -32,7 +32,7 @@ ScrollTrigger.create({
     })
 content.forEach((e,index)=>{
     const animation = gsap.timeline().to(photos[index],{
-        clipPath:"inset(0 0 0 0)"
+        clipPath:"inset(0% 0 0 0)"
         
     })
     ScrollTrigger.create({
