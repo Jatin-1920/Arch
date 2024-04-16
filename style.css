@@ -322,7 +322,7 @@ h1{
 }
 
 .service-container{
-    min-height:80vh;
+    min-height:40vh;
     width:100%;
     display:grid;
     place-items:center;
