@@ -319,11 +319,12 @@ h1{
 }
 
 .service-container{
-    min-height:50vh;
+    min-height:80vh;
     width:100%;
     display:grid;
     place-items:center;
     padding-inline: 1rem;
+    padding-block:5rem;
     background:var(--bg-2);
 }
 .service-content{
@@ -337,7 +338,6 @@ h1{
     width:100%;
     overflow:clip; 
     position:relative;
-    margin-top:10rem;
 }
 .prlx-item{
     position: absolute;
