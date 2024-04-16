@@ -22,7 +22,7 @@ let photos = gsap.utils.toArray(".imgDiv:not(:first-child)")
 const allPhotos = gsap.utils.toArray(".imgDiv")
 const content = gsap.utils.toArray(".pinh1:not(:first-child)")
 gsap.set(photos,{
-scale:0
+clipPath:"inset(100% 0 0 0)"
 })
 
 ScrollTrigger.create({
@@ -32,7 +32,7 @@ ScrollTrigger.create({
     })
 content.forEach((e,index)=>{
     const animation = gsap.timeline().to(photos[index],{
-        scale:1
+        clipPath:"inset(0 0 0 0)"
         
     })
     ScrollTrigger.create({
