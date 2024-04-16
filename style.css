@@ -177,12 +177,14 @@ li{
 .p{
     max-width:30rem;
 }
+.topContent{
+    display:flex;
+    justify-content:space-between;
+}
 .topContent h1{
     max-width:30rem;
     transform:translateX(-20%);
-    display:flex;
-    margin-top:auto;
-    height:100%;
+    
 }
 .trigger{
     width:100%;
