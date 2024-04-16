@@ -18,3 +18,27 @@ trigger.forEach(e=>{
 })
   
 
+const photos = gsap.utils.toArray(".imgDiv:not(first-child)")
+const content = gsap.utils.toArray(".pinContent h1")
+gsap.set(photos,{
+    clipPath:"inset(0px 0px 0px 0px)"
+})
+
+ScrollTrigger.create({
+        trigger:".pinSection",
+        start:"top top",
+        pin:".pinImg"
+    })
+content.forEach((e,index)=>{
+    const animation = gsap.timline()
+    animation.to(photos[index],{
+        clipPath:"inset(0px 0px 100% 0px)"
+    })
+    ScrollTrigger.create({
+        trigger:e,
+        start:"top 80%",
+        end:"top 20%",
+        animation:animation,
+        scrub:true
+    })
+})
