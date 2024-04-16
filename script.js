@@ -35,7 +35,7 @@ content.forEach((e,index)=>{
         clipPath:"inset(0% 0 0 0)",
         ease:"none"
     }).to(".topContent",{
-        background:`${e.dataset.bg}`,
+        background:`${e.target.dataset.bg}`,
     },0)
     ScrollTrigger.create({
         trigger:e,
