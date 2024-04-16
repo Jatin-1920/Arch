@@ -164,7 +164,7 @@ h1{
     background:var(--bg-1);
 }
 .root{
-    height:500vh;
+    height:100%;
     width:90%;
     background: var(--bg-2) ;
     position: relative;
