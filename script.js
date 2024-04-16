@@ -35,7 +35,7 @@ content.forEach((e,index)=>{
         ease:"none"
     })
     ScrollTrigger.create({
-        trigger:e,
+        trigger:".pinSection",
         start:"top 80%",
         end:"top 20%",
         animation:animation,
