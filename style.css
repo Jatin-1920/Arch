@@ -239,6 +239,7 @@ li{
 .imgDiv{
     position: absolute;
     height:100%;
+    inset:0;
     width:100%;
     background-repeat:no-repeat;
     background-size:cover;
@@ -246,19 +247,19 @@ li{
 }
 .imgDiv1{
     background:url(arch34.jpg);
-    z-index:1;
+    z-index:10;
     
 }
 .imgDiv2{
     background:url(arch16.jpg);
-    z-index:2;
+    z-index:11;
 }
 .imgDiv3{
     background:url(arch23.jpg);
-    z-index:3;
+    z-index:12;
 }
 
 .imgDiv4{
     background:url(arch20.jpg);
-    z-index:4;
+    z-index:13;
 }
