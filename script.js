@@ -18,7 +18,7 @@ trigger.forEach(e=>{
 })
   
 
-const photos = gsap.utils.toArray(".imgDiv:not(:first-child)")
+let photos = gsap.utils.toArray(".imgDiv:not(:first-child)")
 const content = gsap.utils.toArray(".pinContent h1")
 gsap.set(photos,{
     scale:0,
@@ -39,6 +39,6 @@ content.forEach((e,index)=>{
         start:"top 80%",
         end:"top 20%",
         animation:animation,
-        scrub:1
+        scrub:true
     })
 })
