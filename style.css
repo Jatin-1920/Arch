@@ -347,3 +347,12 @@ h1{
     width:100%;
     object-fit:cover;
 }
+@media (max-width:50rem){
+    .prlx-section{
+        height:60vh;
+        margin-inline:1rem;
+    }
+    .service-container{
+        padding-inline: 1rem;
+    }
+}
