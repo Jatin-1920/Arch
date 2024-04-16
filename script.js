@@ -26,7 +26,7 @@ gsap.set(photos,{
 
 ScrollTrigger.create({
         trigger:".pinSection",
-        start:"top top",
+        start:"top 30%",
         pin:".pinImg"
     })
 content.forEach((e,index)=>{
