@@ -168,7 +168,7 @@ li{
     margin-inline:auto;
     overflow:clip;
     margin-top:100vh;
-    padding:2rem 1rem;
+    padding:2rem 0;
 }
 
 .topC{
@@ -179,6 +179,7 @@ li{
     display:flex;
     min-height:70vh;
     padding-bottom:3rem;
+    padding-inline:1rem;
 }
 .trigger>*{
     flex:1;
@@ -226,6 +227,7 @@ li{
 }
 .pinContent{
     width:100%;
+    padding-inline:1rem;
 }
 .pinContent h1{
     height:80vh;
