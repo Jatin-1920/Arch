@@ -256,7 +256,7 @@ h1{
 }
 .clippy h1{
     font-size:var(--l-text);
-    transform:translateY(-12vh);
+    transform:translateY(15vh);
 }
 .pinSection{
     width:100%;
