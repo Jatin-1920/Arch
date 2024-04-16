@@ -34,9 +34,7 @@ content.forEach((e,index)=>{
     const animation = gsap.timeline().to(photos[index],{
         clipPath:"inset(0% 0 0 0)",
         ease:"none"
-    }).to(".topContent",{
-        background:`${e.target.dataset.bg}`,
-    },0)
+    })
     ScrollTrigger.create({
         trigger:e,
         start:"top 80%",
