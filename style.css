@@ -238,6 +238,20 @@ h1{
     background-position:center center;
 }
 
+.clippy{
+    min-height:100vh;
+    width:100%;
+    padding:2rem;
+    display:flex;
+    flex-direction: column;
+}
+.clippySection{
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+    background:url(arch4.jpg);
+    height:40vh;
+    clip-path: polygon(0 30%, 70% 30%, 70% 0, 100% 0, 100% 28%, 100% 67%, 100% 100%, 84% 100%, 65% 100%, 35% 100%, 22% 100%, 0 100%);
+}
 .pinSection{
     width:100%;
 }
