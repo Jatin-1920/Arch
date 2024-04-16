@@ -324,7 +324,7 @@ h1{
     width:100%;
     display:grid;
     place-items:center;
-    padding-inline: 2rem;
+    padding-inline: 1rem;
     background:var(--bg-2);
 }
 .service-content{
@@ -339,7 +339,7 @@ h1{
     width:100%;
     overflow:clip; 
     position:relative;
-    margin-inline:2rem;
+    margin-inline:1rem;
     border-radius:1rem;
 }
 .prlx-item{
