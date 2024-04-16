@@ -182,6 +182,7 @@ li{
     transform:translateX(-20%);
     display:flex;
     margin-top:auto;
+    height:100%;
 }
 .trigger{
     width:100%;
