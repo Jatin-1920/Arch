@@ -208,6 +208,7 @@ li{
 }
 .gsapImg{
     gap:4rem;
+    justify-content:center;
 }
 .over{
     position: absolute;
@@ -225,7 +226,7 @@ li{
 .img3{
     background:url(arch17.jpg);
     background-size:cover;
-    height:30vh;
+    height:40vh;
     width:25vw;
     background-position:center center;
 }
