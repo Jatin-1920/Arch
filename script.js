@@ -37,7 +37,7 @@ content.forEach((e,index)=>{
     }).to(".topContent",{
         background:`${e.dataset.bg}`,
         ease:"none"
-    },0)
+    })
     ScrollTrigger.create({
         trigger:e,
         start:"top 80%",
