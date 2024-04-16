@@ -34,9 +34,9 @@ content.forEach((e,index)=>{
     const animation = gsap.timline().to(photos[index],{
         scale:1,
         ease:"none"
-    }).to(allPhotos[index],{autoAlpha:0})
+    }).set(allPhotos[index],{autoAlpha:0})
     ScrollTrigger.create({
-        trigger:".pinSection",
+        trigger:e,
         start:"top 80%",
         end:"top 20%",
         animation:animation,
