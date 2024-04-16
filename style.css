@@ -224,7 +224,9 @@ li{
 .pinContainer>*{
     flex:1;
 }
-
+.pinContent{
+    width:100%;
+}
 .pinContent h1{
     height:80vh;
     display:flex;
@@ -234,6 +236,7 @@ li{
 .pinImg{
     height:80vh;
     overflow:clip;
+    width:100%;
     position:relative;
 }
 .imgDiv{
