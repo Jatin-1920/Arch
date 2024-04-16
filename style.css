@@ -209,6 +209,8 @@ li{
 .gsapImg{
     gap:4rem;
     justify-content:center;
+    align-items:center;
+    height:100vh;
 }
 .over{
     position: absolute;
