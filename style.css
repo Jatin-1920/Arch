@@ -246,8 +246,8 @@ h1{
     flex-direction: column;
 }
 .clippySection{
-    background-size:100% 100%;
-    background-position:top top;
+    background-size:cover;
+    background-position:center center;
     background-repeat:no-repeat;
     background:url(arch10.jpg);
     height:60vh;
