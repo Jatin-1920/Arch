@@ -17,10 +17,7 @@ trigger.forEach(e=>{
         })
 })
   
-const color0 = "none" 
-const color1 = "#C3ACD0"
-const color2 = "#EFEFEF"
-const color3 = "#D8D9CF"
+
 
 
 let photos = gsap.utils.toArray(".imgDiv:not(:first-child)")
@@ -38,9 +35,6 @@ ScrollTrigger.create({
 content.forEach((e,index)=>{
     const animation = gsap.timeline().to(photos[index],{
         clipPath:"inset(0% 0 0 0)",
-        ease:"none"
-    }).to(".topContent",{
-        background:color[index],
         ease:"none"
     })
     ScrollTrigger.create({
