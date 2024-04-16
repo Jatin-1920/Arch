@@ -59,4 +59,19 @@ const parallax = document.querySelectorAll(".prlx-section")
 
         parallax.forEach(e=>{
             const item = e.querySelector(".prlx-item")
+            const y = e.offsetHeight - item.offsetHeight
+            const prlxTl = gsap.timeline({
+                scrollTrigger:{
+                    trigger:e,
+                    scrub:true,
+                    start:"top bottom",
+                    end:"bottom top",
+                }
+            })
+            prlxTl.fromTo(item,{
+                y:-y
+            },{
+                y:0,
+                ease:"none"
+            })
         })
