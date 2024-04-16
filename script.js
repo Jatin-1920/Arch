@@ -20,7 +20,7 @@ trigger.forEach(e=>{
 
 const photos = gsap.utils.toArray(".imgDiv:not(:first-child)")
 const content = gsap.utils.toArray(".pinContent h1")
-gsap.set(".imgDiv",{
+gsap.set(photos,{
     scale:0,
 })
 
