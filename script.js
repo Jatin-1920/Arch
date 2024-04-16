@@ -54,3 +54,9 @@ content.forEach((e,index)=>{
         scrub:true
     })
 })
+
+const parallax = document.querySelectorAll(".prlx-section")
+
+        parallax.forEach(e=>{
+            const item = e.querySelector(".prlx-item")
+        })
