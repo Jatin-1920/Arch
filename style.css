@@ -179,6 +179,7 @@ li{
 }
 .topContent{
     display:flex;
+    flex-direction:column;
     justify-content:space-between;
 }
 .topContent h1{
