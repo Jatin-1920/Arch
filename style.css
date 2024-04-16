@@ -240,6 +240,7 @@ li{
     overflow:clip;
     width:100%;
     position:relative;
+    order:-1;
 }
 .imgDiv{
     position: absolute;
