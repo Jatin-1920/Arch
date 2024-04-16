@@ -226,13 +226,13 @@ li{
 }
 
 .pinContent h1{
-    height:100vh;
+    height:80vh;
     display:flex;
     align-items:center;
 }
 
 .pinImg{
-    height:100vh;
+    height:80vh;
     overflow:clip;
     position:relative;
 }
