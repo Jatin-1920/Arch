@@ -241,9 +241,9 @@ h1{
 .clippy{
     min-height:100vh;
     width:100%;
-    padding:2rem;
     display:flex;
     flex-direction: column;
+    padding-block:2rem;
 }
 .clippySection{
     border-radius:1rem;
@@ -254,10 +254,12 @@ h1{
     font-size:var(--l-text);
     transform:translateY(12vh);
     width:55%;
+    padding-inline:2rem;
 }
 .clippy p{
     min-height:40vh;
     padding-bottom:5rem;
+    padding-inline:2rem;
 }
 .pinSection{
     width:100%;
@@ -322,7 +324,7 @@ h1{
     width:100%;
     display:grid;
     place-items:center;
-    padding-inline: 1rem;
+    padding-inline: 2rem;
     background:var(--bg-2);
 }
 .service-content{
@@ -337,6 +339,8 @@ h1{
     width:100%;
     overflow:clip; 
     position:relative;
+    margin-inline:2rem;
+    border-radius:1rem;
 }
 .prlx-item{
     position: absolute;
