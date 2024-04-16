@@ -195,16 +195,17 @@ h1{
 .trigger{
     width:100%;
     display:flex;
-    min-height:60vh;
+    min-height:70vh;
     padding-bottom:3rem;
     padding-inline:1rem;
     margin-inline:auto;
+    overflow:clip;
 }
 .topC>*{
     flex:1;
       }
 .img{
-    height:60vh;
+    height:100%;
     position:relative;
 }
 .img1{
