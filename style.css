@@ -247,6 +247,7 @@ h1{
 }
 .clippySection{
     background-size:100% 100%;
+    background-position:top top;
     background-repeat:no-repeat;
     background:url(arch10.jpg);
     height:60vh;
