@@ -179,10 +179,9 @@ li{
 }
 .topContent h1{
     max-width:30rem;
-    transform:translateX(-40%)
+    transform:translateX(-10%)
     display:flex;
     margin-top:auto;
-    mix-blend-mode: difference;
 }
 .trigger{
     width:100%;
