@@ -260,9 +260,9 @@ h1{
     transform:translateY(12vh);
     width:55%;
 }
-.clippy{
+.clippy p{
     min-height:40vh;
-    display:flex;
+    padding-bottom:5rem;
 }
 .pinSection{
     width:100%;
