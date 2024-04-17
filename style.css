@@ -403,6 +403,13 @@ h1{
     border-top-right-radius:1rem;
     padding-inline: 2rem;
 }
+.goTop{
+    background:blue;
+    color:white;
+    padding:2rem;
+    border-radius:100%;
+    text-align:center;
+}
 @media (max-width:50rem){
     .prlx-section{
         height:60vh;
