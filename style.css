@@ -177,6 +177,11 @@ h1{
 }
 .layerHead{
     position:relative;
+    overflow:clip;
+    display:flex;
+}
+.layerHead>*{
+    flex:1;
 }
 .layer,.toplayer{
     position: absolute;
