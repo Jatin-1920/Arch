@@ -182,6 +182,9 @@ h1{
 }
 .layerHead h1{
     display:none;
+    font-size:var(--xl-text);
+    align-items:center;
+    justify-content:center;
 }
 .toplayer{
     position:relative;
