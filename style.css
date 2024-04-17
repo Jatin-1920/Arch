@@ -179,7 +179,7 @@ h1{
     margin-bottom:2rem;
     max-width:62rem;
     margin-inline: auto;
-    align-items:center;
+    align-items:end;
     height:70vh;
 }
 .navQuote{
