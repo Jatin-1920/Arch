@@ -353,14 +353,15 @@ h1{
 
     .footer{
         width:100%;
-        min-height:100vh;
-        padding-inline: 1rem;
-        padding-top:1rem;
+        min-height:80vh;
+        margin-top:5rem;
         display:grid;
         grid-template-rows:1.25fr 1fr 1fr;
         border-top:2px solid black;
     }
-
+.topFooter{
+    padding-inline: 1rem;
+}
 .topFooter h1{
     font-size:var(--xl-text);
     text-align:center;
@@ -376,6 +377,7 @@ h1{
     gap:2rem;
     justify-content:center;
     align-items:center;
+    padding-inline: 1rem;
 }
 .footlink{
     flex:1;
@@ -399,6 +401,7 @@ h1{
     background:var(--bg-3);
     border-top-left-radius:1rem;
     border-top-right-radius:1rem;
+    padding-inline: 1rem;
 }
 @media (max-width:50rem){
     .prlx-section{
