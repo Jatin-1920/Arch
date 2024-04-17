@@ -89,13 +89,13 @@ gsap.fromTo([firstNav,secondNav],{
 
 
 function showMovie(movi){
- gsap.to(panMovie,.4,{opacity:1,backgroundImage:`url(${movi})`,ease:"power3.inOut"}) 
+ gsap.to(".movie",.4,{opacity:1,backgroundImage:`url(${movi})`,ease:"power3.inOut"}) 
 
 }
 
 movie.forEach(movie=>{
   movie.addEventListener("mouseover",e =>{
-    showMovie(e.dataset.movie)
+    showMovie(e.target.dataset.movie)
     
   })
  movie.addEventListener("mouseleave",e =>{
