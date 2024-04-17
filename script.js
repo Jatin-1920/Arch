@@ -21,7 +21,7 @@ trigger.forEach(e=>{
         stagger:0.045,
         scrollTrigger: {
         trigger:e,
-        start: 'top 50%',
+        start: 'top 20%',
         }
         })
 })
