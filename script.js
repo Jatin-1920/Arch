@@ -107,19 +107,10 @@ movie.forEach(movie=>{
 
 
 
-const h1 = document.querySelectorAll("h1")
+
 
 const linka= document.querySelectorAll(".li")
-h1.forEach(li=>{
-    li.addEventListener("mouseover",(e)=>{
-        gsap.to(e.target,{skewX:4,y:3,duration:0.3,ease:"Power3.inOut"
-    })
-    })
-    li.addEventListener("mouseleave",(e)=>{
-        gsap.to(e.target,{skewX:0,y:-3,duration:0.3,ease:"Power3.inOut"
-    })
-    })
-})
+
 linka.forEach(a=>{
     a.addEventListener("mouseover",(e)=>{
         gsap.to(e.target,{skewX:4,y:3,duration:0.3,ease:"Power3.inOut"
