@@ -120,7 +120,7 @@ html {
     --h1-text: clamp(2.8rem, 4vw + 1rem, 4rem);
     --m-text: clamp(1.35rem, 0.75vw + 0.75rem, 1.5rem);
   --ml-text: clamp(1.35rem, 2vw + 1rem, 1.75rem);
---brg-heading: clamp(2rem, 2vw + 2rem, 3.25rem);
+--brg-heading: clamp(2rem, 2vw + 3rem, 4rem);
 --xl-text: 10vw;
   
 }
@@ -182,7 +182,7 @@ h1{
 .primaryUl{
     display:flex;
     flex-direction: column;
-    gap:2.5rem;
+    gap:1rem;
 }
 .primaryUl a{
     font-size:var(--brg-heading);
