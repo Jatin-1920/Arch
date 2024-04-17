@@ -1,35 +1,22 @@
 gsap.registerPlugin(ScrollTrigger)
 
 
-const locoScroll = new LocomotiveScroll({
-  el: document.querySelector(".root"),
-  smooth: true,
+const lenis = new Lenis({
+  smooth:true,
+  smoothTouch:false,
   lerp:0.1,
-
-  // for tablet smooth
-  tablet: { smooth: true},
-
-  // for mobile
-  smartphone: { smooth: true  }
-});
-locoScroll.on("scroll", ScrollTrigger.update);
-
-ScrollTrigger.scrollerProxy(".gsapPin", {
-  scrollTop(value) {
-    return arguments.length
-      ? locoScroll.scrollTo(value, 0, 0)
-      : locoScroll.scroll.instance.scroll.y;
-  },
-  getBoundingClientRect() {
-    return {
-      top: 0,
-      left: 0,
-      width: window.innerWidth,
-      height: window.innerHeight
-    };
-  }
+  duration:1.5
 })
 
+
+
+lenis.on('scroll', ScrollTrigger.update)
+
+gsap.ticker.add((time)=>{
+  lenis.raf(time * 1000)
+})
+
+gsap.ticker.lagSmoothing(0)
 
 
 const h1 = document.querySelectorAll("h1")
@@ -109,6 +96,4 @@ const prlxSection = document.querySelectorAll(".prlx-section")
 })
 
 
-  ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
-
-ScrollTrigger.refresh()
+  
