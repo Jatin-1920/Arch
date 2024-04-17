@@ -23,18 +23,18 @@ gsap.to(".toplayer",{
  duration:1,
   ease:"power3.inOut",
   stagger:{
-    amount:0.045
+    amount:0.1
   },
   yPercent:100,
 })
   gsap.to(".layer",{
-  delay:1.135,
+  delay:1.3,
  duration:1,
   ease:"power3.inOut",
   xPercent:100,
 })
 gsap.from(".archCase img",{
-  delay:1.135,
+  delay:1.3,
  duration:1.3,
   scale:1.5,
   ease:"power3.inOut",
