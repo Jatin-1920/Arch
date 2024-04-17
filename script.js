@@ -66,23 +66,23 @@ state = !state
 gsap.fromTo([firstNav,secondNav],{
   height:"0vh",
   
-  transformOrigin:"top left",
-  skewY:3,
+  transformOrigin:"right top",
+  skewY:2,
   
 },{
   height:"100vh",
   transformOrigin:"top left",
   skewY:0,
-  duration:1,
+  duration:.8,
   ease:"power3.inOut",
   stagger:.1
 }) 
 } else{
     gsap.to([secondNav,firstNav],{
   height:0,
-  duration:1,
+  duration:.8,
   ease:"power3.inOut",
-  stagger:.075
+  stagger:.07
 })   
     }
 })
