@@ -19,6 +19,26 @@ gsap.ticker.add((time)=>{
 gsap.ticker.lagSmoothing(0)
 
 
+gsap.to(".toplayer",{
+ duration:1,
+  ease:"power3.inOut",
+  stagger:0.045,
+  yPercent:100,
+})
+  gsap.to(".layer",{
+  delay:1.135,
+ duration:1,
+  ease:"power3.inOut",
+  xPercent:100,
+})
+gsap.from(".archCase img",{
+  delay:1.135,
+ duration:1,
+  scale:1.5,
+  ease:"power3.inOut",
+})
+
+
 const h1 = document.querySelectorAll("h1")
 h1.forEach(li=>{
     li.addEventListener("mouseover",(e)=>{
