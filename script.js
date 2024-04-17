@@ -56,7 +56,7 @@ state = !state
   menuToggle.disabled = true;
     setTimeout(()=>{
       menuToggle.disabled = false;
-    menuDot.innerHTML = state ? "Close":"Menu"
+    menuToggle.innerHTML = state ? "Close":"Menu"
   },1000)
 
 
