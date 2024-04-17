@@ -46,6 +46,63 @@ gsap.from(".archCase img",{
   ease:"power3.inOut",
 })
 
+const movie = document.querySelectorAll(".movieBtn")
+
+const menuToggle = document.querySelector(".menu")
+const firstNav = document.querySelector(".firstNav")
+const secondNav = document.querySelector(".secondNav")
+menuToggle.addEventListener("click",(e)=>{
+state = !state
+  menuToggle.disabled = true;
+    setTimeout(()=>{
+      menuToggle.disabled = false;
+    menuDot.innerHTML = state ? "Close":"Menu"
+  },1000)
+
+
+    
+    if(state) {
+      
+gsap.from([firstNav,secondNav],{
+  height:0,
+  duration:1,
+  ease:"power3.inOut",
+  transformOrigin:"top left",
+  skewY:3,
+  stagger:.1
+}) 
+} else{
+    gsap.to([secondNav,firstNav],{
+  height:0,
+  duration:1,
+  ease:"power3.inOut",
+  stagger:.045
+})   
+    }
+})
+
+    
+
+
+function showMovie(movi){
+ gsap.to(panMovie,.4,{opacity:1,backgroundImage:`url(${movi})`,ease:"power3.inOut"}) 
+
+}
+
+movie.forEach(movie=>{
+  movie.addEventListener("mouseover",e =>{
+    showMovie(e.target.dataset.movie)
+    r.style.setProperty('--nav-p','white')
+    r.style.setProperty('--nav-a','black')
+  })
+ movie.addEventListener("mouseleave",e =>{
+   panMovie.style.backgroundImage=""
+  }) 
+})
+
+
+
+
 
 const h1 = document.querySelectorAll("h1")
 h1.forEach(li=>{
