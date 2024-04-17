@@ -38,7 +38,7 @@ clipPath:"inset(100% 0 0 0)"
 
 ScrollTrigger.create({
         trigger:".pinSection",
-        start:"top 20%",
+        start:"top top",
         pin:".pinImg"
     })
 content.forEach((e,index)=>{
