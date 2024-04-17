@@ -22,7 +22,9 @@ gsap.ticker.lagSmoothing(0)
 gsap.to(".toplayer",{
  duration:1,
   ease:"power3.inOut",
-  stagger:0.045,
+  stagger:{
+    amount:0.045
+  },
   yPercent:100,
 })
   gsap.to(".layer",{
