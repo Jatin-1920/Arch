@@ -176,14 +176,18 @@ h1{
     flex:1;
 }
 .layerHead{
-    position:relative;
     overflow:clip;
     display:flex;
 }
 .layerHead>*{
     flex:1;
 }
-.layer,.toplayer{
+.toplayer{
+    position:relative;
+    z-index:999;
+    background:black;
+}
+.layer{
     position: absolute;
     height:100%;
     width:100%;
@@ -197,6 +201,7 @@ h1{
     flex:1;
     position:relative;
     height:50vh;
+    overflow:clip;
 }
 
 .archCase img{
