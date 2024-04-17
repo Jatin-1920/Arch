@@ -155,7 +155,6 @@ h1{
     display:flex;
     justify-content:space-between;
     position:fixed;
-    top:0;
     padding:1.5rem;
     z-index:999;
     width:100%;
