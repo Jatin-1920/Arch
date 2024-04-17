@@ -409,9 +409,22 @@ h1{
     height:5rem;
     width:5rem;
     border-radius:100%;
-    text-align:center;
     display:grid;
     place-items:center;
+    font-size:2rem;
+}
+.arch{
+    font-size:13vw;
+display:flex;
+    align-items:end;
+    padding:2rem;
+    justify-content:center;
+    background:black;
+    color:blue;
+    height:80vh;
+    margin-top:-40vh;
+    position:sticky;
+    top:0;
 }
 @media (max-width:50rem){
     .prlx-section{
