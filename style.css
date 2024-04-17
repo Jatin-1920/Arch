@@ -423,9 +423,9 @@ display:flex;
     justify-content:center;
     background:black;
     color:blue;
-    height:80vh;
-    margin-top:-40vh;
-    position:sticky;
+    height:120vh;
+    position: sticky;
+    margin-top:-80vh;
     top:0;
 }
 .arch h1{
