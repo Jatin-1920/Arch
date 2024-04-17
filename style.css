@@ -411,28 +411,12 @@ h1{
     color:white;
     height:5rem;
     width:5rem;
-    border-radius:100%;
+    border-radius:5rem;
     display:grid;
     place-items:center;
     font-size:2rem;
 }
-.arch{
-display:flex;
-    align-items:end;
-    padding:2rem;
-    justify-content:center;
-    background:black;
-    color:blue;
-    height:80vh;
-    position: fixed;
-    bottom:0;
-    width:90%;
-    margin-inline:auto;
-    z-index:-100;
-}
-.arch h1{
-    font-size:13vw;
-}
+
 @media (max-width:50rem){
     .prlx-section{
         height:60vh;
