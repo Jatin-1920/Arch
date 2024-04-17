@@ -64,7 +64,7 @@ state = !state
     if(state) {
       
 gsap.fromTo([firstNav,secondNav],{
-  height:0,
+  height:"0vh",
   
   transformOrigin:"top left",
   skewY:3,
