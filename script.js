@@ -1,5 +1,37 @@
 gsap.registerPlugin(ScrollTrigger)
 
+
+const locoScroll = new LocomotiveScroll({
+  el: document.querySelector("#main"),
+  smooth: true,
+  lerp:0.1,
+
+  // for tablet smooth
+  tablet: { smooth: true},
+
+  // for mobile
+  smartphone: { smooth: true  }
+});
+locoScroll.on("scroll", ScrollTrigger.update);
+
+ScrollTrigger.scrollerProxy(".gsapPin", {
+  scrollTop(value) {
+    return arguments.length
+      ? locoScroll.scrollTo(value, 0, 0)
+      : locoScroll.scroll.instance.scroll.y;
+  },
+  getBoundingClientRect() {
+    return {
+      top: 0,
+      left: 0,
+      width: window.innerWidth,
+      height: window.innerHeight
+    };
+  }
+})
+
+
+
 const h1 = document.querySelectorAll("h1")
 h1.forEach(li=>{
     li.addEventListener("mouseover",(e)=>{
