@@ -170,12 +170,9 @@ h1{
     background:red;
     overflow:clip;
     height:0vh;
-    display:flex;
-flex-direction:column;
-    justify-content:center;
 }
 .primaryNav{
-    padding-top:5vh;
+    padding-top:15vh;
     display:flex;
     position:relative;
     z-index:11;
