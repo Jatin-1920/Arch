@@ -410,6 +410,8 @@ h1{
     width:5rem;
     border-radius:100%;
     text-align:center;
+    display:grid;
+    place-items:center;
 }
 @media (max-width:50rem){
     .prlx-section{
