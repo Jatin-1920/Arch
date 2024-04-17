@@ -92,8 +92,7 @@ function showMovie(movi){
 movie.forEach(movie=>{
   movie.addEventListener("mouseover",e =>{
     showMovie(e.target.dataset.movie)
-    r.style.setProperty('--nav-p','white')
-    r.style.setProperty('--nav-a','black')
+    
   })
  movie.addEventListener("mouseleave",e =>{
    panMovie.style.backgroundImage=""
