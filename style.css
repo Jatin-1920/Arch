@@ -179,7 +179,9 @@ h1{
     overflow:clip;
     display:flex;
 }
-
+.layerHead h1{
+    display:none;
+}
 .toplayer{
     position:relative;
     z-index:999;
