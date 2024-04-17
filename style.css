@@ -182,20 +182,15 @@ h1{
 }
 .archCase{
     flex:1;
-    background-size:100% 100%;
-    background-repeat:no-repeat;
-    background-position:100%;
-}
-.archCase1{
-   background:url(plx1.jpeg) 
-}
-.archCase2{
-   background:url(plx2.jpeg) 
-}
-.archCase3{
-   background:url(archi2.jpeg) 
+    position:relative;
 }
 
+.archCase img{
+    position: absolute;
+    height:100%;
+    width:100%;
+    object-fit:cover;
+}
 
 .topC{
     gap:2rem;
