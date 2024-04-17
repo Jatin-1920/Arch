@@ -121,7 +121,7 @@ html {
     --m-text: clamp(1.35rem, 0.75vw + 0.75rem, 1.5rem);
   --ml-text: clamp(1.35rem, 2vw + 1rem, 1.75rem);
 --brg-heading: clamp(1.65rem, 1vw + 1rem, 2.5rem);
---xl-text: 13vw;
+--xl-text: 10vw;
   
 }
 
@@ -349,6 +349,55 @@ h1{
     height:150%;
     width:100%;
     object-fit:cover;
+}
+
+    .footer{
+        width:100%;
+        min-height:100vh;
+        padding-inline: 1rem;
+        padding-top:1rem;
+        display:grid;
+        grid-template-rows:1.25fr 1fr 1fr;
+        border-top:2px solid black;
+    }
+.topFooter{
+    display:flex;
+    flex-direction:column;
+    gap:3rem;
+}
+.topFooter h1{
+    font-size:var(--xl-text);
+}
+.topFooter p{
+    padding-block:1rem;
+    border:2px solid black;
+}
+
+.midFooter{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:2rem;
+}
+.footlink{
+    display:flex;
+    flex-direction:column;
+    gap:1rem;
+}
+.footlink a {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:var(--bg-3);
+    border-radius:2rem;
+    padding:2rem;
+}
+.botFooter{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:var(--bg-3);
+    border-top-left-radius:1rem;
+    border-top-right-radius:1rem;
 }
 @media (max-width:50rem){
     .prlx-section{
