@@ -167,12 +167,12 @@ h1{
     overflow:clip;
     padding-top:5rem;
 }
-.topHead{
+.mainHead{
     min-height:100vh;
     display:flex;
     flex-direction:column;
 }
-.topHead>*{
+.mainHead>*{
     flex:1;
 }
 .archBlock{
