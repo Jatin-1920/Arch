@@ -193,8 +193,9 @@ h1{
 }
 .movieBtnBlock{
     display:flex;
-    justify-content:space-between;
+    justify-content:space-evenly;
     gap:2rem;
+    padding-inline:2rem;
 }
 .movieBtn{
     background:black;
@@ -202,6 +203,7 @@ h1{
     padding:1rem 3rem;
     text-align:center;
     color:white;
+    display:inline-block;
 }
 
 .header{
