@@ -98,7 +98,7 @@ html {
     --h1-font:clamp(1.75rem,2vw + 1rem,3rem);
     --bg-1:white;
     --bg-2:#F9F6EE   ;
-    --bg-3:##ecfc56;
+    --bg-3:#ecfc56;
     --bg-4:#151515;
     --bg-5:white;
     --bg-p:#787786;
@@ -379,8 +379,9 @@ h1{
 .foota{
     text-align:center;
     background:var(--bg-3);
-    border-radius:2rem;
+    border-radius:1rem;
     margin-bottom:1rem;
+    padding:2rem;
 }
 .botFooter{
     display:flex;
