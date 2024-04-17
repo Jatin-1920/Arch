@@ -211,6 +211,7 @@ h1{
 .img1{
     background:url(arch27.jpg);
     background-size:cover;
+    height:70vh;
     background-position:center center;
 }
 .gsapImg{
