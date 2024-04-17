@@ -168,7 +168,7 @@ h1{
     padding-top:5rem;
 }
 .mainHead{
-    min-height:100vh;
+    height:100vh;
     display:flex;
     flex-direction:column;
 }
@@ -177,6 +177,7 @@ h1{
 }
 .archBlock{
     display:flex;
+    height:100%;
 }
 .archCase{
     flex:1;
