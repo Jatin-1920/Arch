@@ -164,10 +164,8 @@ h1{
 }
 .firstNav{
     background:black;
-    height:0vh;
 }
 .secondNav{
-    height:0vh;
     background:red;
     overflow:clip;
 }
