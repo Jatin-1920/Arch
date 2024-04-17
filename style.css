@@ -352,7 +352,7 @@ h1{
         z-index:10;
         margin-top:5rem;
         background:var(--bg-2);
-        grid-template-rows:1.25fr 1fr .5fr;
+        grid-template-rows:1.25fr 1fr .65fr;
         border-top:2px solid black;
     }
 .topFooter{
