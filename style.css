@@ -263,8 +263,8 @@ h1{
 }
 .pinContainer{
     display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:2rem;
+    grid-template-columns:1fr .8fr;
+    gap:.5rem;
     width:100%;
 }
 
