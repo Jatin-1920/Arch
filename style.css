@@ -166,10 +166,9 @@ h1{
     width:100%;
     background: var(--bg-2) ;
     overflow:clip;
-    padding-top:5rem;
 }
 .mainHead{
-    height:90vh;
+    height:100vh;
     display:grid;
     grid-template-rows:1fr 1fr;
 }
@@ -183,6 +182,7 @@ h1{
 .archCase{
     flex:1;
     position:relative;
+    height:50vh;
 }
 
 .archCase img{
