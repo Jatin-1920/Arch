@@ -33,6 +33,12 @@ gsap.to(".toplayer",{
   ease:"power3.inOut",
   xPercent:100,
 })
+gsap.to(".layerHead h1",{
+  delay:1.3,
+ display:"flex",
+  duration:.5,
+  ease:"power3.inOut",
+})
 gsap.from(".archCase img",{
   delay:1.3,
  duration:1.3,
