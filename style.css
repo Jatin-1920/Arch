@@ -182,18 +182,18 @@ h1{
 }
 .archCase{
     flex:1;
-    background-size:100% 100%;
+    background-size:cover;
     background-repeat:no-repeat;
     background-position:center center;
 }
 .archCase1{
-   background:url(archi1.jpeg) 
+   background:url(archi3.jpeg) 
 }
 .archCase2{
-   background:url(archi2.jpeg) 
+   background:url(archi4.jpeg) 
 }
 .archCase3{
-   background:url(archi4.jpeg) 
+   background:url(archi5.jpeg) 
 }
 
 
