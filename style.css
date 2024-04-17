@@ -170,8 +170,6 @@ h1{
     height:0vh;
     background:red;
     overflow:clip;
-    display:grid;
-    grid-template-rows:1fr .15fr;
 }
 .primaryNav{
     padding-top:15vh;
@@ -179,6 +177,7 @@ h1{
     position:relative;
     z-index:1000;
     justify-content:space-evenly;
+    margin-bottom:2rem;
 }
 .primaryUl{
     display:flex;
@@ -187,6 +186,11 @@ h1{
 }
 .primaryUl a{
     font-size:var(--brg-heading);
+    font-family: stretch;
+    color:white;
+}
+.primaryUl a:hover{
+    color:black;
 }
 .movie{
     background-size:100% 100%;
@@ -195,7 +199,6 @@ h1{
 }
 .movieBtnBlock{
     display:flex;
-    justify-content:space-evenly;
     gap:2rem;
     padding:2rem;
 }
@@ -205,7 +208,6 @@ h1{
     padding:1rem 3rem;
     text-align:center;
     color:white;
-    display:inline-block;
 }
 
 .header{
