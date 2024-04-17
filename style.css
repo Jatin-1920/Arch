@@ -182,7 +182,7 @@ h1{
 }
 .layerHead h1{
     display:none;
-    font-size:var(--xl-text);
+    font-size:5vw;
     align-items:center;
     justify-content:center;
 }
