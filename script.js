@@ -33,7 +33,7 @@ gsap.to(".toplayer",{
 })
 gsap.from(".archCase img",{
   delay:1.135,
- duration:1,
+ duration:1.3,
   scale:1.5,
   ease:"power3.inOut",
 })
