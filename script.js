@@ -63,13 +63,17 @@ state = !state
     
     if(state) {
       
-gsap.from([firstNav,secondNav],{
+gsap.fromTo([firstNav,secondNav],{
   height:0,
   transformOrigin:"right top",
   skewY:2,
+  
+},{
+  height:"100vh",
   duration:.8,
   ease:"power3.inOut",
-  stagger:.1
+  stagger:.1,
+  skewY:0,
 }) 
 } else{
     gsap.to([secondNav,firstNav],{
