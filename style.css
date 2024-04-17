@@ -231,10 +231,13 @@ h1{
     padding-inline:2rem;
 }
 .movieBtn{
-    background:black;
     border-radius:.5rem;
-    padding:1rem 3rem;
+    padding:.5rem 4rem;
     text-align:center;
+    transition:all .35s ease-in-out;
+}
+.movieBtn:hover{
+   background:black; 
     color:white;
 }
 
