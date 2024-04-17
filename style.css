@@ -172,7 +172,6 @@ h1{
     height:0vh;
 }
 .primaryNav{
-    padding-top:15vh;
     display:flex;
     position:relative;
     z-index:11;
@@ -181,6 +180,7 @@ h1{
     max-width:62rem;
     margin-inline: auto;
     align-items:center;
+    height:70vh;
 }
 .navQuote{
     max-width:22.5rem;
@@ -233,7 +233,7 @@ h1{
 }
 .movieBtnBlock{
     display:flex;
-    gap:2rem;
+    gap:1rem;
     position:relative;
     z-index:11;
     max-width:62rem;
