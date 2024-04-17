@@ -155,7 +155,7 @@ h1{
     height:100vh;
     width:100%;
     overflow:clip;
-    z-index:1001;
+    z-index:998;
 }
 .firstNav,.movie,.secondNav{
     position: absolute;
@@ -175,7 +175,7 @@ h1{
     padding-top:15vh;
     display:flex;
     position:relative;
-    z-index:1003;
+    z-index:1000;
     justify-content:space-evenly;
 }
 .primaryUl{
@@ -191,7 +191,18 @@ h1{
     background-position:center center;
     background-repeat:no-repeat;
 }
-
+.movieBtnBlock{
+    display:flex;
+    justify-content:space-between;
+    gap:2rem;
+}
+.movieBtn{
+    background:black;
+    border-radius:.5rem;
+    padding:1rem 3rem;
+    text-align:center;
+    color:white;
+}
 
 .header{
     display:flex;
