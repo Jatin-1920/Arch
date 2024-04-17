@@ -228,7 +228,7 @@ h1{
 .img2{
     background:url(arch31.jpg);
     background-size:cover;
-    margin-top:4rem;
+    padding-top:4rem;
     width:30vw;
     height:60vh;
     background-position:center center;
@@ -250,7 +250,7 @@ h1{
 }
 .clippySection{
     border-radius:1rem;
-    margin-bottom:2rem;
+    padding-bottom:2rem;
     clip-path: polygon(0 30%, 70% 30%, 70% 0, 100% 0, 100% 28%, 100% 67%, 100% 100%, 84% 100%, 65% 100%, 35% 100%, 22% 100%, 0 100%);
 }
 .clippy h1{
@@ -335,7 +335,7 @@ h1{
     padding-block:5rem;
 }
 .service-content p {
-    margin-top:1rem;
+    padding-top:1rem;
 }
 .prlx-section{
     height:80vh;
@@ -350,13 +350,16 @@ h1{
     width:100%;
     object-fit:cover;
 }
-
+.margin{
+    height:5rem;
+    background:var(--bg-2);
+}
     .footer{
         width:100%;
         min-height:80vh;
-        margin-top:5rem;
         display:grid;
         position:relative;
+        margin-bottom:40vh;
         z-index:10;
         background:var(--bg-2);
         grid-template-rows:1.25fr 1fr .5fr;
@@ -393,7 +396,6 @@ h1{
     text-align:center;
     background:var(--bg-3);
     border-radius:1rem;
-    margin-bottom:1rem;
     padding-block:var(--brg-heading);
 }
 .botFooter{
@@ -416,6 +418,8 @@ h1{
     place-items:center;
     font-size:2rem;
 }
+
+
 
 @media (max-width:50rem){
     .prlx-section{
