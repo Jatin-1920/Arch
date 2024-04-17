@@ -176,10 +176,13 @@ h1{
     display:flex;
     position:relative;
     z-index:11;
-    justify-content:space-evenly;
+    justify-content:space-between;
     margin-bottom:2rem;
     max-width:62rem;
     margin-inline: auto;
+}
+.navQuote{
+    max-width:22.5rem;
 }
 .primaryUl{
     display:flex;
