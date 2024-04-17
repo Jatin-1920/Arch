@@ -95,7 +95,7 @@ function showMovie(movi){
 
 movie.forEach(movie=>{
   movie.addEventListener("mouseover",e =>{
-    showMovie(e.target.dataset.movie)
+    showMovie(e.dataset.movie)
     
   })
  movie.addEventListener("mouseleave",e =>{
