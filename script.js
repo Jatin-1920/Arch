@@ -47,7 +47,7 @@ gsap.from(".archCase img",{
 })
 
 const movie = document.querySelectorAll(".movieBtn")
-
+let state = false
 const menuToggle = document.querySelector(".menu")
 const firstNav = document.querySelector(".firstNav")
 const secondNav = document.querySelector(".secondNav")
