@@ -180,10 +180,12 @@ h1{
     max-width:62rem;
     margin-inline: auto;
     align-items:end;
-    height:70vh;
+    min-height:50vh;
 }
 .navQuote{
     max-width:22.5rem;
+    display:flex;
+    margin-block:auto;
 }
 .primaryUl{
     display:flex;
