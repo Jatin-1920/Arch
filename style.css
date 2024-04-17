@@ -183,6 +183,7 @@ h1{
 .layerHead h1{
     display:none;
     font-size:5vw;
+    width:100%;
     align-items:center;
     justify-content:center;
 }
