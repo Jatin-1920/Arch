@@ -172,6 +172,7 @@ h1{
     height:0vh;
 }
 .primaryNav{
+    padding-top:30vh;
     display:flex;
     position:relative;
     z-index:11;
@@ -179,13 +180,12 @@ h1{
     margin-bottom:2rem;
     max-width:62rem;
     margin-inline: auto;
-    align-items:end;
-    min-height:60vh;
+    align-items:center;
+    
 }
 .navQuote{
     max-width:22.5rem;
-    display:flex;
-    margin-block:auto;
+    
 }
 .primaryUl{
     display:flex;
