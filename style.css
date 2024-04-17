@@ -176,7 +176,7 @@ h1{
 }
 
 .topC{
-    gap:1rem;
+    gap:2rem;
     max-width:75rem;
 }
 .p{
@@ -189,7 +189,7 @@ h1{
 }
 .topContent h1{
     max-width:30rem;
-    transform:translateX(-20%);
+    transform:translateX(-25%);
     
 }
 .trigger{
