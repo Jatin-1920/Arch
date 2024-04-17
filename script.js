@@ -2,7 +2,7 @@ gsap.registerPlugin(ScrollTrigger)
 
 
 const locoScroll = new LocomotiveScroll({
-  el: document.querySelector("#main"),
+  el: document.querySelector(".root"),
   smooth: true,
   lerp:0.1,
 
@@ -107,3 +107,8 @@ const prlxSection = document.querySelectorAll(".prlx-section")
     ease:"none"
   })
 })
+
+
+  ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
+
+ScrollTrigger.refresh()
