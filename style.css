@@ -178,6 +178,8 @@ h1{
     z-index:11;
     justify-content:space-evenly;
     margin-bottom:2rem;
+    max-width:62rem;
+    margin-inline: auto;
 }
 .primaryUl{
     display:flex;
@@ -228,9 +230,10 @@ h1{
 .movieBtnBlock{
     display:flex;
     gap:2rem;
-    padding-inline:2rem;
     position:relative;
     z-index:11;
+    max-width:62rem;
+    margin-inline: auto;
 }
 .movieBtn{
     border-radius:.5rem;
