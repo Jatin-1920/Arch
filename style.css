@@ -229,6 +229,8 @@ h1{
     display:flex;
     gap:2rem;
     padding-inline:2rem;
+    position:relative;
+    z-index:11;
 }
 .movieBtn{
     border-radius:.5rem;
