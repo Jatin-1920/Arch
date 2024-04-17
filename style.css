@@ -222,7 +222,7 @@ h1{
     background:url(arch31.jpg);
     background-size:cover;
     margin-top:4rem;
-    width:30vw;
+    width:50vw;
     height:60vh;
     background-position:center center;
 }
@@ -230,7 +230,7 @@ h1{
     background:url(arch17.jpg);
     background-size:cover;
     height:40vh;
-    width:25vw;
+    width:40vw;
     background-position:center center;
 }
 
