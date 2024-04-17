@@ -200,7 +200,7 @@ h1{
 .movieBtnBlock{
     display:flex;
     gap:2rem;
-    padding:2rem;
+    padding-inline:2rem;
 }
 .movieBtn{
     background:black;
