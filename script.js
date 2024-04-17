@@ -68,7 +68,7 @@ content.forEach((e,index)=>{
     ScrollTrigger.create({
         trigger:e,
         start:"top 80%",
-        end:"top 20%",
+        end:"top top",
         animation:animation,
         scrub:true
     })
