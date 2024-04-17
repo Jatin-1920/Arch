@@ -170,7 +170,7 @@ h1{
 .mainHead{
     height:100vh;
     display:grid;
-    margin-bottom:10rem;
+    margin-bottom:25vh;
     grid-template-rows:1fr 1fr;
 }
 .mainHead>*{
