@@ -406,7 +406,8 @@ h1{
 .goTop{
     background:blue;
     color:white;
-    padding:2rem;
+    height:5rem;
+    width:5rem;
     border-radius:100%;
     text-align:center;
 }
