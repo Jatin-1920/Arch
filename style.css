@@ -423,12 +423,12 @@ display:flex;
     justify-content:center;
     background:black;
     color:blue;
-    height:80vh;
+    height:40vh;
     position: fixed;
-    margin-top:-40vh;
-    top:0;
-    width:80%;
-    z-index:-1;
+    bottom:0;
+    width:90%;
+    margin-inline:auto;
+    z-index:-100;
 }
 .arch h1{
     font-size:13vw;
