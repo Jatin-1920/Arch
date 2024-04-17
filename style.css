@@ -177,11 +177,10 @@ h1{
 }
 .layerHead{
     overflow:clip;
-    display:flex;
+    display:grid;
+    grid-template-column:repeat(3,1fr);
 }
-.layerHead>*{
-    flex:1;
-}
+
 .toplayer{
     position:relative;
     z-index:999;
