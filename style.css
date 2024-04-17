@@ -177,14 +177,14 @@ h1{
 }
 .layerHead{
     overflow:clip;
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
+    display:flex;
 }
 
 .toplayer{
     position:relative;
     z-index:999;
     background:black;
+    flex:1;
 }
 .layer{
     position: absolute;
