@@ -360,7 +360,7 @@ h1{
         border-top:2px solid black;
     }
 .topFooter{
-    padding-inline: 1rem;
+    padding-inline: 2rem;
 }
 .topFooter h1{
     font-size:var(--xl-text);
@@ -377,7 +377,7 @@ h1{
     gap:2rem;
     justify-content:center;
     align-items:center;
-    padding-inline: 1rem;
+    padding-inline: 2rem;
 }
 .footlink{
     flex:1;
@@ -401,7 +401,7 @@ h1{
     background:var(--bg-3);
     border-top-left-radius:1rem;
     border-top-right-radius:1rem;
-    padding-inline: 1rem;
+    padding-inline: 2rem;
 }
 @media (max-width:50rem){
     .prlx-section{
