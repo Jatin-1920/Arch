@@ -4,7 +4,8 @@ gsap.registerPlugin(ScrollTrigger)
 const lenis = new Lenis({
   smooth:true,
   smoothTouch:false,
-  duration:0.5
+  lerp:0.05,
+  duration:1
 })
 
 
