@@ -273,7 +273,7 @@ h1{
 }
 .mainSection {
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
   overflow: hidden;
     display:flex;
     flex-direction:column;
@@ -566,9 +566,11 @@ display: none;
 @media (max-width:50rem){
 
 .mainSection{
-    display:block;
+    display: grid;
 }
-
+.archBlock{
+    display:grid;
+}
 .toplayer1,.toplayer2{
     display:none;
 }
