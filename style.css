@@ -282,32 +282,34 @@ h1{
     flex:1;
 }
 
-.layerTop{
+.introAnim{
     position: absolute;
     z-index:101;
+    width:100%;
+    height:100%;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+}
+.introAnim>*{
     background:black;
-    width:33.333%;
+}
+.archBlock{
+    display:flex;
     height:50vh;
+    overflow:clip;
 }
-.layer3{
-    left:66.666%;
+.archCase{
+    flex:1;
+    overflow:clip;
+    position: relative;
 }
-.layer2{
-    left:33.333%;
+.archCase img{
+    position: absolute;
+    height:100%;
+    width:100%;
+    object-fit:cover;
 }
-.layerBottom{
-   position: absolute;
-    z-index:101;
-    background:black;
-    width:33.333%;
-    height:50vh;
-}
-.bottom3{
-    left:66.666%;
-}
-.bottom2{
-    left:33.333%;
-}
+
 .mainHead h1{
     display: none;
 }
