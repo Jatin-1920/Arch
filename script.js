@@ -22,7 +22,16 @@ const intro = select(".introAnim")
 
 
 const animTl = gsap.timeline()
-animTl.to(".toplayer",{
+animTl.from(".line",{
+  y: 100,
+    ease: "power4.out",
+    delay: 1,
+    skewY: 7,
+  duration:1.8,
+    stagger: {
+      amount: 0.3
+    }
+}).to(".toplayer",{
   duration:1.6,
   ease:"expo.out",
   stagger:{
@@ -45,6 +54,10 @@ animTl.to(".toplayer",{
   },
   scale:1.5,
   delay:-2
+})
+gsap.to(".mainSection h1",{
+  color:"black",
+  delay:3.1,
 })
 
 const movie = document.querySelectorAll(".movieBtn")
