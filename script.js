@@ -21,7 +21,7 @@ gsap.ticker.lagSmoothing(0)
 
 gsap.to(".toplayer",{
  duration:1.6,
-  ease:"power2.inOut",
+  ease:"expo.out",
   stagger:{
     amount:0.4
   },
@@ -30,7 +30,7 @@ gsap.to(".toplayer",{
   gsap.to(".layer",{
   delay:2.8,
  duration:1.6,
-  ease:"power2.inOut",
+  ease:"expo.out",
   xPercent:100,
     stagger:{
     amount:0.4
@@ -40,7 +40,7 @@ gsap.to(".layerHead h1",{
   delay:2.8,
  display:"flex",
   duration:.5,
-  ease:"power2.inOut",
+  ease:"expo.out",
 })
 gsap.from(".archCase img",{
   delay:2.8,
@@ -49,7 +49,7 @@ gsap.from(".archCase img",{
   stagger:{
     amount:0.4
   },
-  ease:"power2.inOut",
+  ease:"expo.out",
 })
 
 const movie = document.querySelectorAll(".movieBtn")
