@@ -291,12 +291,12 @@ h1{
     flex-direction: column;
     
 }
-.bottomlayer,.toplayer{
-    background:black;
+.bottomlayerblock,.toplayerblock{
     display:flex;
 }
-.bottomlayer>*,.toplayer>*{
+.bottomlayer,.toplayer{
     flex:1;
+    background:black;
 }
 
 .archBlock{
