@@ -468,9 +468,7 @@ h1{
     order:-1;
 }
 
-.pinImg .service-container{
-    display: none;
-}
+
 .imgDiv{
     position: absolute;
     height:100%;
@@ -620,19 +618,7 @@ h1{
     
 }
 @media(max-width:1000px){
-    .pinImg .service-container{
-    display: grid;
-    }
-    .pinContainer{
-        display:block;
-    }
-    .pinImg{
-        height:100%;
-    }
-    .imgDiv{
-        position:relative;
-    }
-    .pinContent{
+    .pinSection{
         display:none;
     }
 }
