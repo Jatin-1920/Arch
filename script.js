@@ -27,7 +27,19 @@ function centerImg() {
   return Flip.from(state,{
     ease:"power3.inOut",
     duration:2,
-    stagger:.15
+    stagger:.15,
+    onComplete:scaleImg()
+  })
+}
+function scaleImg() {
+  const state = Flip.getState([images,img])
+  images.classList.remove("centerFlip")
+  images.classList.add("scaleFlip")
+  return Flip.from(state,{
+    ease:"power3.inOut",
+    duration:2,
+    stagger:.15,
+    
   })
 }
 centerImg()
