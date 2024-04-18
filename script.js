@@ -20,6 +20,7 @@ gsap.ticker.lagSmoothing(0)
 
 
 gsap.to(".toplayer",{
+  delay:.5,
  duration:1.6,
   ease:"expo.out",
   stagger:{
@@ -28,7 +29,7 @@ gsap.to(".toplayer",{
   yPercent:100,
 })
   gsap.to(".layer",{
-  delay:2.8,
+  delay:3.3,
  duration:1.6,
   ease:"expo.out",
   xPercent:100,
@@ -37,13 +38,13 @@ gsap.to(".toplayer",{
   },
 })
 gsap.to(".layerHead h1",{
-  delay:2.8,
+  delay:3.3,
  display:"flex",
   duration:.5,
   ease:"expo.out",
 })
 gsap.from(".archCase img",{
-  delay:2.8,
+  delay:3.3,
  duration:1.6,
   scale:1.4,
   stagger:{
