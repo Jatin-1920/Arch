@@ -346,7 +346,7 @@ h1{
   left: 0%;
 }
 .mainHead.scaleFlip .flipImg5{
-    transform:scale(1);
+    transform:scale(4);
 }
 .mainHead h1{
     display: none;
