@@ -160,7 +160,8 @@ trigger.forEach(e=>{
   
 
 
-
+const matchMedia  = window.matchMedia("(max-width:1000px)")
+if(matchMedia){
 let photos = gsap.utils.toArray(".imgDiv:not(:first-child)")
 const allPhotos = gsap.utils.toArray(".imgDiv")
 const content = gsap.utils.toArray(".pinh1:not(:first-child)")
@@ -186,6 +187,7 @@ content.forEach((e,index)=>{
         scrub:true
     })
 })
+   }
 
 const prlxSection = document.querySelectorAll(".prlx-section")
 
