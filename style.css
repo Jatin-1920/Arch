@@ -275,8 +275,11 @@ h1{
   position: relative;
   min-height: 100vh;
   overflow: hidden;
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
+    display:flex;
+    flex-direction:column;
+}
+.mainSection>*{
+    flex:1;
 }
 
 .layerTop{
