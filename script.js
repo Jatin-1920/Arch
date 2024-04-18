@@ -189,7 +189,7 @@ content.forEach((e,index)=>{
         scrub:true
     })
 })
-   } 
+   } else{}
 
 const prlxSection = document.querySelectorAll(".prlx-section")
 
