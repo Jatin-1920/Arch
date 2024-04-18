@@ -161,7 +161,7 @@ trigger.forEach(e=>{
   
 
 
-const matchMedia  = window.matchMedia("(max-width:1000px)")
+const matchMedia  = window.matchMedia("(min-width:1000px)")
 if(matchMedia){
 let photos = gsap.utils.toArray(".imgDiv:not(:first-child)")
 const allPhotos = gsap.utils.toArray(".imgDiv")
