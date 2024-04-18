@@ -127,7 +127,7 @@ html {
 
 body{
     
-  user-select: none;
+  
   overscroll-behavior: none;
     text-rendering: optimizeSpeed;
     line-height:1.6;
