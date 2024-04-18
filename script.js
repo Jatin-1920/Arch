@@ -24,26 +24,27 @@ const animTl = gsap.timeline()
 animTl.to(".toplayer",{
   
  duration:1.6,
-  ease:"power3.inOut",
+  ease:"expo.inOut",
   stagger:{
     amount:0.4
   },
   yPercent:100,
 }).to(".layer",{
+  delay:-0.8,
  duration:1.6,
-  ease:"power3.inOut",
+  ease:"expo.inOut",
   xPercent:100,
     stagger:{
     amount:0.4
   },
 }).from(".archCase img",{
-  delay:-2.4,
+  delay:-2,
  duration:1.6,
   scale:1.5,
   stagger:{
     amount:0.4
   },
-  ease:"power3.inOut",
+  ease:"expo.inOut",
 })
 gsap.to(".layerHead h1",{
   delay:2.8,
