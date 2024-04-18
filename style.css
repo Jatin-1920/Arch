@@ -298,10 +298,11 @@ h1{
 .bottomlayerblock{
     display:flex;
     flex:1;
+    background:none;
 }
 .bottomlayer,.toplayer{
     flex:1;
-    background:black;
+    background:none;
     width:0%;
 }
 
