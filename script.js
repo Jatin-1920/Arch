@@ -22,7 +22,7 @@ const images = selectAll(".mainHead")
 const img = selectAll(".flipImg")
 function centerImg() {
   const state = Flip.getState([images,img])
-  images.classList.remove("intial")
+  images.classList.remove("initial")
   images.classList.add("centerFlip")
   return Flip.from(state,{
     ease:"power3.inOut",
