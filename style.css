@@ -175,7 +175,7 @@ h1{
     height:0vh;
 }
 .primaryNav{
-    padding-top:30vh;
+    padding-top:10vh;
     display:flex;
     position:relative;
     z-index:11;
