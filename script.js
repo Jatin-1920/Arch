@@ -30,7 +30,7 @@ animTl.to(".toplayer",{
   },
   yPercent:100,
 }).to(".layer",{
-  delay:-0.6,
+  delay:-0.4,
  duration:1.6,
   ease:"power2.inOut",
   xPercent:100,
