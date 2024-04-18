@@ -286,21 +286,12 @@ h1{
     position: absolute;
     z-index:101;
     width:100%;
-    height:100%;
+    height:50vh;
     display:flex;
-    flex-direction: column;
-    
 }
-.toplayerblock{
-    display:flex;
-    flex:1;
-}
-.bottomlayerblock{
-    display:flex;
-    flex:1;
-    background:none;
-}
-.bottomlayer,.toplayer{
+
+
+.toplayer{
     flex:1;
     background:black;
 }
@@ -315,6 +306,12 @@ h1{
     overflow:clip;
     position: relative;
 }
+.layer{
+    position: absolute;
+    height:100%;
+    width:100%;
+    background:black;
+}
 .archCase img{
     position: absolute;
     height:100%;
@@ -322,7 +319,7 @@ h1{
     object-fit:cover;
 }
 
-.mainHead h1{
+.mainSection h1{
     display: none;
 }
 
