@@ -622,4 +622,10 @@ h1{
     .pinContent{
         display:none;
     }
+    .imgDiv{
+        position:relative;
+    }
+    .pinContainer{
+        display:block;
+    }
 }
