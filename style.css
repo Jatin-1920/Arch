@@ -127,7 +127,7 @@ html {
 
 body{
     
-  
+  user-select: none;
   overscroll-behavior: none;
     text-rendering: optimizeSpeed;
     line-height:1.6;
@@ -510,14 +510,13 @@ h1{
     margin-top:1rem;
 }
 .phil{
-    display:inline-block;
     background-image:linear-gradient(to right,#3EB489 50%, yellow 50% );
     background-size:200%;
     background-position:0;
     transition:all .5s ease-in-out;
 }
 .phil:hover{
-    background-position:100%;
+    background-position:-100%;
 }
 .prlx-section{
     height:100vh;
