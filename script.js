@@ -18,6 +18,7 @@ gsap.ticker.add((time)=>{
 
 gsap.ticker.lagSmoothing(0)
 const select = e => document.querySelector(e)
+const selectAll = e => document.querySelectorAll(e)
 const intro = select(".introAnim")
 
 
@@ -187,6 +188,15 @@ content.forEach((e,index)=>{
         scrub:true
     })
 })
+   } else{
+  const pinClass = selectAll(".imgDiv")
+  const pinImages = selectAll(".imgDiv img")
+  pinClass.forEach(e=>{
+    e.classList.add(".prlx-section")
+  })
+  pinImages.forEach(e=>{
+    e.classList.add(".prlx-item")
+  })
    }
 
 const prlxSection = document.querySelectorAll(".prlx-section")
