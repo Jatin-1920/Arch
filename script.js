@@ -103,9 +103,12 @@ gsap.fromTo([firstNav,secondNav],{
 
 const panMovie = document.querySelector(".movie")
 function showMovie(movi){
-  gsap.from(panMovie,1,{
+  gsap.fromTo(panMovie,1,{
     transformOrigin:"right top",
   skewY:2,
+  },{
+        transformOrigin:"right top",
+  skewY:0,
     ease:"power3.inOut"
   })
  gsap.to(panMovie,.4,{opacity:1,backgroundImage:`url(${movi})`,ease:"power3.inOut"}) 
