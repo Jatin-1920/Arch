@@ -568,16 +568,15 @@ display: none;
 .mainSection{
     display:block;
 }
-    .archBlock{
-        display:block;
-    }
+
 .toplayer1,.toplayer2{
     display:none;
 }
     .archBlock{
-        display:flex;
-        flex-direction: column;
+        display:block;
+        height:100%;
     }
+    
     .prlx-section{
         height:60vh;
         margin-inline:1rem;
