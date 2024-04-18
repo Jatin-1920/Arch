@@ -19,9 +19,9 @@ gsap.ticker.add((time)=>{
 gsap.ticker.lagSmoothing(0)
 const selectAll = e => document.querySelector(e)
 const images = selectAll(".mainHead")
-
+const img = selectAll(".flipImg")
 function centerImg() {
-  const state = Flip.getState(images)
+  const state = Flip.getState(images,img)
   images.classList.remove("intial")
   images.classList.add("centerFlip")
   return Flip.from(state,{
