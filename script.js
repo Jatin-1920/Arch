@@ -162,30 +162,6 @@ trigger.forEach(e=>{
 
 const matchMedia  = window.matchMedia("(min-width:1000px)")
 
-const prlxSection = document.querySelectorAll(".prlx-section")
-
-        prlxSection.forEach(e=>{
-  const prlxImg  = e.querySelector(".prlx-item")
-  const prlxTl = gsap.timeline({
-    scrollTrigger: {
-        trigger:e,
-        start: "top bottom",
-        end: "bottom top",
-        scrub: true,
-      
-    }
-})
-  const yHeight = prlxImg.offsetHeight - e.offsetHeight 
-
-  prlxTl.fromTo(prlxImg,{y:-yHeight},{
-    y:0,
-    ease:"none"
-  })
-})
-
-
-    
-      
 let photos = gsap.utils.toArray(".imgDiv:not(:first-child)")
 const allPhotos = gsap.utils.toArray(".imgDiv")
 const content = gsap.utils.toArray(".pinh1:not(:first-child)")
@@ -212,5 +188,34 @@ content.forEach((e,index)=>{
     })
 })
    
+
+
+
+  
+const prlxSection = document.querySelectorAll(".prlx-section")
+
+        prlxSection.forEach(e=>{
+  const prlxImg  = e.querySelector(".prlx-item")
+  const prlxTl = gsap.timeline({
+    scrollTrigger: {
+        trigger:e,
+        start: "top bottom",
+        end: "bottom top",
+        scrub: true,
+      
+    }
+})
+  const yHeight = prlxImg.offsetHeight - e.offsetHeight 
+
+  prlxTl.fromTo(prlxImg,{y:-yHeight},{
+    y:0,
+    ease:"none"
+  })
+})
+
+
+    
+      
+
 
   
