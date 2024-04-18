@@ -273,7 +273,7 @@ h1{
 }
 .mainSection {
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
   overflow: hidden;
     display:flex;
     flex-direction:column;
