@@ -326,17 +326,20 @@ position: absolute;
     top:20vh;
     left:10%;
     z-index:102;
-    color:white;
-    mix-blend-mode: difference;
+    
 }
 .mainHeadContent h1{
         font-size:var(--p-text);
     font-family:j2;
     font-weight:bold;
     overflow:clip;
-    
+    color:white;
+    mix-blend-mode: difference;
 }
 
+.moreA{
+    color:black;
+}
 .topC{
     gap:2rem;
     max-width:75rem;
