@@ -287,6 +287,7 @@ h1{
     z-index:101;
     display:flex;
     overflow:clip;
+    height:50vh;
 }
 
 
@@ -563,6 +564,13 @@ display: none;
 
 
 @media (max-width:50rem){
+
+.mainSection{
+    display:block;
+}
+    .archBlock{
+        display:block;
+    }
 .toplayer1,.toplayer2{
     display:none;
 }
