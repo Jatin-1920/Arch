@@ -326,6 +326,8 @@ position: absolute;
     top:20vh;
     left:10%;
     z-index:102;
+    color:white;
+    mix-blend-mode: difference;
 }
 .mainHeadContent h1{
         font-size:var(--p-text);
@@ -334,10 +336,7 @@ position: absolute;
     overflow:clip;
     
 }
-.lineh{
-    color:white;
-    mix-blend-mode: difference;
-}
+
 .topC{
     gap:2rem;
     max-width:75rem;
