@@ -19,7 +19,7 @@ gsap.ticker.add((time)=>{
 gsap.ticker.lagSmoothing(0)
 const select = e => document.querySelector(e)
 const intro = select(".introAnim")
-const img = select(".archCase img")
+
 
 const animTl = gsap.timeline()
 animTl.to(".toplayer",{
@@ -37,7 +37,7 @@ animTl.to(".toplayer",{
     amount:.4
   },
   delay:-0.8
-}).from(img,{
+}).from(".archCase img",{
   duration:1.6,
   ease:"expo.out",
   stagger:{
