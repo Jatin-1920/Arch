@@ -185,6 +185,9 @@ const prlxSection = document.querySelectorAll(".prlx-section")
 
 
     if(matchMedia.matches){
+      gsap.to(".pinSection",{
+        display:"block"
+      })
 let photos = gsap.utils.toArray(".imgDiv:not(:first-child)")
 const allPhotos = gsap.utils.toArray(".imgDiv")
 const content = gsap.utils.toArray(".pinh1:not(:first-child)")
@@ -210,6 +213,10 @@ content.forEach((e,index)=>{
         scrub:true
     })
 })
-   } 
+   }  else {
+      gsap.to(".pinSection",{
+        display:"none"
+      })
+   }
 
   
