@@ -329,6 +329,7 @@ position: absolute;
     font-family:j2;
     font-weight:bold;
     overflow:clip;
+    color:white;
 }
 .topC{
     gap:2rem;
