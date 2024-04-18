@@ -25,13 +25,13 @@ gsap.to(".toplayer",{
   stagger:{
     amount:0.4
   },
-  height:0,
+  yPercent:100,
 })
   gsap.to(".layer",{
   delay:2.8,
  duration:1.6,
   ease:"expo.inOut",
-  width:0,
+  xPercent:100,
     stagger:{
     amount:0.4
   },
