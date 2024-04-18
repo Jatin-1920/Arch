@@ -504,6 +504,16 @@ h1{
     max-width:50rem;
     padding-block:5rem;
 }
+
+.service-content h1{
+    display:inline-block;
+    background-image:linear-gradient(to right, mint 50%, yellow 50%);
+    background-size:200%;
+    transition:all .5s ease-in-out;
+}
+.service-content h1:hover {
+    background-position:-100%;
+} 
 .service-content p {
     margin-top:1rem;
 }
