@@ -321,7 +321,7 @@ h1{
 }
 
 
-.mainHeadContent h1{
+.mainHeadContent {
 position: absolute;
     top:20vh;
     left:10%;
