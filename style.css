@@ -126,6 +126,9 @@ html {
 }
 
 body{
+    visibility: hidden;
+  user-select: none;
+  overscroll-behavior: none;
     text-rendering: optimizeSpeed;
     line-height:1.6;
     overflow-x: clip;
