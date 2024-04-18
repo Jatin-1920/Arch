@@ -321,24 +321,32 @@ h1{
 }
 
 
-.mainHeadContent {
-position: absolute;
+
+
+    
+.lineh{
+    position: absolute;
     top:20vh;
     left:10%;
     z-index:102;
-    
-}
-.mainHeadContent h1{
-        font-size:var(--p-text);
+    color:white;
+    mix-blend-mode: difference;
+            font-size:var(--p-text);
     font-family:j2;
     font-weight:bold;
     overflow:clip;
-    color:white;
-    mix-blend-mode: difference;
 }
 
 .moreA{
     color:black;
+    position: absolute;
+    top:45vh;
+    right:10%;
+    z-index:102;
+    font-size:var(--p-text);
+    font-family:j2;
+    font-weight:bold;
+    overflow:clip;
 }
 .topC{
     gap:2rem;
