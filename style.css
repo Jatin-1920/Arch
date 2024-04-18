@@ -322,7 +322,13 @@ h1{
 
 
 .mainSection h1{
-display: none;
+position: absolute;
+    top:25%;
+    left:10%;
+    font-size:var(--h1-text);
+    font-family:j2;
+    font-weight:bold;
+    overflow:clip;
 }
 .topC{
     gap:2rem;
