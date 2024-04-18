@@ -184,7 +184,7 @@ content.forEach((e,index)=>{
     })
 })
 
-const prlxSection = document.querySelectorAll(".prlx-section")
+const prlxSection = document.querySelectorAll(".imgTrig")
 
         prlxSection.forEach(e=>{
   const prlxImg  = e.querySelector(".prlx-item")
