@@ -20,30 +20,36 @@ gsap.ticker.lagSmoothing(0)
 
 
 gsap.to(".toplayer",{
- duration:1,
-  ease:"power3.inOut",
+ duration:1.6,
+  ease:"expo.inOut",
   stagger:{
-    amount:0.1
+    amount:0.4
   },
-  yPercent:100,
+  height:100,
 })
   gsap.to(".layer",{
-  delay:1.3,
- duration:1,
-  ease:"power3.inOut",
-  xPercent:100,
+  delay:2.8,
+ duration:1.6,
+  ease:"expo.inOut",
+  width:100,
+    stagger:{
+    amount:0.4
+  },
 })
 gsap.to(".layerHead h1",{
-  delay:1.3,
+  delay:2.8,
  display:"flex",
   duration:.5,
-  ease:"power3.inOut",
+  ease:"expo.inOut",
 })
 gsap.from(".archCase img",{
-  delay:1.3,
- duration:1.3,
-  scale:1.5,
-  ease:"power3.inOut",
+  delay:2.8,
+ duration:1.6,
+  scale:1.4,
+  stagger:{
+    amount:0.4
+  },
+  ease:"expo.inOut",
 })
 
 const movie = document.querySelectorAll(".movieBtn")
