@@ -467,6 +467,9 @@ h1{
     position:relative;
     order:-1;
 }
+.pinImg .service-container{
+    display: none;
+}
 .imgDiv{
     position: absolute;
     height:100%;
@@ -612,5 +615,11 @@ h1{
     }
     .service-container{
         padding-inline: 1rem;
+    }
+    .pinImg .service-container{
+    display: grid;
+    }
+    .pinContent{
+        display:none;
     }
 }
