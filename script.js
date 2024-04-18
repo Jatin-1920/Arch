@@ -60,7 +60,7 @@ animTl.fromTo(".line",{
 })
 gsap.to(".mainSection h1",{
   color:"black",
-  delay:3.5,
+  delay:3.4,
 })
 
 const movie = document.querySelectorAll(".movieBtn")
