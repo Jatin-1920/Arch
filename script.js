@@ -37,7 +37,7 @@ animTl.to(".toplayer",{
     amount:0.4
   },
 }).from(".archCase img",{
-  delay:-1.8,
+  delay:-1,
  duration:1.6,
   scale:1.5,
   stagger:{
