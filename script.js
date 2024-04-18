@@ -163,10 +163,9 @@ trigger.forEach(e=>{
 const matchMedia  = window.matchMedia("(min-width:1000px)")
 if(matchMedia.matches){
 
-let pinClass1 = selectAll(".prlx-section")
-  let pinImages1 = selectAll(".prlx-item")
+let pinClass1 = selectAll(".imgDiv")
+  let pinImages1 = selectAll(".imgDiv img")
   pinClass1.forEach(e=>{
-    e.classList.add("imgDiv")
     e.classList.remove("prlx-section")
   })
   pinImages1.forEach(e=>{
@@ -203,7 +202,6 @@ content.forEach((e,index)=>{
   let pinImages = selectAll(".imgDiv img")
   pinClass.forEach(e=>{
     e.classList.add("prlx-section")
-    e.classList.remove("imgDiv")
   })
   pinImages.forEach(e=>{
     e.classList.add("prlx-item")
