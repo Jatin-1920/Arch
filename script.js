@@ -36,9 +36,8 @@ animTl.to(".toplayer",{
     stagger:{
     amount:0.4
   },
-})
-  gsap.from(".archCase img",{
-  delay:2.8,
+}).from(".archCase img",{
+  delay:-2.3,
  duration:1.6,
   scale:1.5,
   stagger:{
