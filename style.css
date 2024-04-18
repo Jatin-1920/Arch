@@ -607,7 +607,7 @@ h1{
 
 
 
-@media (min-width:1001px){
+@media (max-width:1001px){
 .warn{
     display:grid;
 }
