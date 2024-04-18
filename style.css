@@ -627,7 +627,7 @@ h1{
         display:block;
     }
     .pinImg{
-        min-height:100vh;
+        height:100%;
     }
     .imgDiv{
         position:relative;
