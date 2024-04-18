@@ -17,32 +17,29 @@ gsap.ticker.add((time)=>{
 })
 
 gsap.ticker.lagSmoothing(0)
-const selectAll = e => document.querySelector(e)
-const images = selectAll(".mainHead")
-const img = selectAll(".flipImg")
-function centerImg() {
-  const state = Flip.getState(images)
-  images.classList.remove("initial")
-  images.classList.add("centerFlip")
-  return Flip.from(state,{
-    ease:"power3.inOut",
-    duration:2,
-    stagger:.15,
-    onComplete:()=>scaleImg()
-  })
-}
-function scaleImg() {
-  const state = Flip.getState([images,img])
-  images.classList.remove("centerFlip")
-  images.classList.add("scaleFlip")
-  return Flip.from(state,{
-    ease:"power3.inOut",
-    duration:2,
-    stagger:.15,
-    
-  })
-}
-centerImg()
+const select = e => document.querySelector(e)
+const intro = select(".introAnim")
+const img = select(".archCase img")
+
+const animTl = gsap.timeline()
+animTl.to(".toplayer",{
+  duration:1.6,
+  ease:"expo.inOut",
+  stagger:.4,
+  yPercent:100
+}).to(".bottomlayer",{
+  xPercent:100,
+  duration:1.6,
+  ease:"expo.inOut",
+  stagger:.4,
+  delay:-0.8
+}).from(img,{
+  duration:1.6,
+  ease:"expo.inOut",
+  stagger:.4,
+  scale:1.5,
+  delay:-2
+})
 
 const movie = document.querySelectorAll(".movieBtn")
 let state = false
