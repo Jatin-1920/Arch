@@ -323,7 +323,7 @@ h1{
 
 .mainSection h1{
 position: absolute;
-    top:25vh;
+    top:15vh;
     left:10%;
     font-size:var(--p-text);
     font-family:j2;
