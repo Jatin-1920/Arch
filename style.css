@@ -97,7 +97,7 @@ html {
 :root{
     --h1-font:clamp(1.75rem,2vw + 1rem,3rem);
     --bg-1:white;
-    --bg-2:#F9F6EE   ;
+    --bg-2:white   ;
     --bg-3:#ecfc56;
     --bg-4:#151515;
     --bg-5:white;
@@ -138,7 +138,7 @@ body{
     color:black;
     scrollbar-width:thin;
     scrollbar-color:#760026;
-    background:var(--bg-2);
+    background:var(--bg-1);
 }
 
 a{
@@ -331,6 +331,7 @@ position: absolute;
     overflow:clip;
     color:white;
     z-index:102;
+    mix-blend-mode: difference;
 }
 .topC{
     gap:2rem;
