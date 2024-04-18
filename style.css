@@ -562,6 +562,12 @@ display: none;
 
 
 @media (max-width:50rem){
+.toplayer1,.toplayer2{
+    display:none;
+}
+    .archBlock{
+        grid-template-columns:1fr;
+    }
     .prlx-section{
         height:60vh;
         margin-inline:1rem;
