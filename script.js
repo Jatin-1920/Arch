@@ -214,7 +214,7 @@ content.forEach((e,index)=>{
     })
 })
    }  else {
-      gsap.to(".pinSection",{
+      gsap.set(".pinSection",{
         display:"none"
       })
    }
