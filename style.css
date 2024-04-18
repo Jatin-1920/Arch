@@ -330,7 +330,7 @@ h1{
     z-index:102;
     color:white;
     mix-blend-mode: difference;
-            font-size:var(--l-text);
+            font-size:var(--p-text);
     font-family:j2;
     font-weight:bold;
     overflow:clip;
@@ -342,7 +342,7 @@ h1{
     top:40vh;
     right:10%;
     z-index:102;
-    font-size:var(--p1-text);
+    font-size:var(--p-text);
     font-family:j2;
     font-weight:bold;
     overflow:clip;
