@@ -302,7 +302,7 @@ h1{
 .bottomlayer,.toplayer{
     flex:1;
     background:black;
-    width:100%;
+    width:0%;
 }
 
 .archBlock{
