@@ -28,7 +28,7 @@ animTl.to(".toplayer",{
   stagger:.4,
   yPercent:100
 }).to(".bottomlayer",{
-  xPercent:100,
+  width:0,
   duration:1.6,
   ease:"expo.inOut",
   stagger:.4,
