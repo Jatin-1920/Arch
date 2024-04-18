@@ -159,9 +159,10 @@ h1{
     z-index:2000;
     background:black;
     color:red;
-    font-size:5vw;
+    font-size:3vw;
     padding-inline:2rem;
     place-items:center;
+    text-align:center;
     height:100vh;
     width:100%;
     overflow:clip;
