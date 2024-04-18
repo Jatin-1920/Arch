@@ -24,22 +24,22 @@ const img = select(".archCase img")
 const animTl = gsap.timeline()
 animTl.to(".toplayer",{
   duration:1.6,
-  ease:"expo.inOut",
+  ease:"expo.out",
   stagger:{
     amount:.4
   },
   yPercent:100
-}).to(".bottomlayer",{
+}).to(".layer",{
   xPercent:100,
   duration:1.6,
-  ease:"expo.inOut",
+  ease:"expo.out",
   stagger:{
     amount:.4
   },
   delay:-0.8
 }).from(img,{
   duration:1.6,
-  ease:"expo.inOut",
+  ease:"expo.out",
   stagger:{
     amount:.4
   },
