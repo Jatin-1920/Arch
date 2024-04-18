@@ -210,9 +210,6 @@ content.forEach((e,index)=>{
         scrub:true
     })
 })
-   } else{
-  
-return;
-}
+   } 
 
   
