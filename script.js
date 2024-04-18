@@ -30,7 +30,7 @@ animTl.to(".toplayer",{
   },
   yPercent:100
 }).to(".bottomblocklayer div",{
-  xPercent:0,
+  xPercent:100,
   duration:1.6,
   ease:"expo.inOut",
   stagger:{
