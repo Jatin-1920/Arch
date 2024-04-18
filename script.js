@@ -19,38 +19,38 @@ gsap.ticker.add((time)=>{
 gsap.ticker.lagSmoothing(0)
 
 
-gsap.to(".toplayer",{
-  delay:.5,
+const animTl = gsap.timeline()
+
+animTl.to(".toplayer",{
+  
  duration:1.6,
-  ease:"expo.out",
+  ease:"expo.inOut",
   stagger:{
     amount:0.4
   },
   yPercent:100,
-})
-  gsap.to(".layer",{
-  delay:3.3,
+}).to(".layer",{
+  delay:-0.8,
  duration:1.6,
-  ease:"expo.out",
+  ease:"expo.inOut",
   xPercent:100,
     stagger:{
     amount:0.4
   },
-})
-gsap.to(".layerHead h1",{
-  delay:3.3,
- display:"flex",
-  duration:.5,
-  ease:"expo.out",
-})
-gsap.from(".archCase img",{
-  delay:3.3,
- duration:2,
+}).from(".archCase img",{
+  delay:-2,
+ duration:1.6,
   scale:1.5,
   stagger:{
     amount:0.4
   },
-  ease:"expo.out",
+  ease:"expo.inOut",
+})
+gsap.to(".layerHead h1",{
+  delay:2.8,
+ display:"flex",
+  duration:.5,
+  ease:"expo.inOut",
 })
 
 const movie = document.querySelectorAll(".movieBtn")
