@@ -1,4 +1,4 @@
-gsap.registerPlugin(ScrollTrigger)
+gsap.registerPlugin(ScrollTrigger,Flip)
 
 
 const lenis = new Lenis({
@@ -21,8 +21,16 @@ const selectAll = e => document.querySelectorAll(e)
 const images = selectAll(".flipImg")
 
 function centerImg() {
-  const state = 
+  const state = Flip.getState(images)
+  images.classList.remove("intial")
+  images.classList.add("centerFlip")
+  return Flip.from(state,{
+    ease:"power3.inOut",
+    duration:2,
+    stagger:.15
+  })
 }
+centerImg()
 
 const movie = document.querySelectorAll(".movieBtn")
 let state = false
