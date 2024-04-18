@@ -58,10 +58,7 @@ animTl.fromTo(".line",{
   scale:1.5,
   delay:-2
 })
-gsap.to(".mainSection h1",{
-  color:"black",
-  delay:3.3,
-})
+
 
 const movie = document.querySelectorAll(".movieBtn")
 let state = false
