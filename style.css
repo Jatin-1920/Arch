@@ -283,10 +283,11 @@ h1{
 }
 
 .introAnim{
-    position: relative;
+    position: absolute;
     z-index:101;
     display:flex;
     overflow:clip;
+    height:50vh;
 }
 
 
@@ -318,9 +319,6 @@ h1{
     object-fit:cover;
 }
 
-.mainSection h1{
-display: none;
-}
 
 .topC{
     gap:2rem;
