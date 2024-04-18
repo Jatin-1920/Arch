@@ -510,12 +510,13 @@ h1{
     margin-top:1rem;
 }
 .service-content h1{
+    display:inline-block;
     background-image:linear-gradient(to right,#3EB489 50%, yellow 50% );
     background-size:200%;
     transition:all .5s ease-in-out;
 }
 .service-content h1:hover{
-    background-position:-100%;
+    background-position:100%;
 }
 .prlx-section{
     height:100vh;
