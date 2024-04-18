@@ -160,16 +160,15 @@ trigger.forEach(e=>{
 })
   
 
-const pinClass = selectAll(".imgDiv")
-  const pinImages = selectAll(".imgDiv img")
 const matchMedia  = window.matchMedia("(min-width:1000px)")
 if(matchMedia.matches){
 
-
-  pinClass.forEach(e=>{
+let pinClass1 = selectAll(".imgDiv")
+  let pinImages1 = selectAll(".imgDiv img")
+  pinClass1.forEach(e=>{
     e.classList.remove("prlx-section")
   })
-  pinImages.forEach(e=>{
+  pinImages1.forEach(e=>{
     e.classList.remove("prlx-item")
   })
 let photos = gsap.utils.toArray(".imgDiv:not(:first-child)")
@@ -199,7 +198,8 @@ content.forEach((e,index)=>{
 })
    } else{
   
-  
+  let pinClass = selectAll(".imgDiv")
+  let pinImages = selectAll(".imgDiv img")
   pinClass.forEach(e=>{
     e.classList.add("prlx-section")
   })
