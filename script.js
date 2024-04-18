@@ -24,7 +24,7 @@ const animTl = gsap.timeline()
 animTl.to(".toplayer",{
   
  duration:1.6,
-  ease:"expo.inOut",
+  ease:"expo.out",
   stagger:{
     amount:0.4
   },
@@ -32,7 +32,7 @@ animTl.to(".toplayer",{
 }).to(".layer",{
   delay:-0.8,
  duration:1.6,
-  ease:"expo.inOut",
+  ease:"expo.out",
   xPercent:100,
     stagger:{
     amount:0.4
@@ -44,7 +44,7 @@ animTl.to(".toplayer",{
   stagger:{
     amount:0.4
   },
-  ease:"expo.inOut",
+  ease:"expo.out",
 })
 gsap.to(".layerHead h1",{
   delay:2.8,
