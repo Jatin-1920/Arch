@@ -326,7 +326,7 @@ h1{
     
 .lineh{
     position: absolute;
-    top:20vh;
+    top:17vh;
     left:10%;
     z-index:102;
     color:white;
@@ -340,7 +340,7 @@ h1{
 .moreA{
     color:black;
     position: absolute;
-    top:45vh;
+    top:40vh;
     right:10%;
     z-index:102;
     font-size:var(--p-text);
