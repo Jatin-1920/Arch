@@ -626,6 +626,9 @@ h1{
     .pinContainer{
         display:block;
     }
+    .pinImg{
+        min-height:100vh;
+    }
     .imgDiv{
         position:relative;
     }
