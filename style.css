@@ -283,7 +283,7 @@ h1{
 }
 
 .introAnim{
-    position: absolute;
+    position: relative;
     z-index:101;
     display:flex;
     overflow:clip;
@@ -320,6 +320,9 @@ h1{
 }
 
 
+.mainSection h1{
+display: none;
+}
 .topC{
     gap:2rem;
     max-width:75rem;
