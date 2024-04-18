@@ -297,11 +297,12 @@ h1{
 }
 
 .archBlock{
-    display:grid;
+    display:flex;
     overflow:clip;
-    grid-template-columns:repeat(3,1fr);
+    
 }
 .archCase{
+    flex:1;
     height:50vh;
     overflow:clip;
     position: relative;
@@ -567,7 +568,8 @@ display: none;
     display:none;
 }
     .archBlock{
-        grid-template-columns:1fr;
+        display:flex;
+        flex-direction: column;
     }
     .prlx-section{
         height:60vh;
