@@ -320,7 +320,7 @@ h1{
 }
 
 .mainSection h1{
-    display: none;
+opacity: 0;
 }
 
 .topC{
