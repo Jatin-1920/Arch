@@ -161,16 +161,30 @@ trigger.forEach(e=>{
   
 
 const matchMedia  = window.matchMedia("(min-width:1000px)")
-if(matchMedia.matches){
 
-let pinClass1 = selectAll(".imgDiv")
-  let pinImages1 = selectAll(".imgDiv img")
-  pinClass1.forEach(e=>{
-    e.classList.remove("prlx-section")
+const prlxSection = document.querySelectorAll(".prlx-section")
+
+        prlxSection.forEach(e=>{
+  const prlxImg  = e.querySelector(".prlx-item")
+  const prlxTl = gsap.timeline({
+    scrollTrigger: {
+        trigger:e,
+        start: "top bottom",
+        end: "bottom top",
+        scrub: true,
+      
+    }
+})
+  const yHeight = prlxImg.offsetHeight - e.offsetHeight 
+
+  prlxTl.fromTo(prlxImg,{y:-yHeight},{
+    y:0,
+    ease:"none"
   })
-  pinImages1.forEach(e=>{
-    e.classList.remove("prlx-item")
-  })
+})
+
+
+    if(matchMedia.matches){
 let photos = gsap.utils.toArray(".imgDiv:not(:first-child)")
 const allPhotos = gsap.utils.toArray(".imgDiv")
 const content = gsap.utils.toArray(".pinh1:not(:first-child)")
@@ -198,36 +212,7 @@ content.forEach((e,index)=>{
 })
    } else{
   
-  let pinClass = selectAll(".imgDiv")
-  let pinImages = selectAll(".imgDiv img")
-  pinClass.forEach(e=>{
-    e.classList.add("prlx-section")
-  })
-  pinImages.forEach(e=>{
-    e.classList.add("prlx-item")
-  })
-   }
-
-const prlxSection = document.querySelectorAll(".prlx-section")
-
-        prlxSection.forEach(e=>{
-  const prlxImg  = e.querySelector(".prlx-item")
-  const prlxTl = gsap.timeline({
-    scrollTrigger: {
-        trigger:e,
-        start: "top bottom",
-        end: "bottom top",
-        scrub: true,
-      
-    }
-})
-  const yHeight = prlxImg.offsetHeight - e.offsetHeight 
-
-  prlxTl.fromTo(prlxImg,{y:-yHeight},{
-    y:0,
-    ease:"none"
-  })
-})
-
+return;
+}
 
   
