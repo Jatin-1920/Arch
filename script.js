@@ -25,18 +25,24 @@ const animTl = gsap.timeline()
 animTl.to(".toplayer",{
   duration:1.6,
   ease:"expo.inOut",
-  stagger:.4,
+  stagger:{
+    amount:.4
+  },
   yPercent:100
-}).to(".bottomlayer",{
-  width:0,
+}).to(".bottomblocklayer div",{
+  xPercent:0,
   duration:1.6,
   ease:"expo.inOut",
-  stagger:.4,
+  stagger:{
+    amount:.4
+  },
   delay:-0.8
 }).from(img,{
   duration:1.6,
   ease:"expo.inOut",
-  stagger:.4,
+  stagger:{
+    amount:.4
+  },
   scale:1.5,
   delay:-2
 })
