@@ -167,10 +167,10 @@ if(matchMedia.matches){
 
 
   pinClass.forEach(e=>{
-    e.classList.remove(".prlx-section")
+    e.classList.remove("prlx-section")
   })
   pinImages.forEach(e=>{
-    e.classList.remove(".prlx-item")
+    e.classList.remove("prlx-item")
   })
 let photos = gsap.utils.toArray(".imgDiv:not(:first-child)")
 const allPhotos = gsap.utils.toArray(".imgDiv")
@@ -201,10 +201,10 @@ content.forEach((e,index)=>{
   
   
   pinClass.forEach(e=>{
-    e.classList.add(".prlx-section")
+    e.classList.add("prlx-section")
   })
   pinImages.forEach(e=>{
-    e.classList.add(".prlx-item")
+    e.classList.add("prlx-item")
   })
    }
 
