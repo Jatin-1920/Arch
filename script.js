@@ -22,11 +22,14 @@ const intro = select(".introAnim")
 
 
 const animTl = gsap.timeline()
-animTl.from(".line",{
+animTl.fromTo(".line",{
   y: 100,
-    ease: "power4.out",
+  skewY: 7,  
+},{
+  ease: "power4.out",
     delay: 1,
-    skewY: 7,
+    y: 0,
+  skewY: 0,  
   duration:1.8,
     stagger: {
       amount: 0.3
