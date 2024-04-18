@@ -192,10 +192,10 @@ content.forEach((e,index)=>{
   const pinClass = selectAll(".imgDiv")
   const pinImages = selectAll(".imgDiv img")
   pinClass.forEach(e=>{
-    e.classList.add(".prlx-section")
+    e.classList.add("prlx-section")
   })
   pinImages.forEach(e=>{
-    e.classList.add(".prlx-item")
+    e.classList.add("prlx-item")
   })
    }
 
