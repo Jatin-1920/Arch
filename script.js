@@ -44,9 +44,9 @@ gsap.to(".layerHead h1",{
   ease:"expo.out",
 })
 gsap.from(".archCase img",{
-  delay:3.6,
- duration:1.6,
-  scale:1.4,
+  delay:3.3,
+ duration:2,
+  scale:1.5,
   stagger:{
     amount:0.4
   },
