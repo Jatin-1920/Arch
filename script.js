@@ -187,7 +187,7 @@ content.forEach((e,index)=>{
 const prlxSection = document.querySelectorAll(".imgTrig")
 
         prlxSection.forEach(e=>{
-  const prlxImg  = e.querySelector(".prlx-item")
+  const prlxImg  = e.querySelector("img")
   const prlxTl = gsap.timeline({
     scrollTrigger: {
         trigger:e,
