@@ -28,7 +28,7 @@ function centerImg() {
     ease:"power3.inOut",
     duration:2,
     stagger:.15,
-    onComplete:scaleImg()
+    onComplete:()=>scaleImg()
   })
 }
 function scaleImg() {
