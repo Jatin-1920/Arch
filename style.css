@@ -325,7 +325,6 @@ h1{
 position: absolute;
     top:20vh;
     left:10%;
-    overflow:clip;
     z-index:102;
 }
 .mainHeadContent h1{
@@ -333,6 +332,9 @@ position: absolute;
     font-family:j2;
     font-weight:bold;
     overflow:clip;
+    
+}
+.line{
     color:white;
     mix-blend-mode: difference;
 }
