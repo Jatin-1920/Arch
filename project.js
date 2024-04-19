@@ -1,5 +1,9 @@
-const archCon = select(".archContainer")
-const gallery = select(".gallery")
+
+gsap.registerPlugin(ScrollTrigger)
+const selec = (e)=>document.querySelector(e)
+const selecAll = (e)=>document.querySelectorAll(e)
+const archCon = selec(".archContainer")
+const gallery = selec(".gallery")
 archCon.addEventListener("mousemove",(e)=>{
 
   const x = e.clientX
@@ -32,7 +36,7 @@ for(let i=0, i<40,i++){
   item.appendChild("img")
 }
 
-  const allItem = selectAll(".archItem")
+  const allItem = selecAll(".archItem")
 const numberI = allItem.length
 const angleIncrement = 360/numberI
 allItem.forEach((item,index)=>{
