@@ -648,9 +648,9 @@ h1:hover{
 }
 .archItem{
     position: absolute;
-    width:40px;
-    height:40px;
-    margin:8px;
+    width:45px;
+    height:30px;
+    margin:0px;
     top:0%;
     left:50%;
     transform:translateX(-50%) ;
