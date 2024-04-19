@@ -137,8 +137,11 @@ movie.forEach(movie=>{
 
 
 
-
-const linka= document.querySelectorAll(".li")
+const hs = selectAll("h1")
+h1.forEach(e=>{
+  e.classList.add("h1")
+})
+const linka= document.querySelectorAll(".h1")
 
 linka.forEach(a=>{
     a.addEventListener("mouseover",(e)=>{
