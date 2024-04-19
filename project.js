@@ -14,8 +14,8 @@ archCon.addEventListener("mousemove",(e)=>{
   const percentX = (x-centerX) / centerX
   const percentY = (y-centerY) / centerY
 
-  const rotateX = 55 + percentY *2
-  const rotateY =  percentX *2
+  const rotateX = 55 + percentY * 2
+  const rotateY =  percentX * 2
   gsap.to(gallery,{
     duration:1,
     ease:"power2.inOut",
@@ -42,7 +42,7 @@ const angleIncrement = 360/numberI
 allItem.forEach((item,index)=>{
   gsap.set(item,{
     rotationY:90,
-    rotationZ:index*angleIncrement-90,
+    rotationZ:index * angleIncrement - 90,
     transformOrigin:"50% 400px"
   })
 })
