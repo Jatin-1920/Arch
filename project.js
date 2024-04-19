@@ -26,12 +26,12 @@ archCon.addEventListener("mousemove",(e)=>{
 
   
 })
-for(let i=0, i<40,i++){
+for(let is=0, is<40,is++){
  
   const item = document.createElement("div")
   const archImg = document.createElement("img")
   item.className = "archItem"
-  archImg.src = `arch${i}.jpg`
+  archImg.src = `arch${is}.jpg`
   gallery.appendChild(item)
   item.appendChild("img")
 }
