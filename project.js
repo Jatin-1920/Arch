@@ -16,8 +16,29 @@ archCon.addEventListener("mousemove",(e)=>{
     duration:1,
     ease:"power2.inOut",
     rotateX :rotateX,
-    rotateY:rotateY
+    rotateY:rotateY,
+    overwrite:"auto"
   })
 
   
+})
+for(let i=0, i<40,i++){
+ 
+  const item = document.createElement("div")
+  const archImg = document.createElement("img")
+  item.className = "archItem"
+  archImg.src = `arch${i}`
+  gallery.appendChild(item)
+  item.appendChild("img")
+}
+
+  const allItem = selectAll(".archItem")
+const numberI = allItem.length
+const angleIncrement = 360/numberI
+allItem.forEach((item,index)=>{
+  gsap.set(item,{
+    rotationY:90,
+    rotationZ:index*angelIncrement-90,
+    transformOrigin:"50% 400px"
+  })
 })
