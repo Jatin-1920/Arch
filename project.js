@@ -37,17 +37,24 @@ for(let i=0; i<40;i++){
   item.appendChild(archImg)
 }
 
-  const allItem = selecAll(".archItem")
-const numberI = allItem.length
-const angleIncrement = 360/numberI
+  const allItem = selec(".archItem")
+const numbersI = allItem.length
+const angle = 360/numbersI
 allItem.forEach((item,index)=>{
-  gsap.set(item,{
+  gsap.to(item,{
     rotationY:90,
-    rotationZ:index * angleIncrement - 90,
-    transformOrigin:"50% 400px"
+    rotationZ:index * angle - 90,
+    transformOrigin:"50% 400px",
+    
   })
-  item.addEventListener("mouseover",(e)=>{
+  item.addEventListener("mouseover",()=>{
     const Im = item.querySelector("img")
-    previewImg.src= Im.src
+    previewImg.src = Im.src
+  })
+  item.addEventListener("mouseleave",()=>{
+    previewImg.src = "prlx2.jpeg"
   })
 })
+
+
+    
