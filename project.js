@@ -47,7 +47,7 @@ allItem.forEach((item,index)=>{
     transformOrigin:"50% 400px"
   })
   item.addEventListener("mouseover",(e)=>{
-    const Im = e.querySelector("img")
+    const Im = item.querySelector("img")
     previewImg.src= Im.src
   })
 })
