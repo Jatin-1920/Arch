@@ -11,8 +11,8 @@ archCon.addEventListener("mousemove",(e)=>{
   const centerX = window.innerWidth/2
   const centerY = window.innerHeight/2
 
-  const precentX = (x-centerX) / centerX
-  const precentY = (y-centerY) / centerY
+  const percentX = (x-centerX) / centerX
+  const percentY = (y-centerY) / centerY
 
   const rotateX = 55 + percentY *2
   const rotateY =  percentX *2
