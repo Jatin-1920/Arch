@@ -377,7 +377,7 @@ h1{
     justify-content:center;
     transition:all .35s ease-in-out;
 }
-.moreA:hover i{
+.moreA:hover .moreA i{
     background:black;
     color: white;
 }
