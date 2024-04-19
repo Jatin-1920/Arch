@@ -138,7 +138,7 @@ movie.forEach(movie=>{
 
 
 const hs = selectAll("h1")
-h1.forEach(e=>{
+hs.forEach(e=>{
   e.classList.add("h1")
 })
 const linka= document.querySelectorAll(".h1")
