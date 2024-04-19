@@ -150,12 +150,10 @@ li{
 h1{
     font-family:stretch;
 }
-h1:hover {
-    color:blue;
-}
+
 .warn{
     position:fixed;
-    z-index:2000;
+    z-index:1100;
     background:black;
     color:red;
     font-size:3vw;
@@ -284,6 +282,7 @@ h1:hover {
     width:100%;
     background: var(--bg-2) ;
     overflow:clip;
+    position: relative;
 }
 .mainSection {
   position: relative;
