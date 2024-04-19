@@ -1,4 +1,5 @@
 const archCon = select(".archContainer")
+const gallery = select(".gallery")
 archCon.addEventListener("mousemove",(e)=>{
 
   const x = e.clientX
@@ -11,4 +12,12 @@ archCon.addEventListener("mousemove",(e)=>{
 
   const rotateX = 55 + percentY *2
   const rotateY =  percentX *2
+  gsap.to(gallery,{
+    duration:1,
+    ease:"power2.inOut",
+    rotateX :rotateX,
+    rotateY:rotateY
+  })
+
+  
 })
