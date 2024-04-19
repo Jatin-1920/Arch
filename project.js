@@ -3,7 +3,7 @@ gsap.registerPlugin(ScrollTrigger)
 const selec = (e)=>document.querySelector(e)
 const selecAll = (e)=>document.querySelectorAll(e)
 const archCon = selec(".archContainer")
-const gallery = selec(".gallery")
+const gallery = selec(".archGallery")
 archCon.addEventListener("mousemove",(e)=>{
 
   const x = e.clientX
