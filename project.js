@@ -4,7 +4,7 @@ const selec = (e)=>document.querySelector(e)
 const selecAll = (e)=>document.querySelectorAll(e)
 const archCon = selec(".archContainer")
 const gallery = selec(".archGallery")
-const previewImg = selec(".previewImg")
+const previewImg = selec(".previewImg img")
 document.addEventListener("mousemove",(e)=>{
 
   const x = e.clientX
