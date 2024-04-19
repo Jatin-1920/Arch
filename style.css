@@ -149,6 +149,11 @@ li{
 
 h1{
     font-family:stretch;
+    transition:all .3s ease-in-out;
+}
+h1:hover{
+    transform:skewX(4px) translateY(3px);
+    
 }
 
 .warn{
@@ -171,6 +176,7 @@ h1{
     width:100%;
     overflow:clip;
     z-index:998;
+    display:none;
 }
 .firstNav,.secondNav{
     position: absolute;
@@ -376,7 +382,7 @@ h1{
     justify-content:center;
     transition:all .35s ease-in-out;
 }
-.moreA i:hover {
+.moreA:hover i{
     background:black;
     color: white;
 }
