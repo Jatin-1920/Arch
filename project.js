@@ -50,9 +50,23 @@ allItem.forEach((item,index)=>{
   item.addEventListener("mouseover",()=>{
     const Im = item.querySelector("img")
     previewImg.src = Im.src
+    gsap.to(item,{
+      x:10,
+      y:10,
+      z:10,
+      duration:.5,
+      ease:"power3.inOut"
+    })
   })
   item.addEventListener("mouseleave",()=>{
     previewImg.src = "plx2.jpeg"
+    gsap.to(item,{
+      x:0,
+      y:0,
+      z:0,
+      duration:.5,
+      ease:"power3.inOut"
+    })
   })
 })
 
