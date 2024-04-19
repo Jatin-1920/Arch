@@ -301,7 +301,6 @@ h1{
     display:flex;
     overflow:clip;
     min-height:50vh;
-    z-index:999;
 }
 
 
