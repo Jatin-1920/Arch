@@ -150,7 +150,9 @@ li{
 h1{
     font-family:stretch;
 }
-
+h1:hover {
+    color:blue;
+}
 .warn{
     position:fixed;
     z-index:2000;
