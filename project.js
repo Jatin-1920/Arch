@@ -37,7 +37,7 @@ for(let i=0; i<40;i++){
   item.appendChild(archImg)
 }
 
-  const allItem = selec(".archItem")
+  const allItem = selecAll(".archItem")
 const numbersI = allItem.length
 const angle = 360/numbersI
 allItem.forEach((item,index)=>{
