@@ -52,7 +52,7 @@ allItem.forEach((item,index)=>{
     previewImg.src = Im.src
   })
   item.addEventListener("mouseleave",()=>{
-    previewImg.src = "prlx2.jpeg"
+    previewImg.src = "plx2.jpeg"
   })
 })
 
