@@ -362,13 +362,16 @@ h1{
     font-family:j2;
     font-weight:bold;
     overflow:clip;
+    display:flex;
+    align-items:center;
+    gap:.25rem;
 }
 .moreA i {
     font-size:.5rem;
     height:1rem;
     width:1rem;
     border-radius:1rem;
-    border:1pxs solid black;
+    border:1px solid black;
 }
 .topC{
     gap:2rem;
