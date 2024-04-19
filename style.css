@@ -372,6 +372,14 @@ h1{
     width:1rem;
     border-radius:1rem;
     border:1px solid black;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    transition:all .35s ease-in-out;
+}
+.moreA:hover i{
+    background:black;
+    color: white;
 }
 .topC{
     gap:2rem;
