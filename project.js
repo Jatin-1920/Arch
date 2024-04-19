@@ -1,5 +1,5 @@
-
-document.addEventListener("mousemove",(e)=>{
+const archCon = select(".archContainer")
+archCon.addEventListener("mousemove",(e)=>{
 
   const x = e.clientX
   const y = e.clientY
@@ -8,4 +8,7 @@ document.addEventListener("mousemove",(e)=>{
 
   const precentX = (x-centerX) / centerX
   const precentY = (y-centerY) / centerY
+
+  const rotateX = 55 + percentY *2
+  const rotateY =  percentX *2
 })
