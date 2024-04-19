@@ -262,6 +262,10 @@ h1:hover{
     z-index:11;
     max-width:62rem;
     margin-inline: auto;
+    align-items:center;
+}
+.movieBtnBlock p{
+    margin-left:1rem;
 }
 .movieBtn{
     border-radius:.5rem;
