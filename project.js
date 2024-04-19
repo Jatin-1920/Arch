@@ -4,6 +4,7 @@ const selec = (e)=>document.querySelector(e)
 const selecAll = (e)=>document.querySelectorAll(e)
 const archCon = selec(".archContainer")
 const gallery = selec(".archGallery")
+const previewImg = selec(".previewImg")
 document.addEventListener("mousemove",(e)=>{
 
   const x = e.clientX
@@ -44,5 +45,9 @@ allItem.forEach((item,index)=>{
     rotationY:90,
     rotationZ:index * angleIncrement - 90,
     transformOrigin:"50% 400px"
+  })
+  item.addEventListener("mouseover",(e)=>{
+    const Im = e.querySelector("img")
+    previewImg.src= Im.src
   })
 })
