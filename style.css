@@ -126,9 +126,6 @@ html {
 }
 
 body{
-    
-  user-select: none;
-  overscroll-behavior: none;
     text-rendering: optimizeSpeed;
     line-height:1.6;
     overflow-x: clip;
@@ -377,7 +374,7 @@ h1{
     justify-content:center;
     transition:all .35s ease-in-out;
 }
-.moreA:hover .moreA i{
+.moreA>i:hover {
     background:black;
     color: white;
 }
