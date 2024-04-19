@@ -21,7 +21,6 @@ html {
   dl,
   dd {
     margin: 0;
-      text-wrap:balance;
   }
   
   /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
@@ -136,6 +135,7 @@ body{
     scrollbar-width:thin;
     scrollbar-color:#760026;
     background:var(--bg-1);
+    text-wrap:balance;
 }
 
 a{
@@ -374,7 +374,7 @@ h1{
     justify-content:center;
     transition:all .35s ease-in-out;
 }
-.moreA>i:hover {
+.moreA i:hover {
     background:black;
     color: white;
 }
