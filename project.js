@@ -42,7 +42,7 @@ const angleIncrement = 360/numberI
 allItem.forEach((item,index)=>{
   gsap.set(item,{
     rotationY:90,
-    rotationZ:index*angelIncrement-90,
+    rotationZ:index*angleIncrement-90,
     transformOrigin:"50% 400px"
   })
 })
