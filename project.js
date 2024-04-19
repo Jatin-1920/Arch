@@ -31,7 +31,7 @@ for(let i=0, i<40,i++){
   const item = document.createElement("div")
   const archImg = document.createElement("img")
   item.className = "archItem"
-  archImg.src = `arch${i}`
+  archImg.src = `arch${i}.jpg`
   gallery.appendChild(item)
   item.appendChild("img")
 }
