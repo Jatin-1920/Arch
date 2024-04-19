@@ -27,7 +27,7 @@ document.addEventListener("mousemove",(e)=>{
 
   
 })
-for(let i=0; i<40;i++){
+for(let i=0; i<47; i++){
  
   const item = document.createElement("div")
   const archImg = document.createElement("img")
