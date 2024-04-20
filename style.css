@@ -291,6 +291,7 @@ h1{
     background: none;
     border:none;
     outline:none;
+    color:black;
 }
 .root{
     height:100%;
