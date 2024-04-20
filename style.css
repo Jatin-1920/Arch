@@ -709,7 +709,7 @@ h1{
 }
 .parallaxDiv{
     height:50vh;
-    width:75vw;
+    width:65vw;
     overflow:clip;
     position:relative;
 }
