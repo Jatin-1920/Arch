@@ -8,7 +8,14 @@ const previewImg = selec(".previewImg img")
 
 
 
-  
+  for(let i=0;i<150;i++){
+    const newDiv = document.createElement("div")
+    const newImages = document.createElement("img")
+    newDiv.className = "archItem"
+    newImages.src = `arch${i+1}.jpg`
+    gallery.appendChild(newDiv)
+    newDiv.appendChild(newImages)
+  }
  const allItem = selecAll(".archItem")
 const numbersI = allItem.length
 const angle = 360/numbersI
@@ -40,7 +47,7 @@ allItem.forEach((item,index)=>{
       ease:"power3.inOut"
     })
   })
-}) */
+}) 
 ScrollTrigger.create({
   trigger:"body",
   start:"top top",
