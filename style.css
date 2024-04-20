@@ -142,9 +142,7 @@ a{
     text-decoration:none;
     color:black;
 }
-#scrollDown{
-    height:400vh;
-}
+
 li{
     list-style:none;
 }
@@ -301,6 +299,9 @@ h1{
     background: var(--bg-2) ;
     overflow:clip;
     position: relative;
+}
+#scrollDown{
+    height:400vh;
 }
 .mainSection {
   position: relative;
