@@ -17,10 +17,14 @@ gsap.ticker.add((time)=>{
 })
 
 gsap.ticker.lagSmoothing(0) */
+
+
 // Define variables
 const sections = document.querySelectorAll('section');
 const windowHeight = window.innerHeight;
-
+let lastScrollY = window.scrollY;
+let velocityY = 0;
+const friction = 0.1;
 
 // Function to perform linear interpolation
 function lerp(start, end, t) {
@@ -32,6 +36,15 @@ function updateScroll(scrollStart, scrollEnd, progress) {
   const newScroll = lerp(scrollStart, scrollEnd, progress);
   window.scrollTo(0, newScroll);
 }
+
+// Function to handle mousewheel event for momentum scrolling
+function handleMouseWheel(event) {
+  const deltaY = event.deltaY;
+  velocityY += deltaY;
+}
+
+// Add mousewheel event listener for momentum scrolling
+document.addEventListener('mousewheel', handleMouseWheel);
 
 // Loop through each section
 sections.forEach((section, index) => {
@@ -56,6 +69,26 @@ sections.forEach((section, index) => {
     },
   });
 });
+
+// Function to handle smooth scrolling with momentum effect
+function smoothScroll() {
+  // Calculate velocity with friction
+  velocityY *= (1 - friction);
+
+  // Update scroll position using lerp
+  const newScrollY = lastScrollY + velocityY;
+  window.scrollTo(0, newScrollY);
+
+  // Update last scroll position
+  lastScrollY = newScrollY;
+
+  // Call smoothScroll function recursively
+  requestAnimationFrame(smoothScroll);
+}
+
+// Call smoothScroll function to start momentum scrolling
+smoothScroll();
+
 
 
 const select = e => document.querySelector(e)
