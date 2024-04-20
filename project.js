@@ -75,6 +75,7 @@ ScrollTrigger.create({
   start:"top top",
   end:"bottom bottom",
   scrub: true,
+  onRefresh:setUpRotate,
   onUpdate = self =>{
     const progress = self.progress * 360 * 1
     allItem.forEach((item,index)=>{
@@ -89,6 +90,7 @@ ScrollTrigger.create({
     })
   }
 })
+function setUpRotate(){}
 
 
     
