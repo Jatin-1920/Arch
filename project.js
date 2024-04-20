@@ -58,7 +58,7 @@ allItem.forEach((item,index)=>{
       ease:"power3.inOut"
     })
   })
-  item.addEventListener("mouseleave",()=>{
+  item.addEventListener("mouseout",()=>{
     previewImg.src = "plx2.jpeg"
     gsap.to(item,{
       x:0,
@@ -69,16 +69,15 @@ allItem.forEach((item,index)=>{
     })
   })
 })
-
 ScrollTrigger.create({
   trigger:"body",
   start:"top top",
   end:"bottom bottom",
   scrub: 2,
   onRefresh:setUpRotate,
-  onUpdate = (self) =>{
+  onUpdate = (self) => {
     const progress = self.progress * 360 * 1
-    allItem.forEach((item,index)=>{
+    item.forEach((item,index)=>{
       const newAngle = index * angle - 90 + progress
       gsap.to(item,{
     rotationZ:newAngle,
@@ -90,6 +89,7 @@ ScrollTrigger.create({
     })
   }
 })
+
 function setUpRotate(){}
 
 
