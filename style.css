@@ -266,7 +266,7 @@ h1{
 }
 .movieBtn{
     border-radius:.5rem;
-    padding:.5rem 4rem;
+    padding:.5rem 2rem;
     text-align:center;
     transition:all .35s ease-in-out;
 }
