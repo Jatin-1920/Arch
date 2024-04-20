@@ -270,7 +270,7 @@ const sliderTl = gsap.timeline({
 }
 })
    sliderTl.fromTo(parallaxImg,{
-    x:-paral,
+    x:"-30vw",
 },{
   x:0,
   ease:"none",
