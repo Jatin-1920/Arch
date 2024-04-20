@@ -17,36 +17,46 @@ gsap.ticker.add((time)=>{
 })
 
 gsap.ticker.lagSmoothing(0) */
+// Define variables
+const sections = document.querySelectorAll('section');
+const windowHeight = window.innerHeight;
+
+
 // Function to perform linear interpolation
 function lerp(start, end, t) {
   return start * (1 - t) + end * t;
 }
 
-// Function to perform smooth scroll
-function smoothScroll(targetY, duration) {
-  const startY = window.pageYOffset;
-  const startTime = performance.now();
-
-  function scroll() {
-    const currentTime = performance.now();
-    const elapsedTime = currentTime - startTime;
-    const t = Math.min(1, elapsedTime / duration);
-    const scrollY = lerp(startY, targetY, t);
-
-    window.scrollTo(0, scrollY);
-
-    if (elapsedTime < duration) {
-      requestAnimationFrame(scroll);
-    }
-  }
-
-  scroll();
+// Function to update scroll position based on lerp effect
+function updateScroll(scrollStart, scrollEnd, progress) {
+  const newScroll = lerp(scrollStart, scrollEnd, progress);
+  window.scrollTo(0, newScroll);
 }
 
-// Usage example: Call smoothScroll function with targetY and duration
-const targetY = 1000; // Target scroll position in pixels
-const duration = 1000; // Duration of the smooth scroll animation in milliseconds
-smoothScroll(targetY, duration);
+// Loop through each section
+sections.forEach((section, index) => {
+  // Define the start and end scroll positions for each section
+  const scrollStart = index * windowHeight;
+  const scrollEnd = (index + 1) * windowHeight;
+
+  // Create a GSAP timeline for each section
+  gsap.timeline({
+    scrollTrigger: {
+      trigger: section,
+      start: 'top top',
+      end: 'bottom bottom',
+      scrub: true,
+      onUpdate: (self) => {
+        // Calculate progress based on the scroll position
+        const progress = self.progress;
+        
+        // Update scroll position using lerp
+        updateScroll(scrollStart, scrollEnd, progress);
+      },
+    },
+  });
+});
+
 
 const select = e => document.querySelector(e)
 const selectAll = e => document.querySelectorAll(e)
