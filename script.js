@@ -228,8 +228,53 @@ const prlxSection = document.querySelectorAll(".prlx-section")
 })
 
 
-    
-      
+    const races = document.querySelector(".parallaxRace")
+function getScrollAmount(){
+    let racesWidth = races.scrollWidth
+    return -(racesWidth-window.innerWidth)
+
+}
+const slider = gsap.to(races,{
+    x:getScrollAmount,
+    duration:5,ease:"none",
+  
+
+})
+const parallaxDiv = selectAll(".parallaxDiv")
+
+
+const sliderTl = gsap.timeline({
+  scrollTrigger:{
+    trigger:".parallaxSlider",
+    start:"left center",
+  end:"bottom bottom",
+    scrub:1,
+})
+})
+
+
+ScrollTrigger.create({
+    trigger:".parallaxSlider",
+    start:"top 20%",
+    end:()=> `+=${getScrollAmount()*-1}`,
+    pin:true,
+    scrub:1,
+    invalidateOnRefresh:true,
+    animation:slider,
+})
+
+      parallaxDiv.forEach(e=>{
+  const parallaxImg = e.querySelector("img")
+  const paral = parallaxImg.offsetWidth - e.offsetWidth
+
+
+   sliderTl.fromTo(parallaxImg,{
+    x:-paral,
+},{
+  x:0,
+  ease:"none",
+})
+})
 
 
   
