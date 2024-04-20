@@ -70,5 +70,25 @@ allItem.forEach((item,index)=>{
   })
 })
 
+ScrollTrigger.create({
+  trigger:"body",
+  start:"top top",
+  end:"bottom bottom",
+  scrub: true,
+  onUpdate = self =>{
+    const progress = self.progress * 360 * 1
+    allItem.forEach((item,index)=>{
+      const newAngle = index * angle - 90 + progress
+      gsap.to(item,{
+    rotationZ:newAngle,
+    duration:1,
+        ease:"power2.inOut",
+        overwrite:"auto"
+    
+  })
+    })
+  }
+})
+
 
     
