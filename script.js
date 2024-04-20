@@ -101,7 +101,7 @@ gsap.fromTo([firstNav,secondNav],{
 }) 
       gsap.to(".nav",{
         display:"none",
-        delay:.943,
+        delay:.945,
       })
     }
 })
