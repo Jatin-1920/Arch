@@ -702,9 +702,10 @@ h1{
 }
 .parallaxRace{
     width:fit-content;
-    height:65vh;
+    height:100vh;
     display:flex;
     gap:3rem;
+    align-items:center;
     padding-inline:5rem;
 }
 .parallaxDiv{
