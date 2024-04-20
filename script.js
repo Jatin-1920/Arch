@@ -243,14 +243,7 @@ const slider = gsap.to(races,{
 const parallaxDiv = selectAll(".parallaxDiv")
 
 
-const sliderTl = gsap.timeline({
-  scrollTrigger:{
-    trigger:".parallaxSlider",
-    start:"top bottom",
-  end:"bottom top",
-    scrub: true,
-}
-})
+
 
 
 ScrollTrigger.create({
@@ -267,7 +260,14 @@ ScrollTrigger.create({
   const parallaxImg = e.querySelector("img")
   const paral = parallaxImg.offsetWidth - e.offsetWidth
 
-
+const sliderTl = gsap.timeline({
+  scrollTrigger:{
+    trigger:e,
+    start:"left right",
+  end:"right left",
+    scrub: true,
+}
+})
    sliderTl.fromTo(parallaxImg,{
     x:-paral,
 },{
