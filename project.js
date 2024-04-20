@@ -26,7 +26,7 @@ for(let i=0; i<150; i++){
   
  const allItem = selecAll(".archItem")
 const numbersI = allItem.length
-const angle = 360/numbersI
+const angles = 360/numbersI
 /*allItem.forEach((item,index)=>{
  const angle = angleIncrement * index;
   const x = radius * Math.cos(angle) + container.clientWidth / 2;
@@ -68,7 +68,7 @@ ScrollTrigger.create({
   onUpdate: (self) => {
     const progress = self.progress * 360 * 1
     allItem.forEach((item,index)=>{
-      const newAngle = index * angle - 90 + progress
+      const newAngle = index * angles - 90 + progress
       gsap.to(item,{
     rotationZ:newAngle,
     duration:1,
