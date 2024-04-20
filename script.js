@@ -265,7 +265,7 @@ ScrollTrigger.create({
   x:0,
   ease:"none",
      scrollTrigger:{
-    trigger:e.parentNode,
+    trigger:e,
     start:"left right",
   end:"right left",
     scrub: true,
