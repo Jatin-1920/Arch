@@ -53,7 +53,7 @@ allItem.forEach((item,index)=>{
     const Im = item.querySelector("img")
     previewImg.src = Im.src
     gsap.to(item,{
-      x:10,
+      x:-20,
       y:10,
       z:10,
       duration:.5,
