@@ -300,8 +300,11 @@ h1{
     overflow:clip;
     position: relative;
 }
-#scrollDown{
+.scrollDown{
     height:400vh;
+    background: var(--bg-2) ;
+    overflow:clip;
+    position: relative;
 }
 .mainSection {
   position: relative;
