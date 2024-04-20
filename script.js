@@ -246,8 +246,8 @@ const parallaxDiv = selectAll(".parallaxDiv")
 const sliderTl = gsap.timeline({
   scrollTrigger:{
     trigger:".parallaxSlider",
-    start:"left center",
-  end:"bottom bottom",
+    start:"top bottom",
+  end:"bottom top",
     scrub: true,
 }
 })
