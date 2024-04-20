@@ -8,19 +8,17 @@ const previewImg = selec(".previewImg img")
 
 const numImages = 150;
 const radius = 200; // Adjust radius as needed
-const angleIncrement = (2 * Math.PI) / numImages;
+const angleIncrement = 360 / numImages;
 for(let i=0; i<150; i++){
  const angle = angleIncrement * i;
-  const x = radius * Math.cos(angle) + container.clientWidth / 2;
-  const y = radius * Math.sin(angle) + container.clientHeight / 2;
+  
   const item = document.createElement("div")
   const archImg = document.createElement("img")
   item.className = "archItem"
   archImg.src = `arch${i+1}.jpg`
   gallery.appendChild(item)
   item.appendChild(archImg)
- archImg.style.left = `${x}px`;
-  archImg.style.top = `${y}px`;
+ image.style.transform = `rotateY(${angle}deg) translateZ(250px)`
 }
 
   
