@@ -248,8 +248,8 @@ const sliderTl = gsap.timeline({
     trigger:".parallaxSlider",
     start:"left center",
   end:"bottom bottom",
-    scrub:1,
-})
+    scrub: true,
+}
 })
 
 
