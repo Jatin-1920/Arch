@@ -1,7 +1,7 @@
 gsap.registerPlugin(ScrollTrigger,Flip)
 
 
-const lenis = new Lenis({
+/*const lenis = new Lenis({
   smooth:true,
   smoothTouch:false,
   lerp:0.1,
@@ -16,7 +16,38 @@ gsap.ticker.add((time)=>{
   lenis.raf(time * 1000)
 })
 
-gsap.ticker.lagSmoothing(0)
+gsap.ticker.lagSmoothing(0) */
+// Function to perform linear interpolation
+function lerp(start, end, t) {
+  return start * (1 - t) + end * t;
+}
+
+// Function to perform smooth scroll
+function smoothScroll(targetY, duration) {
+  const startY = window.pageYOffset;
+  const startTime = performance.now();
+
+  function scroll() {
+    const currentTime = performance.now();
+    const elapsedTime = currentTime - startTime;
+    const t = Math.min(1, elapsedTime / duration);
+    const scrollY = lerp(startY, targetY, t);
+
+    window.scrollTo(0, scrollY);
+
+    if (elapsedTime < duration) {
+      requestAnimationFrame(scroll);
+    }
+  }
+
+  scroll();
+}
+
+// Usage example: Call smoothScroll function with targetY and duration
+const targetY = 1000; // Target scroll position in pixels
+const duration = 1000; // Duration of the smooth scroll animation in milliseconds
+smoothScroll(targetY, duration);
+
 const select = e => document.querySelector(e)
 const selectAll = e => document.querySelectorAll(e)
 const intro = select(".introAnim")
