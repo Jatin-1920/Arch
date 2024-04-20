@@ -694,6 +694,30 @@ h1{
     height:100%;
     object-fit:cover;
 }
+.parallaxSlider{
+    height:100vh;
+    width:100%;
+    align-items:center;
+    display:flex;
+}
+.parallaxRace{
+    width:fit-content;
+    height:60vh;
+    display:flex;
+    gap:3rem;
+}
+.parallaxDiv{
+    height:60vh;
+    width:75vw;
+    overflow:clip;
+    position:relative;
+}
+.parallaxDiv img{
+    position: absolute;
+    width:150%;
+    height:100%;
+    object-fit:cover;
+}
 @media (max-width:1001px){
 .warn{
     display:grid;
