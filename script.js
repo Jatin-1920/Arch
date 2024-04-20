@@ -99,7 +99,7 @@ gsap.fromTo([firstNav,secondNav],{
   ease:"power3.inOut",
   stagger:.07
 }) 
-      gsap.to(".nav",{
+      gsap.to(".nav",0,{
         display:"none",
         delay:.945,
       })
