@@ -18,7 +18,7 @@ for(let i=0; i<150; i++){
   archImg.src = `arch${i+1}.jpg`
   gallery.appendChild(item)
   item.appendChild(archImg)
- archImg.style.transform = `rotateY(${angle}deg) translateZ(250px)`
+ archImg.style.transform = `rotateY("90deg") rotateZ(${angle}deg)`
 }
 
   
