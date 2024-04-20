@@ -280,9 +280,17 @@ h1{
     justify-content:space-between;
     position:fixed;
     top:0;
-    padding:2rem;
+    padding:1rem 2rem;
     z-index:999;
     width:100%;
+    font-size:var(--p-text);
+    font-weight:bold;
+}
+
+.menu{
+    background: none;
+    border:none;
+    outline:none;
 }
 .root{
     height:100%;
