@@ -269,7 +269,8 @@ ScrollTrigger.create({
     start:"left right",
   end:"right left",
     scrub: true,
-    containerAnimation:slider
+    containerAnimation:slider,
+      id:"id"
      }
 })
 })
