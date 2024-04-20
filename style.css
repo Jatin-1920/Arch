@@ -700,14 +700,15 @@ h1{
 }
 .parallaxRace{
     width:fit-content;
-    height:100vh;
+    height:50vh;
     display:flex;
     gap:3rem;
+    margin-block:auto;
     align-items:center;
     padding-inline:5rem;
 }
 .parallaxDiv{
-    height:65vh;
+    height:50vh;
     width:45vw;
     overflow:clip;
     position:relative;
