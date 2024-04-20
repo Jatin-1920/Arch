@@ -77,7 +77,7 @@ ScrollTrigger.create({
   onRefresh:setUpRotate,
   onUpdate: (self) => {
     const progress = self.progress * 360 * 1
-    item.forEach((item,index)=>{
+    allItem.forEach((item,index)=>{
       const newAngle = index * angle - 90 + progress
       gsap.to(item,{
     rotationZ:newAngle,
