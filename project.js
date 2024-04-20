@@ -6,32 +6,16 @@ const archCon = selec(".archContainer")
 const gallery = selec(".archGallery")
 const previewImg = selec(".previewImg img")
 
-const numImages = 150;
-const radius = 200; // Adjust radius as needed
-const angleIncrement = 360 / numImages;
-for(let i=0; i<150; i++){
- const angle = angleIncrement * i;
-  
-  const item = document.createElement("div")
-  const archImg = document.createElement("img")
-  item.className = "archItem"
-  archImg.src = `arch${i+1}.jpg`
-  gallery.appendChild(item)
-  item.appendChild(archImg)
- archImg.style.transform = `rotateY("90deg") rotateZ(${angle}deg)`
-}
+
 
   
  const allItem = selecAll(".archItem")
 const numbersI = allItem.length
-const angles = 360/numbersI
-/*allItem.forEach((item,index)=>{
- const angle = angleIncrement * index;
-  const x = radius * Math.cos(angle) + container.clientWidth / 2;
-  const y = radius * Math.sin(angle) + container.clientHeight / 2;
+const angle = 360/numbersI
+allItem.forEach((item,index)=>{
   gsap.to(item,{
-    x:x,
-   y:y,
+    rotateY:90,
+   rotateZ:angle * index - 90,
     transformOrigin:"50% 400px",
     
   })
@@ -66,7 +50,7 @@ ScrollTrigger.create({
   onUpdate: (self) => {
     const progress = self.progress * 360 * 1
     allItem.forEach((item,index)=>{
-      const newAngle = index * angles - 90 + progress
+      const newAngle = index * angle - 90 + progress
       gsap.to(item,{
     rotationZ:newAngle,
     duration:1,
