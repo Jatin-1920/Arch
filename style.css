@@ -305,6 +305,7 @@ h1{
     background: var(--bg-2) ;
     overflow:clip;
     position: relative;
+    width:100%;
 }
 .mainSection {
   position: relative;
