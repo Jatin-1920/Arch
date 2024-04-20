@@ -16,13 +16,17 @@ for(let i=0; i<150; i++){
   item.appendChild(archImg)
 }
 
+  
   const allItem = selecAll(".archItem")
 const numbersI = allItem.length
 const angle = 360/numbersI
 allItem.forEach((item,index)=>{
+ const angle = angleIncrement * index;
+  const x = radius * Math.cos(angle) + container.clientWidth / 2;
+  const y = radius * Math.sin(angle) + container.clientHeight / 2;
   gsap.to(item,{
-    rotationY:90,
-    rotationZ:index * angle - 90,
+    x:x,
+   y:y,
     transformOrigin:"50% 400px",
     
   })
