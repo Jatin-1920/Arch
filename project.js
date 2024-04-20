@@ -74,7 +74,7 @@ ScrollTrigger.create({
   trigger:"body",
   start:"top top",
   end:"bottom bottom",
-  scrub: true,
+  scrub: 2,
   onRefresh:setUpRotate,
   onUpdate = self =>{
     const progress = self.progress * 360 * 1
