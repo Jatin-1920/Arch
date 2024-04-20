@@ -639,12 +639,12 @@ h1{
 .goTop{
     background:blue;
     color:white;
-    height:5rem;
-    width:5rem;
-    border-radius:5rem;
+    height:3rem;
+    width:3rem;
+    border-radius:3rem;
     display:grid;
     place-items:center;
-    font-size:2rem;
+    font-size:1rem;
 }
 
 .archContainer{
