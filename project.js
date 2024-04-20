@@ -32,7 +32,7 @@ for(let i=0; i<47; i++){
   const item = document.createElement("div")
   const archImg = document.createElement("img")
   item.className = "archItem"
-  archImg.src = `arch${i}.jpg`
+  archImg.src = `arch${i+1}.jpg`
   gallery.appendChild(item)
   item.appendChild(archImg)
 }
