@@ -705,11 +705,11 @@ h1{
     height:50vh;
     display:flex;
     gap:3rem;
-    padding-inline:3.5rem;
+    padding-inline:5rem;
 }
 .parallaxDiv{
     height:50vh;
-    width:65vw;
+    width:60vw;
     overflow:clip;
     position:relative;
 }
