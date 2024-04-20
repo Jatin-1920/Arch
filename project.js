@@ -75,7 +75,7 @@ ScrollTrigger.create({
   end:"bottom bottom",
   scrub: 2,
   onRefresh:setUpRotate,
-  onUpdate = (self) => {
+  onUpdate: (self) => {
     const progress = self.progress * 360 * 1
     item.forEach((item,index)=>{
       const newAngle = index * angle - 90 + progress
