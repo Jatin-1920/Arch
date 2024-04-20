@@ -6,24 +6,28 @@ const archCon = selec(".archContainer")
 const gallery = selec(".archGallery")
 const previewImg = selec(".previewImg img")
 
+const numImages = 150;
+const radius = 200; // Adjust radius as needed
+const angleIncrement = (2 * Math.PI) / numImages;
 for(let i=0; i<150; i++){
- 
+ const angle = angleIncrement * i;
+  const x = radius * Math.cos(angle) + container.clientWidth / 2;
+  const y = radius * Math.sin(angle) + container.clientHeight / 2;
   const item = document.createElement("div")
   const archImg = document.createElement("img")
   item.className = "archItem"
   archImg.src = `arch${i+1}.jpg`
   gallery.appendChild(item)
   item.appendChild(archImg)
+ archImg.style.left = `${x}px`;
+  archImg.style.top = `${y}px`;
 }
-const numImages = 150;
-const radius = 200; // Adjust radius as needed
-const angleIncrement = (2 * Math.PI) / numImages;
 
   
-  const allItem = selecAll(".archItem")
+ const allItem = selecAll(".archItem")
 const numbersI = allItem.length
 const angle = 360/numbersI
-allItem.forEach((item,index)=>{
+/*allItem.forEach((item,index)=>{
  const angle = angleIncrement * index;
   const x = radius * Math.cos(angle) + container.clientWidth / 2;
   const y = radius * Math.sin(angle) + container.clientHeight / 2;
@@ -54,7 +58,7 @@ allItem.forEach((item,index)=>{
       ease:"power3.inOut"
     })
   })
-})
+}) */
 ScrollTrigger.create({
   trigger:"body",
   start:"top top",
