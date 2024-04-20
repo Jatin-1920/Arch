@@ -15,6 +15,9 @@ for(let i=0; i<150; i++){
   gallery.appendChild(item)
   item.appendChild(archImg)
 }
+const numImages = 150;
+const radius = 200; // Adjust radius as needed
+const angleIncrement = (2 * Math.PI) / numImages;
 
   
   const allItem = selecAll(".archItem")
