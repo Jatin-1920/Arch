@@ -4,8 +4,8 @@ gsap.registerPlugin(ScrollTrigger,Flip)
 const lenis = new Lenis({
   smooth:true,
   smoothTouch:false,
-  lerp:0.05,
-  duration:1
+  lerp:0.1,
+  duration:1.5
 })
 
 
@@ -101,7 +101,7 @@ gsap.fromTo([firstNav,secondNav],{
 }) 
       gsap.to(".nav",{
         display:"none",
-        delay:.95,
+        delay:.943,
       })
     }
 })
