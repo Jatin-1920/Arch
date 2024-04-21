@@ -706,23 +706,23 @@ h1{
     width:100%;
     margin-top:25vh;
 }
-.parallaxRace{
+.parallaxRace,.parallaxRace1{
     width:fit-content;
-    height:50vh;
+    height:30vh;
     display:flex;
     gap:3rem;
-    margin-block:auto;
+    margin-block:5vh;
     align-items:center;
     padding-inline:50vh;
 }
-.parallaxDiv{
-    height:50vh;
+.parallaxDiv,.parallaxDivs{
+    height:30vh;
     width:45vw;
     overflow:clip;
     position:relative;
     background:var(--bg-1);
 }
-.parallaxDiv img{
+.parallaxDiv img,.parallaxDivs{
     position: absolute;
     width:67.5vw;
     min-width:67.5vw;
