@@ -728,6 +728,20 @@ h1{
     min-width:67.5vw;
     height:100%;
 }
+.galleries{
+    clipPath:polygon(0 0, 100% 0, 100% 100%,0 100%);
+}
+.vignette{
+    position:fixed;
+    height:30vw;
+    width:25vw;
+    overflow:clip;
+}
+.vignette img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
 @media (max-width:1001px){
 .warn{
     display:grid;
