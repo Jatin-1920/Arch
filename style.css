@@ -725,7 +725,7 @@ h1{
 .parallaxDiv img{
     position: absolute;
     width:67.5vw;
-    max-width:67.5vw;
+    min-width:67.5vw;
     height:100%;
 }
 @media (max-width:1001px){
