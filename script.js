@@ -63,6 +63,10 @@ animTl.fromTo(".line",{
   },
   scale:1.5,
   delay:-2
+}).fromTo(".allContent",0,{
+  height:"0%"
+},{
+  height:"100%"
 })
 
 
