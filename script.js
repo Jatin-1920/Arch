@@ -47,7 +47,7 @@ animTl.fromTo(".line",{
     amount:.4
   },
   yPercent:100
-}).to(".bottomlayer",{
+}).to(".layer",{
   xPercent:100,
   duration:1.6,
   ease:"expo.out",
@@ -63,8 +63,6 @@ animTl.fromTo(".line",{
   },
   scale:1.5,
   delay:-2
-}).(intro,{
-  display:"none"
 })
 
 
