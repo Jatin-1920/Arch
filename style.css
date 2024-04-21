@@ -750,9 +750,11 @@ h1{
     overflow:hidden;
     border-radius:1.5vw;
     top:0;
-    object-fit:cover;
 }
-
+.vignette img{
+    object-fit:cover;
+    width:100%;
+}
 
 @media (max-width:1001px){
 .warn{
