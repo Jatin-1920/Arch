@@ -265,7 +265,6 @@ const paralxImg =  e.querySelector("img")
     x:"-22.5vw",
 },{
   x:0,
-     duration:1.2,
   ease:"none",
      scrollTrigger:{
     trigger:e,
