@@ -63,7 +63,7 @@ animTl.fromTo(".line",{
   },
   scale:1.5,
   delay:-2
-}).(".introAnim",{
+}).(intro,{
   display:"none"
 })
 
