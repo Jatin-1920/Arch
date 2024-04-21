@@ -63,6 +63,8 @@ animTl.fromTo(".line",{
   },
   scale:1.5,
   delay:-2
+}).to(".lerp",0,{
+  height:"100%"
 })
 
 
