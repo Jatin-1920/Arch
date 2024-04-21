@@ -260,8 +260,9 @@ ScrollTrigger.create({
       parallaxDiv.forEach(e=>{
   
 const paralxImg =  e.querySelector("img")
+        const xWidth = e.offsetWidth - paralxImg.offsetWidth
    gsap.fromTo(paralxImg,{
-    x:"-30vw",
+    x:-xWidth,
 },{
   x:0,
   ease:"none",
