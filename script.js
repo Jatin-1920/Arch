@@ -26,7 +26,7 @@ const select = e => document.querySelector(e)
 const selectAll = e => document.querySelectorAll(e)
 const intro = select(".introAnim")
 gsap.set(".allContent",{
-  height:"0%"
+  display:"none"
 })
 
 const animTl = gsap.timeline()
@@ -66,7 +66,7 @@ animTl.fromTo(".line",{
   scale:1.5,
   delay:-2
 }).to(".allContent",0,{
-  height:"100%"
+  display:"block"
 })
 
 
