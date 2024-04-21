@@ -259,8 +259,8 @@ ScrollTrigger.create({
 
       parallaxDiv.forEach(e=>{
   
-
-   gsap.fromTo(e,{
+const paralxImg =  e.querySelector("img")
+   gsap.fromTo(paralxImg,{
     x:"-30vw",
 },{
   x:0,
