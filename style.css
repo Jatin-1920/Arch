@@ -331,6 +331,7 @@ h1{
     min-height:50vh;
     width:100%;
     z-index:105;
+    pointer-events:none;
 }
 .introAnim>*{
     flex:1;
