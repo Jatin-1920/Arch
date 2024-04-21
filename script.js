@@ -262,9 +262,9 @@ ScrollTrigger.create({
 const paralxImg =  e.querySelector("img")
         const xWidth = e.offsetWidth - paralxImg.offsetWidth
    gsap.fromTo(paralxImg,{
-    left:"-22.5vw",
+    x:"-22.5vw",
 },{
-  left:0,
+  x:0,
   ease:"none",
      scrollTrigger:{
     trigger:e,
