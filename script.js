@@ -315,5 +315,5 @@ ScrollTrigger.create({
 ScrollTrigger.addEventListener("refresh", () => scroller.update()); //locomotive-scroll
 
   ScrollTrigger.refresh();
-});
+
   
