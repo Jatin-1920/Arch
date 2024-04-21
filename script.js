@@ -25,7 +25,9 @@ gsap.ticker.lagSmoothing(0)
 const select = e => document.querySelector(e)
 const selectAll = e => document.querySelectorAll(e)
 const intro = select(".introAnim")
-
+gsap.set(".allContent",{
+  height:"0%"
+})
 
 const animTl = gsap.timeline()
 animTl.fromTo(".line",{
