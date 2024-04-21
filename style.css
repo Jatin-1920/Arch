@@ -325,33 +325,20 @@ h1{
 }
 
 .introAnim{
-    position: fixed;
+    position: relative;
     display:flex;
-    flex-direction:column;
     overflow:clip;
-    height:100vh;
-    pointer-events:none;
+    min-height:50vh;
     width:100%;
-    z-index:1005;
+    z-index:105;
 }
 .introAnim>*{
     flex:1;
-    
-}
-.introTop,.introBottom{
-    flex:1;
-    min-height:50vh;
-    width:100%;
-    overflow:clip;
-    display:flex;
+    background:black;
 }
 
-.toplayer,.bottomlayer{
-    flex:1;
-    background:black;
-    min-height:50vh;
-    width:100%;
-}
+
+
 
 .archBlock{
     display:flex;
@@ -373,14 +360,19 @@ h1{
 }
 
 
-
+.layer{
+    position: absolute;
+    height:100%;
+    width:100%;
+    background:black
+}
 
     
 .lineh{
     position: absolute;
     top:17vh;
     left:10%;
-    z-index:1006;
+    z-index:106;
     color:white;
     mix-blend-mode: difference;
             font-size:var(--p-text);
