@@ -728,10 +728,16 @@ h1{
     min-width:67.5vw;
     height:100%;
 }
+.mainGallery{
+    display:flex;
+    flex-direction:column;
+    overflow:hidden;
+    width:100%;
+}
 .galleries{
-    margin:0;
-    border-radius:0;
     height:120vh;
+    position:relative;
+    overflow:hidden;
     clip-path:polygon(0 0, 100% 0, 100% 100%,0 100%);
 }
 .galleriesItem{
@@ -744,11 +750,11 @@ h1{
     object-fit:cover;
 }
 .vignette {
-    position: absolute;
+    position: fixed;
     height:30vw;
     width:25vw;
     overflow:hidden;
-    border-radius:1.5vw;
+    border-radius:2.5vw;
     top:0;
 }
 .vignette img{
