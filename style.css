@@ -713,7 +713,7 @@ h1{
     gap:3rem;
     margin-block:auto;
     align-items:center;
-    padding-inline:5rem;
+    padding-inline:50vh;
 }
 .parallaxDiv{
     height:50vh;
