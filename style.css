@@ -293,7 +293,7 @@ h1{
     outline:none;
     color:black;
 }
-.root{
+.root,.allContent{
     height:100%;
     width:100%;
     background: var(--bg-2) ;
