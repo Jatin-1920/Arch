@@ -302,7 +302,7 @@ const parallaxDivs = selectAll(".parallaxDivs")
 ScrollTrigger.create({
     trigger:".parallaxSlider",
     start:"top 20%",
-    end:()=> `+=${getScrollAmount()*-1}`,
+    end:()=> `+=${getScrollAmounts()*-1}`,
     pin:true,
     scrub:1,
     invalidateOnRefresh:true,
