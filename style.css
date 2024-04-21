@@ -315,6 +315,10 @@ h1{
     flex-direction:column;
     margin-bottom:30vh;
 }
+.emptyDiv{
+    min-height:50vh;
+    width:100%;
+}
 .mainSection>*{
     flex:1;
 }
@@ -326,6 +330,7 @@ h1{
     overflow:clip;
     height:100vh;
     pointer-events:none;
+    width:100%;
 }
 .introAnim>*{
     flex:1;
