@@ -744,7 +744,7 @@ h1{
     object-fit:cover;
 }
 .vignette {
-    position:fixed;
+    position: absolute;
     height:30vw;
     width:25vw;
     overflow:hidden;
