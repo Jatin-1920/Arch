@@ -320,15 +320,21 @@ h1{
 }
 
 .introAnim{
-    position: relative;
+    position: fixed;
+    display:flex;
+    flex-direction:column;
+    overflow:clip;
+    height:100vh;
+    pointer-events:none;
+}
+.introAnim>*{
+    flex:1;
     display:flex;
     overflow:clip;
-    min-height:50vh;
-    pointer-events:none;
 }
 
 
-.toplayer{
+.toplayer,.bottomlayer{
     flex:1;
     background:black;
 }
@@ -344,12 +350,7 @@ h1{
     overflow:clip;
     position: relative;
 }
-.layer{
-    position: absolute;
-    height:100%;
-    width:100%;
-    background:black;
-}
+
 .archCase img{
     position: absolute;
     height:100%;
