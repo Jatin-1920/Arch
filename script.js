@@ -22,36 +22,39 @@ gsap.ticker.lagSmoothing(0)
 
 
 
-const pageContainer = select(".root");
-
-/* SMOOTH SCROLL */
-const scroller = new LocomotiveScroll({
-  el: pageContainer,
+const locoScroll = new LocomotiveScroll({
+  el: document.querySelector(".root"),
   smooth: true,
-  lerp:0.05
+
+  // for tablet smooth
+  tablet: { smooth: true },
+
+  // for mobile
+  smartphone: { smooth: true }
 });
+locoScroll.on("scroll", ScrollTrigger.update);
 
-scroller.on("scroll", ScrollTrigger.update);
-
-ScrollTrigger.scrollerProxy(pageContainer, {
+ScrollTrigger.scrollerProxy(".root", {
   scrollTop(value) {
     return arguments.length
-      ? scroller.scrollTo(value, 0, 0)
-      : scroller.scroll.instance.scroll.y;
+      ? locoScroll.scrollTo(value, 0, 0)
+      : locoScroll.scroll.instance.scroll.y;
   },
   getBoundingClientRect() {
     return {
-      left: 0,
       top: 0,
+      left: 0,
       width: window.innerWidth,
       height: window.innerHeight
     };
-  },
-  pinType: pageContainer.style.transform ? "transform" : "fixed"
-});
+  }
 
-////////////////////////////////////
-////////////////////////////////////
+  // follwoing line is not required to work pinning on touch screen
+
+  /* pinType: document.querySelector(".smooth-scroll").style.transform
+    ? "transform"
+    : "fixed"*/
+});
 
 
 
