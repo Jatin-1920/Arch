@@ -752,13 +752,7 @@ h1{
     top:25%;
     left:50%;
 }
-.vignette img{
-    width:100%;
-    position: absolute;
-    height:100%;
-    object-fit:cover;
-    
-}
+
 
 @media (max-width:1001px){
 .warn{
