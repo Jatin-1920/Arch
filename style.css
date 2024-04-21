@@ -349,6 +349,8 @@ h1{
 .toplayer,.bottomlayer{
     flex:1;
     background:black;
+    min-height:50vh;
+    width:100%;
 }
 
 .archBlock{
@@ -378,7 +380,7 @@ h1{
     position: absolute;
     top:17vh;
     left:10%;
-    z-index:102;
+    z-index:1006;
     color:white;
     mix-blend-mode: difference;
             font-size:var(--p-text);
