@@ -315,6 +315,7 @@ h1{
     flex-direction:column;
     margin-bottom:30vh;
 }
+
 .emptyDiv{
     min-height:50vh;
     width:100%;
@@ -331,13 +332,19 @@ h1{
     height:100vh;
     pointer-events:none;
     width:100%;
+    z-index:1005;
 }
 .introAnim>*{
     flex:1;
-    display:flex;
-    overflow:clip;
+    
 }
-
+.introTop,.introBottom{
+    flex:1;
+    min-height:50vh;
+    width:100%;
+    overflow:clip;
+    display:flex;
+}
 
 .toplayer,.bottomlayer{
     flex:1;
