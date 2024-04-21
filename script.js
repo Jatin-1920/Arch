@@ -25,7 +25,8 @@ gsap.ticker.lagSmoothing(0)
 const locoScroll = new LocomotiveScroll({
   el: document.querySelector('.root'),
   smooth: true,
-  multiplier: 0.7,
+  lerp:0.05,
+  
 });
 
 // each time Locomotive Scroll updates, tell ScrollTrigger to update too (sync positioning)
