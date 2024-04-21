@@ -1,7 +1,7 @@
 gsap.registerPlugin(ScrollTrigger,Flip)
 
 
-const lenis = new Lenis({
+/*const lenis = new Lenis({
   smooth:true,
   smoothTouch:false,
   lerp:0.1,
@@ -18,6 +18,40 @@ gsap.ticker.add((time)=>{
 
 gsap.ticker.lagSmoothing(0) 
 
+*/
+
+
+
+const pageContainer = select(".root");
+
+/* SMOOTH SCROLL */
+const scroller = new LocomotiveScroll({
+  el: pageContainer,
+  smooth: true,
+  lerp:0.05
+});
+
+scroller.on("scroll", ScrollTrigger.update);
+
+ScrollTrigger.scrollerProxy(pageContainer, {
+  scrollTop(value) {
+    return arguments.length
+      ? scroller.scrollTo(value, 0, 0)
+      : scroller.scroll.instance.scroll.y;
+  },
+  getBoundingClientRect() {
+    return {
+      left: 0,
+      top: 0,
+      width: window.innerWidth,
+      height: window.innerHeight
+    };
+  },
+  pinType: pageContainer.style.transform ? "transform" : "fixed"
+});
+
+////////////////////////////////////
+////////////////////////////////////
 
 
 
@@ -275,5 +309,8 @@ ScrollTrigger.create({
 })
 })
 
+ScrollTrigger.addEventListener("refresh", () => scroller.update()); //locomotive-scroll
 
+  ScrollTrigger.refresh();
+});
   
