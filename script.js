@@ -241,7 +241,7 @@ const slider = gsap.to(races,{
   
 
 })
-const parallaxDiv = selectAll(".parallaxDiv img")
+const parallaxDiv = selectAll(".parallaxDiv")
 
 
 
