@@ -720,7 +720,7 @@ h1{
     width:45vw;
     overflow:clip;
     position:relative;
-    background:red;
+    background:var(--bg-1);
 }
 .parallaxDiv img{
     position: absolute;
