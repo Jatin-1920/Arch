@@ -103,7 +103,7 @@ movie.forEach(movie=>{
 })
 
 const hs = document.querySelectorAll(".h1")
-link.forEach(li=>{
+hs.forEach(li=>{
     li.addEventListener("click",()=>{
   state = !state
      menuToggle.disabled = true; 
