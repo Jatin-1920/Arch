@@ -4,7 +4,7 @@ const vignetteAnim =[
   {img:"archi1.jpeg",vigImg:"movie1.jpeg"},
   {img:"archi3.jpeg",vigImg:"movie2.jpeg"},
     {img:"movie3.jpeg",vigImg:"movie4.jpeg"},
-    {img:"archi2.jpeg",vigImg:"archi1.jpeg"},
+    {img:"archi2.jpeg",vigImg:"archi4.jpeg"},
 ]
 
 const html = vignetteAnim.map(x=>
