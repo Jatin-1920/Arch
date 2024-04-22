@@ -109,4 +109,26 @@ hs.forEach(li=>{
   
 })
 
-const Link = document 
+const Link = document.querSelectorAll(".li") 
+Link.forEach(a=>{
+    a.addEventListener("click",()=>{
+  state = !state
+     menuToggle.disabled = true; 
+  setTimeout(()=>{
+    menuToggle.disabled = false;
+    menuDot.innerHTML = state ? "Close":"Menu"
+  },1000)
+    
+  gsap.to([secondNav,firstNav],{
+      height:0,
+      duration:0.8,
+      ease:"power3.inOut",
+    stagger:0.07
+  })
+      gsap.to(".nav",0,{
+          delay:.9,
+          display:"none"
+      })
+    
+})
+    })
