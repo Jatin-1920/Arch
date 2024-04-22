@@ -10,10 +10,12 @@ const vignetteAnim =[
 const html = vignetteAnim.map(x=>
 `
 <div class="galleries">
+<div class="galleriesItem">
 <img src="${x.img}">
 </div>
 <div class="vignette">
 <img src="${x.vigImg}">
+</div>
 </div>
   `
 ).join('')
