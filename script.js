@@ -3,9 +3,10 @@ const select= (e) => document.querySelector(e)
 const selectAll= (e) => document.querySelectorAll(e)
 
 
-const introTl = gsap.timeline()
 
-introTl.from(".line", 1.8, {
+const completeAnimation= ()=>{
+    const introTl = gsap.timeline() 
+    introTl.from(".line", 1.8, {
     y: 100,
     ease: "power4.out",
     delay: 1,
@@ -35,8 +36,10 @@ introTl.from(".line", 1.8, {
       delay: -2,
       stagger: {
         amount: 0.4
-      }})
-
+      },
+        onComplete: completeAnimation
+    })
+completeAnimation()
 const trigger= document.querySelectorAll(".over")
 trigger.forEach(e=>{
     gsap.to(e,{
@@ -51,7 +54,7 @@ trigger.forEach(e=>{
         }
         })
 })
-  
+}
 
 const matchMedia  = window.matchMedia("(min-width:1000px)")
 
