@@ -771,11 +771,10 @@ h1{
     overflow:clip;
     display:flex;
     align-items:end;
-    margin-bottom:25vh;
     background:url(plx2.jpeg);
     background-size:100% 100%;
     background-repeat:no-repeat;
-    background-position: center center;
+    background-position: top;
 }
 
 .aboutTopContent{
