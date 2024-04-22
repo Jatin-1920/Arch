@@ -29,7 +29,7 @@ mainGallery.addEventListener("mousemove",(e)=>{
   gsap.to(".vignette",{
     top:yp,
     left:xp,
-    duration:1.2,
+    duration:1,
     ease:"power1.inOut"
   })
 })
