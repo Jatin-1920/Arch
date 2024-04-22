@@ -30,8 +30,7 @@ introTl.fromTo(".line",{
   delay:-0.8,
   stagger:{
     amount:0.4
-  },
-}).from(".archCase img",{
+  }).from(".archCase img",{
   scale:1.4,
   ease:"expo.out",
     duration:1.6,
