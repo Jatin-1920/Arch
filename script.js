@@ -1,4 +1,7 @@
 gsap.registerPlugin(ScrollTrigger,Flip)
+const select= (e) => document.querySelector(e)
+const selectAll= (e) => document.querySelector(e)
+
 
 const trigger= document.querySelectorAll(".over")
 trigger.forEach(e=>{
