@@ -741,10 +741,8 @@ h1{
     clip-path:polygon(0 0, 100% 0, 100% 100%,0 100%);
 }
 .galleriesItem{
-    position: absolute;
-    height:125%;
+    height:100%;
     width:100%;
-    overflow: clip;
 }
 .galleriesItem img{
     width:100%;
