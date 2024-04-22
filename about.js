@@ -21,4 +21,17 @@ const html = vignetteAnim.map(x=>
 ).join('')
 
 const mainGallery =  document.querySelector(".mainGallery")
+const vignette =  document.querySelectorAll(".vignette")
 mainGallery.innerHTML = html
+document.addEventListener("mousemove",(e)=>{
+  const xp =  e.clientX -( window.innerWidth / 2 * 0.25)
+  const yp = e.clientY -( window.innerWidth / 2 * 0.3)
+  vignette.forEach(e=>{
+    gsap.to(e,{
+      top:xp,
+      left:yp,
+      ease:"power2.inOut",
+      duration:1.2
+    })
+  })
+})
