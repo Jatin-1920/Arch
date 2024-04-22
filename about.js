@@ -19,6 +19,7 @@ const html = vignetteAnim.map(x=>
 </div>
 <div class="vignette">
 <img src="${x.vigImg}">
+<p class="vigP">${x.heading}</p>
 </div>
 </div>
   `
