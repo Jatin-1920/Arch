@@ -789,6 +789,17 @@ h1{
     max-width:30rem;
     margin-top:1rem;
 }
+.vigContent{
+    max-width:35rem;
+    position: absolute;
+    right:15vh;
+    top:50%;
+    color:white;
+    transform:translateY(-50%);
+}
+.vigContent p{
+    margin-top:1rem;
+}
 @media (max-width:1001px){
 .warn{
     display:grid;
