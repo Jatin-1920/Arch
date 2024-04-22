@@ -1,9 +1,18 @@
-const lenis = new Lenis({
-  smooth:true,
-  smoothTouch:false,
-  lerp:0.1,
-  duration:1.5
-})
+gsap.registerPlugin(ScrollTrigger)
+
+const lenis = new Lenis({ 
+    duration: 1.2,
+    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+    direction: 'both',
+    gestureDirection: 'both',
+    lerp: 0.05,
+    smooth: 2,
+    smoothTouch: false,
+    touchMultiplier: 2,
+    wheelMultiplier: 1,
+    infinite: false,
+    autoResize: true,
+  });
 
 
 
