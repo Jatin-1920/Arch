@@ -398,9 +398,9 @@ h1{
 }
 .moreA i {
     font-size:.5rem;
-    height:1rem;
-    width:1rem;
-    border-radius:1rem;
+    height:3rem;
+    width:3rem;
+    border-radius:3rem;
     border:1px solid black;
     display:flex;
     align-items:center;
