@@ -35,23 +35,4 @@ mainGallery.addEventListener("mousemove",(e)=>{
 })
 
 
-const galleryItem = document.querySelectorAll(".galleries")
 
-
-galleryItem.forEach(e=>{
-  const galleriesItem = e.querySelector(".galleriesItem")
-  const yHt = galleriesItem.offsetHeight - e.offsetHeight
-  const aboutPrlxTl = gsap.timeline({
-    trigger:e,
-    start:"top bottom",
-    end:"bottom top",
-    scrub:true
-  })
-
-  aboutPrlxTl.fromTo(galleriesItem,{
-    y:-yHt
-  },{
-    y:0,
-    ease:"none"
-  })
-})
