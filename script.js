@@ -4,7 +4,7 @@ const selectAll= (e) => document.querySelectorAll(e)
 
 
 
-const completeAnimation = (comp)=>{
+
     const introTl = gsap.timeline() 
     introTl.from(".line", 1.8, {
     y: 100,
@@ -36,10 +36,9 @@ const completeAnimation = (comp)=>{
       delay: -2,
       stagger: {
         amount: 0.4
-      },
-        onComplete: comp
+      }
     })
-completeAnimation()
+
 const trigger= document.querySelectorAll(".over")
 trigger.forEach(e=>{
     gsap.to(e,{
