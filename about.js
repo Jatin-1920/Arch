@@ -4,7 +4,7 @@ const vignetteAnim =[
   {img:"archi1.jpeg",vigImg:"movie1.jpeg",heading:"Innovation",para:"We embrace new technologies, materials, and design methodologies to push the boundaries of what's possible."},
   {img:"archi3.jpeg",vigImg:"movie2.jpeg",heading:"Sustainability",para:"We are committed to environmentally responsible design practices, aiming to minimize our ecological footprint and create spaces that enhance the well-being of both people and the planet."},
     {img:"movie3.jpeg",vigImg:"movie4.jpeg",heading:"Collaboration",para:"We foster a collaborative approach, working closely with clients, stakeholders, and industry partners to achieve shared goals and deliver exceptional results."},
-    {p:"See Projects",a:"project.html",img:"archi2.jpeg",vigImg:"archi4.jpeg",heading:"Our Projects",para:"Explore a portfolio of our most notable projects, each a testament to our dedication to excellence and innovation. From sleek urban skyscrapers to sustainable community developments, our diverse body of work showcases our versatility, creativity, and unwavering commitment to quality." },
+    {img:"archi2.jpeg",vigImg:"archi4.jpeg",heading:"Our Projects",para:"Explore a portfolio of our most notable projects, each a testament to our dedication to excellence and innovation. From sleek urban skyscrapers to sustainable community developments, our diverse body of work showcases our versatility, creativity, and unwavering commitment to quality." },
 ]
 
 const html = vignetteAnim.map(x=>
@@ -15,7 +15,6 @@ const html = vignetteAnim.map(x=>
 </div>
 <div class="vigContent">
 <p>${x.para}</p>
-<a href="${x.a}">${x.p}</a>
 </div>
 <div class="vignette">
 <img src="${x.vigImg}">
