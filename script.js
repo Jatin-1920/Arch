@@ -5,7 +5,7 @@ const selectAll= (e) => document.querySelectorAll(e)
 
 const introTl = gsap.timeline()
 
-introTl.from(".line span", 1.8, {
+introTl.from(".line", 1.8, {
     y: 100,
     ease: "power4.out",
     delay: 1,
