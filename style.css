@@ -736,7 +736,8 @@ h1{
     width:100%;
 }
 .galleries{
-    height:120vh;
+    flex:1;
+    height:100vh;
     position:relative;
     overflow:clip;
     clip-path:polygon(0 0, 100% 0, 100% 100%,0 100%);
