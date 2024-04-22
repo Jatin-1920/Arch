@@ -736,13 +736,12 @@ h1{
 .galleries{
     height:120vh;
     overflow:hidden;
-    margin:0;
-    position:relative;
     clip-path:polygon(0 0, 100% 0, 100% 100%,0 100%);
 }
 .galleriesItem{
     height:100%;
     width:100%;
+    position:relative;
 }
 .galleriesItem img{
     width:100%;
