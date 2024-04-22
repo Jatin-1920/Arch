@@ -5,7 +5,7 @@ const lenis = new Lenis({
     easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
     direction: 'both',
     gestureDirection: 'both',
-    lerp: 0.05,
+    lerp: 5,
     smooth: 2,
     smoothTouch: false,
     touchMultiplier: 2,
