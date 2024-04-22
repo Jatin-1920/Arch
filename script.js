@@ -17,12 +17,14 @@ introTl.fromTo(".line",{
   ease:"power2.inOut",
   stagger:{
     amount:0.3
-  },
+  }
 }).to(".toplayer",{
   yPercent:100,
   ease:"expo.out",
     duration:1.6,
-    stagger:
+    stagger:{
+      amount:0.4
+    }
 }).to(".layer",{
   xPercent:100,
   ease:"expo.out",
@@ -30,6 +32,7 @@ introTl.fromTo(".line",{
   delay:-0.8,
   stagger:{
     amount:0.4
+  }
   }).from(".archCase img",{
   scale:1.4,
   ease:"expo.out",
@@ -37,7 +40,7 @@ introTl.fromTo(".line",{
   delay:-2,
   stagger:{
     amount:0.4
-  },
+  }
 })
 
 const trigger= document.querySelectorAll(".over")
