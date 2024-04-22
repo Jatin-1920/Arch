@@ -730,16 +730,12 @@ h1{
     height:100%;
 }
 .mainGallery{
-    display:flex;
-    flex-direction:column;
-    overflow:hidden;
+    height:100%;
     width:100%;
 }
 .galleries{
-    flex:1;
-    height:100vh;
-    position:relative;
-    overflow:clip;
+    height:120vh;
+    overflow:hidden;
     clip-path:polygon(0 0, 100% 0, 100% 100%,0 100%);
 }
 .galleriesItem{
@@ -750,18 +746,20 @@ h1{
 .galleriesItem img{
     width:100%;
     object-fit:cover;
+    height:100%;
 }
 .vignette {
     position: fixed;
     height:30vw;
     width:25vw;
-    overflow:clip;
+    overflow: hidden;
     border-radius:1.5vw;
-    inset:0;
+    top:0;
 }
 .vignette img{
     object-fit:cover;
     width:100%;
+    height:100%;
 }
 
 @media (max-width:1001px){
