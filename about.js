@@ -10,9 +10,8 @@ const vignetteAnim =[
 const html = vignetteAnim.map(x=>
 `
 <div class="galleries prlx-section">
-<div class="galleriesItem prlx-item">
-<img src="${x.img}">
-</div>
+
+<img src="${x.img}" class="prlx-item">
 <div class="vignette">
 <img src="${x.vigImg}">
 </div>
