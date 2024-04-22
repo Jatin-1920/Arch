@@ -55,7 +55,7 @@ trigger.forEach(e=>{
         }
         })
 })
-}
+
 
 const matchMedia  = window.matchMedia("(min-width:1000px)")
 
