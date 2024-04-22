@@ -5,43 +5,35 @@ const selectAll= (e) => document.querySelectorAll(e)
 
 const introTl = gsap.timeline()
 
-introTl.fromTo(".line",{
-  y:100,
-  skewY:7,
-  
-},{
-  y:0,
-  skewY:0,
-  delay:1,
-  duration:1.8,
-  ease:"power2.inOut",
-  stagger:{
-    amount:0.3
-  }
-}).to(".toplayer",{
-  yPercent:100,
-  ease:"expo.out",
-    duration:1.6,
-    stagger:{
-      amount:0.4
+introTl.from(".line span", 1.8, {
+    y: 100,
+    ease: "power4.out",
+    delay: 1,
+    skewY: 7,
+    stagger: {
+      amount: 0.3
     }
-}).to(".layer",{
-  xPercent:100,
-  ease:"expo.out",
-    duration:1.6,
-  delay:-0.8,
-  stagger:{
-    amount:0.4
-  }
-  }).from(".archCase img",{
-  scale:1.4,
-  ease:"expo.out",
-    duration:1.6,
-  delay:-2,
-  stagger:{
-    amount:0.4
-  }
-})
+  })
+    .to(".toplayer", 1.6, {
+      yPercent: 100,
+      ease: "expo.out",
+      stagger: 0.4
+    })
+    .to(".layer", 1.6, {
+      xPercent: 100,
+      ease: "expo.out",
+      delay: -0.8,
+      stagger: {
+        amount: 0.4
+      }
+    })
+    .from(".archCase img", 1.6, {
+      scale: 1.4,
+      ease: "expo.out",
+      delay: -2,
+      stagger: {
+        amount: 0.4
+      },
 
 const trigger= document.querySelectorAll(".over")
 trigger.forEach(e=>{
