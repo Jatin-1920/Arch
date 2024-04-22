@@ -33,7 +33,7 @@ introTl.from(".line span", 1.8, {
       delay: -2,
       stagger: {
         amount: 0.4
-      },
+      }})
 
 const trigger= document.querySelectorAll(".over")
 trigger.forEach(e=>{
