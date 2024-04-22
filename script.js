@@ -14,14 +14,16 @@ introTl.from(".line", 1.8, {
       amount: 0.3
     }
   })
-    .to(".toplayer", 1.6, {
+    .to(".toplayer", 1, {
       yPercent: 100,
-      ease: "power2.inOut",
-      stagger: 0.4
+      ease: "expo.out",
+      stagger: {
+          amount:0.4
+      }
     })
     .to(".layer", 1.6, {
       xPercent: 100,
-      ease: "power2.inOut",
+      ease: "expo.out",
       delay: -0.8,
       stagger: {
         amount: 0.4
