@@ -1,9 +1,9 @@
 
 
 const vignetteAnim =[
-  {img:"arch1.jpg",vigImg:"arch4.jpg"},
-  {img:"arch78.jpg",vigImg:"arch36.jpg"},
-    {img:"arch109.jpg",vigImg:"arch123.jpg"},
+  {img:"archi1.jpeg",vigImg:"movie1.jpeg"},
+  {img:"archi3.jpeg",vigImg:"movie2.jpeg"},
+    {img:"movie3.jpeg",vigImg:"movie4.jpeg"},
     {img:"archi2.jpeg",vigImg:"archi1.jpeg"},
 ]
 
