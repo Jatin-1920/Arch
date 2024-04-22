@@ -49,7 +49,7 @@ galleryItem.forEach(e=>{
   })
 
   aboutPrlxTl.fromTo(galleriesItem,{
-    y:-yht
+    y:-yHt
   },{
     y:0,
     ease:"none"
