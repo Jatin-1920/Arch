@@ -45,7 +45,7 @@ state = !state
         gsap.to(".nav",0,{
             display:"block"
         })
-      gsap.fromTo[firstNav,secondNav],{
+      gsap.fromTo([firstNav,secondNav],{
       height:0,
       skewY:2,
   },{
