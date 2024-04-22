@@ -25,4 +25,112 @@ gsap.ticker.add((time)=>{
 gsap.ticker.lagSmoothing(0) 
 
 
+let state = false;
+const menuToggle = document.querySelector(".menu")
+const firstNav = document.querySelector(".firstNav")
+const secondNav = document.querySelector(".secondNav")
 
+menuToggle.addEventListener("click",(e)=>{
+state = !state
+  menuToggle.disabled = true;
+    setTimeout(()=>{
+      menuToggle.disabled = false;
+    menuToggle.innerHTML = state ? "Close":"Menu"
+  },1000)
+
+
+    
+    if(state) {
+
+        gsap.to(".nav",0,{
+            display:"block"
+        })
+      gsap.fromTo[firstNav,secondNav],{
+      height:0,
+      skewY:2,
+  },{
+          height:"100vh",
+      skewY:0,
+         duration:0.8,
+      ease:"power3.inOut",     
+    stagger:0.1,
+          transformOrigin:"right top"
+  })
+      
+    
+    
+} else{
+    gsap.to([secondNav,firstNav],{
+      height:0,
+      duration:0.8,
+      ease:"power3.inOut",
+    stagger:0.07
+  })
+      gsap.to(".nav",0,{
+          delay:.9,
+          display:"none"
+      })
+    }
+})
+
+
+const panMovie = document.querySelector(".movie")
+
+function showMovie(movi){
+    gsap.fromTo(panMovie,{
+        skewY:3,
+        
+    },{
+        skewY:0,
+      transformOrigin:"right top",
+        duration:.5,
+        ease:"power3.inOut"  
+    })
+ gsap.to(panMovie,.4,{opacity:1,backgroundImage:`url(${movi})`,ease:"power3.inOut"}) 
+
+}
+
+const movie= document.querySelectorAll(".movieBtn")
+movie.forEach(movie=>{
+  movie.addEventListener("mouseover",e =>{
+    showMovie(e.target.dataset.movie)
+    
+  })
+ movie.addEventListener("mouseleave",e =>{
+   panMovie.style.backgroundImage=""
+
+  }) 
+})
+
+const hs = document.querySelectorAll(".h1")
+link.forEach(li=>{
+    li.addEventListener("click",()=>{
+  state = !state
+     menuToggle.disabled = true; 
+  setTimeout(()=>{
+    menuToggle.disabled = false;
+    menuDot.innerHTML = state ? "Close":"Menu"
+  },1000)
+    
+  gsap.to([secondNav,firstNav],{
+      height:0,
+      duration:0.8,
+      ease:"power3.inOut",
+    stagger:0.07
+  })
+      gsap.to(".nav",0,{
+          delay:.9,
+          display:"none"
+      })
+    
+})
+    li.addEventListener("mouseover",(e)=>{
+        gsap.to(e.target,{skewX:4,y:3,duration:0.3,ease:"Power3.inOut"
+    })
+    })
+    li.addEventListener("mouseleave",(e)=>{
+        gsap.to(e.target,{skewX:0,y:-3,duration:0.3,ease:"Power3.inOut"
+    })
+    })
+  
+})
