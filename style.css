@@ -736,6 +736,7 @@ h1{
 .galleries{
     height:120vh;
     overflow:hidden;
+    position:relative;
     clip-path:polygon(0 0, 100% 0, 100% 100%,0 100%);
 }
 .galleriesItem{
