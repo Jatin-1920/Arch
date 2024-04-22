@@ -7,4 +7,16 @@ const vignetteAnim =[
     {img:"archi2.jpeg",vigImg:"archi1.jpeg"},
 ]
 
-vignetteAnim.map((item,index))
+const html = vignetteAnim.map(x=>
+`
+<div class="galleries">
+<img src="${x.img}">
+</div>
+<div class="vignette">
+<img src="${x.vigImg}">
+</div>
+  `
+).join('')
+
+const mainGallery =  document.querySelector(".mainGallery")
+mainGallery.innerHTML = html
