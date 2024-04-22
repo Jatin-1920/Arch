@@ -807,7 +807,7 @@ h1{
 
 .vigP{
     font-size:var(--h2-text);
-   color:indianred;
+   color:blue;
     font-weight:bold;
     position:relative;
     z-index:5;
