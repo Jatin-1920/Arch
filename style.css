@@ -788,6 +788,7 @@ h1{
 }
 .aboutTopContent p{
     max-width:30rem;
+    margin-top:1rem;
 }
 @media (max-width:1001px){
 .warn{
