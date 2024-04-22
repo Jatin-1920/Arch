@@ -26,13 +26,10 @@ mainGallery.innerHTML = html
 mainGallery.addEventListener("mousemove",(e)=>{
   const xp =  e.clientX - (window.innerWidth / 2 * 0.25)
   const yp = e.clientY - (window.innerWidth / 2 * 0.3)
-  vignette.forEach(e=>{
-    e.animate({
-      left:`${xp}px`,
-      top:`${yp}px`,
-    },{
-      duration:1200,
-      fill:"forward"
-    })
+  gsap.to(".vignette",{
+    top:yp,
+    left:xp,
+    duration:1.2,
+    ease:"power2.inOut"
   })
 })
