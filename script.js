@@ -1,6 +1,6 @@
 gsap.registerPlugin(ScrollTrigger,Flip)
 const select= (e) => document.querySelector(e)
-const selectAll= (e) => document.querySelector(e)
+const selectAll= (e) => document.querySelectorAll(e)
 
 
 const introTl = gsap.timeline()
