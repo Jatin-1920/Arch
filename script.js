@@ -14,7 +14,7 @@ introTl.from(".line", 1.8, {
       amount: 0.3
     }
   })
-    .to(".toplayer", 1, {
+    .to(".toplayer", 1.6, {
       yPercent: 100,
       ease: "expo.out",
       stagger: {
