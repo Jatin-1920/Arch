@@ -774,7 +774,7 @@ h1{
     background:url(head.jpg);
     background-size:100% 100%;
     background-repeat:no-repeat;
-    background-position: bottom top;
+    background-position: center;
 }
 
 .aboutTopContent{
