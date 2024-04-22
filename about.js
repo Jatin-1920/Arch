@@ -24,8 +24,8 @@ const mainGallery =  document.querySelector(".mainGallery")
 const vignette =  document.querySelectorAll(".vignette")
 mainGallery.innerHTML = html
 mainGallery.addEventListener("mousemove",(e)=>{
-  const xp =  e.clientX - (window.innerWidth / 2 * 0.25)
-  const yp = e.clientY - (window.innerWidth / 2 * 0.3)
+  const xp =  e.clientX 
+  const yp = e.clientY 
   gsap.to(".vignette",{
     top:yp,
     left:xp,
