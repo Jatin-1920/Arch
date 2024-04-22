@@ -30,7 +30,7 @@ mainGallery.addEventListener("mousemove",(e)=>{
     top:yp,
     left:xp,
     duration:1.2,
-    ease:"power2.inOut"
+    ease:"power1.inOut"
   })
 })
 
