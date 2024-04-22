@@ -7,19 +7,34 @@ const introTl = gsap.timeline()
 
 introTl.from(".line",{
   delay:1,
-  duration:1.6,
+  duration:1.8,
   y:60,
   skewY:7,
+  stagger:{
+    amount:0.3
+  },
   ease:"power2.inOut"
 }).to(".toplayer",{
   yPercent:100,
   ease:"expo.out",
     duration:1.6,
     stagger:
-}).to(".toplayer",{
-  yPercent:100,
+}).to(".layer",{
+  xPercent:100,
   ease:"expo.out",
     duration:1.6,
+  delay:-0.8,
+  stagger:{
+    amount:0.4
+  },
+}).from(".archCase img",{
+  scale:1.4,
+  ease:"expo.out",
+    duration:1.6,
+  delay:-2,
+  stagger:{
+    amount:0.4
+  },
 })
 
 const trigger= document.querySelectorAll(".over")
