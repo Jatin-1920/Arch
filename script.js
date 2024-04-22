@@ -8,7 +8,7 @@ const introTl = gsap.timeline()
 introTl.from(".line",{
   delay:1,
   duration:1.8,
-  y:60,
+  y:100,
   skewY:7,
   stagger:{
     amount:0.3
