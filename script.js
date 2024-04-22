@@ -3,6 +3,25 @@ const select= (e) => document.querySelector(e)
 const selectAll= (e) => document.querySelector(e)
 
 
+const introTl = gsap.timeline()
+
+introTl.from(".line",{
+  delay:1,
+  duration:1.6,
+  y:60,
+  skewY:7,
+  ease:"power2.inOut"
+}).to(".toplayer",{
+  yPercent:100,
+  ease:"expo.out",
+    duration:1.6,
+    stagger:
+}).to(".toplayer",{
+  yPercent:100,
+  ease:"expo.out",
+    duration:1.6,
+})
+
 const trigger= document.querySelectorAll(".over")
 trigger.forEach(e=>{
     gsap.to(e,{
