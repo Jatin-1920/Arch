@@ -109,7 +109,7 @@ hs.forEach(li=>{
   
 })
 
-const Link = document.querSelectorAll(".li") 
+const Link = document.querySelectorAll(".li") 
 Link.forEach(a=>{
     a.addEventListener("click",()=>{
   state = !state
