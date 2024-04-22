@@ -5,15 +5,19 @@ const selectAll= (e) => document.querySelector(e)
 
 const introTl = gsap.timeline()
 
-introTl.from(".line",{
-  delay:1,
-  duration:1.8,
+introTl.fromTo(".line",{
   y:100,
   skewY:7,
+  
+},{
+  y:0,
+  skewY:0,
+  delay:1,
+  duration:1.8,
+  ease:"power2.inOut",
   stagger:{
     amount:0.3
   },
-  ease:"power2.inOut"
 }).to(".toplayer",{
   yPercent:100,
   ease:"expo.out",
