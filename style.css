@@ -804,12 +804,6 @@ h1{
     padding:2rem;
     transform:translateY(-50%);
 }
-.vigContent a{
-    margin-top:2rem;
-    color:white;
-    border-bottom:1px solid white;
-}
-
 .vigP{
     font-size:var(--h2-text);
    color:red;
