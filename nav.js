@@ -97,26 +97,7 @@ movie.forEach(movie=>{
 
 const hs = document.querySelectorAll(".h1")
 hs.forEach(li=>{
-    li.addEventListener("click",()=>{
-  state = !state
-     menuToggle.disabled = true; 
-  setTimeout(()=>{
-    menuToggle.disabled = false;
-    menuDot.innerHTML = state ? "Close":"Menu"
-  },1000)
     
-  gsap.to([secondNav,firstNav],{
-      height:0,
-      duration:0.8,
-      ease:"power3.inOut",
-    stagger:0.07
-  })
-      gsap.to(".nav",0,{
-          delay:.9,
-          display:"none"
-      })
-    
-})
     li.addEventListener("mouseover",(e)=>{
         gsap.to(e.target,{skewX:4,y:3,duration:0.3,ease:"Power3.inOut"
     })
@@ -127,3 +108,5 @@ hs.forEach(li=>{
     })
   
 })
+
+const Link = document 
