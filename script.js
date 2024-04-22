@@ -16,19 +16,19 @@ introTl.from(".line", 1.8, {
   })
     .to(".toplayer", 1.6, {
       yPercent: 100,
-      ease: "expo.out",
+      ease: "power2.inOut",
       stagger: 0.4
     })
     .to(".layer", 1.6, {
       xPercent: 100,
-      ease: "expo.out",
+      ease: "power2.inOut",
       delay: -0.8,
       stagger: {
         amount: 0.4
       }
     })
     .from(".archCase img", 1.6, {
-      scale: 1.4,
+      scale: 1.5,
       ease: "expo.out",
       delay: -2,
       stagger: {
