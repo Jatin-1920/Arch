@@ -394,7 +394,7 @@ h1{
     overflow:clip;
     display:flex;
     align-items:center;
-    gap:.25rem;
+    gap:.75rem;
 }
 .moreA i {
     font-size:1.25rem;
