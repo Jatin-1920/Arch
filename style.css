@@ -803,7 +803,9 @@ h1{
     justify-content: center;
     align-items:center;
 }
-
+.modalContent span,.modalContent p{
+    font-size:.8rem;
+}
 .aboutTopContent{
     order:-1;
     padding:15vh 3rem;
