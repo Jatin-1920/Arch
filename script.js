@@ -169,6 +169,8 @@ gsap.to(mask,{
     WebkitMaskPosition:`${e.clientX -(maskSizes/2)}px ${e.clientY -(maskSizes/2)}px`,
     duration:1,
     ease:"expo.out",
+    maskSize:`${maskSizes}px`,
+    WebkitMaskSize:`${maskSizes}px`
 })
 })
 
