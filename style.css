@@ -841,14 +841,13 @@ h1{
 .aboutSticky{
     margin-block:-100vh;
     height:300vh;
-    top:15vh;
-    position:sticky;
     overflow:clip;
 }
 .aboutStickyDiv{
-    height:100vh;
+    height:125vh;
     width:100%;
-    
+    top:0;
+    position:sticky;
     background:url(arch100.jpg);
     background-size:100% 100%;
     background-repeat:no-repeat;
