@@ -843,6 +843,7 @@ h1{
     height:300vh;
     top:15vh;
     position:sticky;
+    overflow:clip;
 }
 .aboutStickyDiv{
     height:100vh;
