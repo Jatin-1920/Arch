@@ -167,33 +167,34 @@ gsap.to(e,{
     duration:1,
     ease:"expo.out",
 })
-    e.addEventListener("mouseenter",it=>{
-      gsap.to(it,{
+})
+mask.addEventListener("mouseenter",e=>{
+      gsap.to(e,{
     duration:.35,
     ease:"expo.out",
         opacity:1
 })
-  })
     const maskScale = e.querySelector("p")
 
   maskScale.addEventListener("mouseeenter",e=>{
       gsap.to(e,{
     duration:.35,
     ease:"expo.out",
-        maskSize:400,
-        webkitMaskSize:400
+        maskSize:"400px",
+        webkitMaskSize:"400px"
 })
   })
     maskScale.addEventListener("mouseleave",e=>{
       gsap.to(e,{
     duration:.35,
     ease:"expo.out",
-        maskSize:42,
-        webkitMaskSize:42
+        maskSize:"40px",
+        webkitMaskSize:"40px"
 })
   })
     
 })
+
 mask.addEventListener("mouseleave",e=>{
 gsap.to(e,{
     ease:"expo.out",
