@@ -803,6 +803,7 @@ h1{
     flex-direction:column;
     justify-content: center;
     align-items:center;
+    border-bottom:.5px solid black;
 }
 .modalContent span,.modalContent p{
     font-size:.8rem;
