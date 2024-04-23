@@ -881,7 +881,6 @@ h1{
     mask-repeat:no-repeat;
     mask-image:url(mask.svg);
     mask-size:2.5rem;
-    opacity:0;
 }
 
 @media (max-width:1001px){
