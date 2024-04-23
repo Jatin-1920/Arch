@@ -778,9 +778,12 @@ h1{
 .aboutTop>*{
     flex:1;
 }
-.aboutTop img,.aboutModal img{
+.aboutModal img{
     height:100%;
     width:100%;
+    object-fit: cover;
+}
+.aboutTop img{
     object-fit: cover;
 }
 .aboutModal{
