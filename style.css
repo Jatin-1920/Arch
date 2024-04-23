@@ -791,13 +791,14 @@ h1{
     overflow:hidden;
     transform:translate(-50%,-50%);
     display:grid;
+    background:#fdfdfd;
+    padding:.5rem;
     grid-template-rows:.65fr .35fr;
 }
 .modalContent{
     display: grid;
     gap:.5rem;
     place-items:center;
-    background:#fdfdfd;
 }
 
 .aboutTopContent{
