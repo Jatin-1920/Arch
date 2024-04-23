@@ -773,17 +773,13 @@ h1{
     width:100%;
     position:relative;
     overflow:clip;
-    display:flex; 
+    display:grid; 
+    grid-template-columns:repeat(2,1fr);
 }
-.aboutTop>*{
-    flex:1;
-}
-.aboutModal img{
+
+.aboutTop img,.aboutModal img{
     height:100%;
     width:100%;
-    object-fit: cover;
-}
-.aboutTop img{
     object-fit: cover;
 }
 .aboutModal{
