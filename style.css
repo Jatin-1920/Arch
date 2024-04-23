@@ -735,7 +735,7 @@ h1{
 }
 .galleries{
     height:120vh;
-    overflow:hidden;
+    overflow:clip;
     position:relative;
     clip-path:polygon(0 0, 100% 0, 100% 100%,0 100%);
 }
@@ -754,7 +754,7 @@ h1{
     position: fixed;
     height:30vw;
     width:25vw;
-    overflow: hidden;
+    overflow: clip;
     border-radius:1.5vw;
     top:50%;
     left:50%;
@@ -832,6 +832,27 @@ h1{
     font-weight:bold;
     position:relative;
     z-index:5;
+}
+.aboutSticky{
+    top:0;
+    margin-block:-100vh;
+    height:300vh;
+    position:sticky;
+    display:flex;
+    align-items:center;
+}
+.aboutStickyDiv{
+    height:105vh;
+    width:100%;
+    background:url(arch100.jpg);
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+    display:grid;
+    place-items:center;
+    color:white;
+}
+.aboutStickyDiv h1{
+    max-width:35rem;
 }
 @media (max-width:1001px){
 .warn{
