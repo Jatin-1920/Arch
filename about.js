@@ -25,6 +25,7 @@ const html = vignetteAnim.map(x=>
 ).join('')
 
 const mainGallery =  document.querySelector(".mainGallery")
+const aboutTop =  document.querySelector(".aboutTop")
 const vignette =  document.querySelectorAll(".vignette")
 mainGallery.innerHTML = html
 mainGallery.addEventListener("mousemove",(e)=>{
@@ -38,5 +39,14 @@ mainGallery.addEventListener("mousemove",(e)=>{
   })
 })
 
-
+aboutTop.addEventListener("mousemove",(e)=>{
+  const xps =  e.clientX 
+  const yps = e.clientY 
+  gsap.to(".aboutModal",{
+    top:yps,
+    left:xps,
+    duration:1,
+    ease:"power1.inOut"
+  })
+})
 
