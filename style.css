@@ -793,6 +793,7 @@ h1{
     display:grid;
     background:#fdfdfd;
     padding:.75rem;
+    color:black;
     grid-template-rows:.65fr .35fr;
 }
 .modalContent{
