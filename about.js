@@ -48,13 +48,6 @@ aboutTop.addEventListener("mousemove",(e)=>{
     duration:1,
     ease:"power1.inOut"
   })
-  const moveimgX = (e.clientX / window.innerWidth)*10
-  const moveimgY = (e.clientY / window.innerHeight)*10
-  gsap.to(".aboutModal img",{
-    x:moveimgX,
-    y:moveimgY,
-    duration:1,
-    ease:"power1.inOut"
-  })
+  
 })
 
