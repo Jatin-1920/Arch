@@ -774,6 +774,7 @@ h1{
     position:relative;
     overflow:clip;
     display:grid; 
+    z-index:10;
     grid-template-columns:repeat(2,1fr);
 }
 
