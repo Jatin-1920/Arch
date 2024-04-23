@@ -159,5 +159,40 @@ const paralxImg =  e.querySelector("img")
 })
 
 
- 
+ const mask=select(".mask")
+mask.addEventListener("mousemove",e=>{
+gsap.to(e,{
+    x:e.clientX,
+    y:e.clientY,
+    duration:1,
+    ease:"expo.out",
+    opacity:1
+})
+    const maskScale = e.select("p")
+
+  p.addEventListener("mouseover",e=>{
+      gsap.to(e,{
+    duration:.35,
+    ease:"expo.out",
+        maskSize:400,
+        webkitMaskSize:400
+})
+  })
+    p.addEventListener("mouseleave",e=>{
+      gsap.to(e,{
+    duration:.35,
+    ease:"expo.out",
+        maskSize:42,
+        webkitMaskSize:42
+})
+  })
+    
+})
+mask.addEventListener("mouseleave",e=>{
+gsap.to(e,{
+    ease:"expo.out",
+    opacity:0
+})
+    
+})
   
