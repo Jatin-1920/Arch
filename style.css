@@ -811,6 +811,7 @@ h1{
     text-transform:lowercase;
     text-align:center;
     border-bottom:.5px solid black;
+    padding-bottom:.25rem;
 }
 .aboutTopContent{
     order:-1;
