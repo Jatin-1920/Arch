@@ -162,8 +162,8 @@ const paralxImg =  e.querySelector("img")
  const mask=select(".mask")
 mask.addEventListener("mousemove",e=>{
 gsap.to(e,{
-    maskPosition:e.clientX,
-    webkitMaskPosition:e.clientY,
+    maskPosition:`${e.clientX}px ${e.clientY}px`,
+    webkitMaskPosition:`${e.clientX}px ${e.clientY}px`,
     duration:1,
     ease:"expo.out",
 })
