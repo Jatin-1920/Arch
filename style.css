@@ -792,7 +792,7 @@ h1{
     transform:translate(-50%,-50%);
     display:grid;
     background:#fdfdfd;
-    padding:.5rem;
+    padding:1rem;
     grid-template-rows:.65fr .35fr;
 }
 .modalContent{
