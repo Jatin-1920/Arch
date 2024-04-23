@@ -841,7 +841,7 @@ h1{
 .aboutSticky{
     margin-block:-100vh;
     height:300vh;
-    top:0;
+    top:15vh;
     position:sticky;
 }
 .aboutStickyDiv{
