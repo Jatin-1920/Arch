@@ -797,13 +797,13 @@ h1{
     display: grid;
     gap:.5rem;
     place-items:center;
-    background:grey;
+    background:#faf9f6;
 }
 
 .aboutTopContent{
     order:-1;
     padding:15vh 3rem;
-    background:grey;
+    background:#f5f5f5;
 }
 .aboutTopContent p{
     max-width:30rem;
