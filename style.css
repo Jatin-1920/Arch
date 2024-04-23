@@ -807,6 +807,9 @@ h1{
 .modalContent span,.modalContent p{
     font-size:.8rem;
 }
+.modalContent p{
+    text-transform:capitalize;
+}
 .aboutTopContent{
     order:-1;
     padding:15vh 3rem;
