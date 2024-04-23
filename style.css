@@ -842,6 +842,7 @@ h1{
     margin-block:-100vh;
     height:300vh;
     overflow:clip;
+    position: relative;
 }
 .aboutStickyDiv{
     height:100vh;
