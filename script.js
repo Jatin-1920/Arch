@@ -165,8 +165,8 @@ let maskSizes = maskState ? 400 : 40
 mask.addEventListener("mousemove",e=>{
     
 gsap.to(mask,{
-    maskPosition:`${e.clientX -(maskSizes/2)}px ${e.clientY -(maskSizes/2)}px`,
-    WebkitMaskPosition:`${e.clientX -(maskSizes/2)}px ${e.clientY -(maskSizes/2)}px`,
+    maskPosition:`${e.clientX - (maskSizes/2)}px ${e.clientY - (maskSizes/2)}px`,
+    WebkitMaskPosition:`${e.clientX - (maskSizes/2)}px ${e.clientY - (maskSizes/2)}px`,
     duration:1,
     ease:"expo.out",
     maskSize:`${maskSizes}px`,
