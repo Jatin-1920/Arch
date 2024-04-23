@@ -809,6 +809,7 @@ h1{
 }
 .modalContent p{
     text-transform:lowercase;
+    text-align:center;
 }
 .aboutTopContent{
     order:-1;
