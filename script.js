@@ -178,7 +178,7 @@ gsap.to(mask,{
       maskState = !maskState
       gsap.to(mask,{
           maskSize:"400px",
-    WebkitMaskSize:"400px",,
+    WebkitMaskSize:"400px",
           duration:.35,
     ease:"expo.out",
       })
