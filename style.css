@@ -999,6 +999,7 @@ background:inherit;
     display:grid;
     place-items:center;
     font-size:1.1rem;
+    transform:translateY(-50%);
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 .formbtn p{
