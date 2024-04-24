@@ -786,7 +786,7 @@ h1{
 .aboutModal{
     position: absolute;
     width:24rem;
-    height:16.875rem;
+    height:30rem;
     top:50%;
     left:50%;
     overflow:hidden;
