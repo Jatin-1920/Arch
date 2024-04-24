@@ -397,10 +397,10 @@ h1{
     gap:.75rem;
 }
 .moreA i {
-    font-size:1.25rem;
-    height:3rem;
-    width:3rem;
-    border-radius:3rem;
+    font-size:.9rem;
+    height:2rem;
+    width:2rem;
+    border-radius:2rem;
     border:1px solid black;
     display:flex;
     align-items:center;
