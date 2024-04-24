@@ -82,6 +82,7 @@ formTl.to(".formContainer",0,{
    }).from([formSp,formP],{
   duration:1,
   stagger:0.1,
+  opacity:0,
   ease:"power3.inOut"
    }).from([name,email,formdiv],{
   opacity:0,
