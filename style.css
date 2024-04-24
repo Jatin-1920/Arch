@@ -920,23 +920,23 @@ h1{
 .fline1{
    height:100%;
     left:0;
-    width:1px;
+    width:1.5px;
     background:black;
 }
 .fline2{
    height:100%;
     right:0;
-    width:1px;
+    width:1.5px;
     background:black;
 }
 .fline3{
-   height:1px;
+   height:1.5px;
     top:0;
     width:100%;
     background:black;
 }
 .fline4{
-   height:1px;
+   height:1.5px;
     bottom:0;
     width:100%;
     background:black;
@@ -944,7 +944,7 @@ h1{
 .fline5{
     height:100%;
     left:0;
-    width:1px;
+    width:1.5px;
     background:black;
 }
 .formcont{
@@ -974,7 +974,7 @@ background:inherit;
     border: none;
     outline:none;
     color:black;
-    border-bottom:1px solid black;
+    border-bottom:1.5px solid black;
 }
 .formLog div{
     font-size:1.1rem;
