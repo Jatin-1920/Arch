@@ -93,7 +93,7 @@ formTl.to(".formContainer",{
    })
 const formbtn = document.querySelector(".formbtn")
 
-const formState = false
+let formState = false
 function switchForm(){
   formState = !formState
   if(formState){
