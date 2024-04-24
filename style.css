@@ -892,8 +892,8 @@ h1{
     opacity:0;
 }
 .formContainer{
-   max-width:50.4rem;
-    height:28.35rem;
+   width:50vw;
+    height:42vh;
     padding:1rem;
     position: fixed;
     overflow:clip;
