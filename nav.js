@@ -137,7 +137,7 @@ Link.forEach(a=>{
     stagger:0.07
   })
       gsap.to(".nav",0,{
-          delay:.9,
+          delay:.945,
           display:"none"
       })
     
