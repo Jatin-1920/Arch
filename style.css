@@ -982,7 +982,7 @@ background:inherit;
     align-items:center;
 }
 .formbtn{
-    padding:3rem 1.5rem;
+    padding:3rem 1rem;
     background:indianred;
     color:black;
     position:fixed;
@@ -990,7 +990,11 @@ background:inherit;
     left:0;
     display:grid;
     place-items:center;
-    transform:rotate(90deg);
+    font-size:1.1rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.formbtn p{
+    transform:rotate(-90deg);
 }
 @media (max-width:1001px){
 .warn{
