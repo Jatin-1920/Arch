@@ -51,3 +51,50 @@ aboutTop.addEventListener("mousemove",(e)=>{
   
 })
 
+const slec = e=> document.querySelector(e)
+const fline1 = slec(".fline1")
+    const fline2 = slec(".fline2")
+const fline3 = slec(".fline3")
+const fline4 = slec(".fline4")
+const fline5 = slec(".fline5")
+const email = slec("#email")
+const name = slec("#name")
+const formdiv = slec(".formLog div")
+  
+const formbtn = document.querySelector(".formbtn")
+formbtn.addEventListener("click",{
+  gsap.to(".formContainer",{
+    display:"block",
+    height:"42vh",
+      duration:.5,
+    ease:"power3.inOut"
+  })
+   gsap.from([fline1,fline2,fline5],{
+  height:0,
+  duration:.5,
+  delay:.5,
+  stagger:{
+    amount:0.01,
+  },
+  ease:"power3.inOut"
+   })
+gsap.from([fline3,fline4],{
+  height:0,
+  duration:.5,
+  delay:.5,
+  stagger:{
+    amount:0.01,
+  },
+  ease:"power3.inOut"
+   })
+gsap.from([name,email,formdiv],{
+  opacity:0,
+  duration:.5,
+  delay:1,
+  stagger:{
+    amount:0.01,
+  },
+  ease:"power3.inOut"
+   })
+
+})
