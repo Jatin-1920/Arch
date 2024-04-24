@@ -72,23 +72,18 @@ formTl.to(".formContainer",0,{
 }).from([fline1,fline2,fline5],{
   height:0,
   duration:1,
-  stagger:{
-    amount:0.045,
-  },
+  stagger:0.045,
   ease:"power3.inOut"
    }).from([fline3,fline4],{
-  height:0,
+  width:0,
   duration:1,
-  stagger:{
-    amount:0.045,
-  },
+  stagger:0.045,
   ease:"power3.inOut"
    }).from([name,email,formdiv],{
   opacity:0,
   duration:1,
-  stagger:{
-    amount:0.045,
-  },
+  
+    stagger:0.045,
   ease:"power3.inOut"
    })
 const formbtn = document.querySelector(".formbtn")
