@@ -35,7 +35,7 @@ mainGallery.addEventListener("mousemove",(e)=>{
     top:yp,
     left:xp,
     duration:1,
-    ease:"power1.inOut"
+    ease:"power3.inOut"
   })
 })
 
@@ -46,7 +46,7 @@ aboutTop.addEventListener("mousemove",(e)=>{
     top:yps,
     left:xps,
     duration:1,
-    ease:"power1.inOut"
+    ease:"power3.inOut"
   })
   
 })
