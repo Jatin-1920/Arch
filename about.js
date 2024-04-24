@@ -69,7 +69,7 @@ formTl.to(".formContainer",0,{
   height:"42vh",
       duration:1,
     ease:"power3.inOut"
-}).from([fline1,fline2,fline5],{
+}).from([fline1,fline5,fline2],{
   height:0,
   duration:1,
   stagger:0.1,
