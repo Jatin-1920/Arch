@@ -92,7 +92,7 @@ formTl.to(".formContainer",0,{
   ease:"power2.inOut"
    })
 const formbtn = document.querySelector(".formbtn")
-const formbtnP = formbtn.querySelector(".formbtn p")
+const formbtnP = formbtn.querySelector("p")
 let formState = false
 function switchForm(){
   formState = !formState
