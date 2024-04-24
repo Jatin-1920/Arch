@@ -67,30 +67,29 @@ formTl.to(".formContainer",0,{
     display:"block",
   }).from(".formContainer",{
   scaleY:0,
-      duration:1,
-    ease:"power3.inOut",
+      duration:.8,
+    ease:"power2.inOut",
   transformOrigin:"top"
 },0).from([fline1,fline5,fline2],{
   height:0,
-  duration:1,
+  duration:.8,
   stagger:0.1,
-  ease:"power3.inOut"
+  ease:"power2.inOut"
    }).from([fline3,fline4],{
   width:0,
-  duration:1,
+  duration:.8,
   stagger:0.1,
-  ease:"power3.inOut"
+  ease:"power2.inOut"
    }).from([formSp,formP],{
-  duration:1,
+  duration:.6,
   stagger:0.1,
   opacity:0,
-  ease:"power3.inOut"
+  ease:"power2.inOut"
    }).from([name,email,formdiv],{
   opacity:0,
-  duration:1,
-  
+  duration:.6,
     stagger:0.1,
-  ease:"power3.inOut"
+  ease:"power2.inOut"
    })
 const formbtn = document.querySelector(".formbtn")
 
