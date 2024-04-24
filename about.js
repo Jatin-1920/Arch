@@ -60,8 +60,8 @@ const fline5 = slec(".fline5")
 const email = slec("#email")
 const name = slec("#name")
 const formdiv = slec(".formlogdiv")
-
-
+const formSp = slec(".form span")
+const formP = slec(".form P") 
 const formTl = gsap.timeline({paused:true})
 formTl.to(".formContainer",0,{
     display:"flex",
@@ -76,6 +76,10 @@ formTl.to(".formContainer",0,{
   ease:"power3.inOut"
    }).from([fline3,fline4],{
   width:0,
+  duration:1,
+  stagger:0.1,
+  ease:"power3.inOut"
+   }).from([formSp,formP],{
   duration:1,
   stagger:0.1,
   ease:"power3.inOut"
