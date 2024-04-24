@@ -59,7 +59,7 @@ const fline4 = slec(".fline4")
 const fline5 = slec(".fline5")
 const email = slec("#email")
 const name = slec("#name")
-const formdiv = slec(".formLog div")
+const formdiv = slec(".formlogdiv")
 
 
 const formtl = gsap.timeline({paused:true})
