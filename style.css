@@ -792,7 +792,7 @@ h1{
     overflow:hidden;
     transform:translate(-50%,-50%);
     display:grid;
-    background:rgba(207,200,194,0.2);
+    background:rgba(203,194,186,0.2);
     padding:.75rem;
     backdrop-filter:blur(5rem);
     grid-template-rows:.65fr .35fr;
