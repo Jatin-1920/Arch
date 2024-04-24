@@ -68,8 +68,7 @@ formtl.to(".formContainer",{
     height:"42vh",
       duration:.5,
     ease:"power3.inOut"
-  })
-  .from([fline1,fline2,fline5],{
+  }).from([fline1,fline2,fline5],{
   height:0,
   duration:.5,
   stagger:{
@@ -94,5 +93,4 @@ formtl.to(".formContainer",{
 const formbtn = document.querySelector(".formbtn")
 formbtn.addEventListener("click",{
   formtl.play()
-
 })
