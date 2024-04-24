@@ -96,7 +96,7 @@ const formbtnP = formbtn.querySelector("p")
 let formState = false
 function switchForm(){
   formState = !formState
-    formbtnP.innerHTML = formState ? "Close" :"Open"
+    formbtnP.innerHTML = formState ? "Close" :"Form"
   
   if(formState){
     formTl.play()
