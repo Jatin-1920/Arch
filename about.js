@@ -67,27 +67,27 @@ formTl.to(".formContainer",0,{
     display:"flex",
   }).to(".formContainer",{
   height:"42vh",
-      duration:.5,
+      duration:1,
     ease:"power3.inOut"
-  },0).from([fline1,fline2,fline5],{
+}).from([fline1,fline2,fline5],{
   height:0,
-  duration:.5,
+  duration:1,
   stagger:{
-    amount:0.01,
+    amount:0.045,
   },
   ease:"power3.inOut"
    }).from([fline3,fline4],{
   height:0,
-  duration:.5,
+  duration:1,
   stagger:{
-    amount:0.01,
+    amount:0.045,
   },
   ease:"power3.inOut"
    },"-=.5").from([name,email,formdiv],{
   opacity:0,
-  duration:.5,
+  duration:1,
   stagger:{
-    amount:0.01,
+    amount:0.045,
   },
   ease:"power3.inOut"
    })
