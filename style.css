@@ -869,7 +869,6 @@ h1{
     align-items:center;
     justify-content:center;
     text-align:center;
-    overflow:clip;
 }
 .mask-content{
     max-width:50rem;
