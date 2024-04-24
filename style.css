@@ -875,7 +875,10 @@ h1{
     display:flex;
     align-items:center;
     justify-content:center;
-    
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .mask-content p{
     max-width:50rem;
@@ -886,6 +889,7 @@ h1{
     mask-repeat:no-repeat;
     mask-image:url(mask.svg);
     mask-size:2.5rem;
+    opacity:0;
 }
 
 @media (max-width:1001px){
