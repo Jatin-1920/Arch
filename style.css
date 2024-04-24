@@ -982,7 +982,8 @@ background:inherit;
     align-items:center;
 }
 .formbtn{
-    padding:3rem 1rem;
+    width:3rem;
+    height:7rem;
     background:indianred;
     color:black;
     position:fixed;
