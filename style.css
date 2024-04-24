@@ -980,6 +980,7 @@ background:inherit;
     border: none;
     outline:none;
     color:black;
+    text-tranform:capitalize;
     border-bottom:1.5px solid black;
 }
 .formLog div{
