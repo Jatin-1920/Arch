@@ -891,6 +891,72 @@ h1{
     mask-size:2.5rem;
     opacity:0;
 }
+.form{
+    width:40vw;
+    height:40vh;
+    position:relative;
+    background:red;
+    text-align:center;
+    display:flex;
+}
+.form>*{
+    flex:1;
+}
+.fline{
+    position: absolute;
+}
+.fline1{
+   height:100%;
+    left:0;
+    width:1px;
+    background:black;
+}
+.fline2{
+   height:100%;
+    right:0;
+    width:1px;
+    background:black;
+}
+.fline3{
+   height:1px;
+    top:0;
+    width:100%;
+    background:black;
+}
+.fline4{
+   height:1px;
+    bottom:0;
+    width:100%;
+    background:black;
+}
+.fline5{
+    height:100%;
+    right:0;
+    width:1px;
+    background:black;
+}
+.formcont{
+    position:relative;
+    font-size:.85rem;
+}
+.formcont p{
+    max-width:16rem;
+    margin-top:1.5rem;
+}
+.formLog{
+    display:flex;
+    flex-direction:column;
+}
+.formLog>*{
+    flex:1;
+}
+#email,#name{
+background:inherit;
+    text-align:center;
+}
+.formLog div{
+    font-size:1.1rem;
+}
 
 @media (max-width:1001px){
 .warn{
