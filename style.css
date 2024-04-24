@@ -964,6 +964,7 @@ background:inherit;
     text-align:center;
     border: none;
     outline:none;
+    color:black;
     border-bottom:1px solid black;
 }
 .formLog div{
