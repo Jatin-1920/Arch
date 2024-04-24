@@ -176,18 +176,14 @@ gsap.to(mask,{
 
 mask.addEventListener("mouseenter",e=>{
         gsap.to(mask,{
-          opacity:1,
-            duration:.35,
-    ease:"expo.out",
+          opacity:1
       })
   })
 
 
             mask.addEventListener("mouseleave",e=>{
         gsap.to(mask,{
-          opacity:0,
-            duration:.35,
-    ease:"expo.out",
+          opacity:0
       })
   })
 
