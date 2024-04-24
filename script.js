@@ -181,20 +181,32 @@ mask.addEventListener("mouseenter",e=>{
       
 
     const maskScale = mask.querySelector("p")
-
+let maskSizes
   maskScale.addEventListener("mouseenter",e=>{
       maskState = !maskState
-      
+      let maskSizes = 400
+      gsap.to(mask,{
+    duration:.35,
+    ease:"expo.out",
+    maskSize:"400px",
+    webkitMaskSize:"400px",
+})
     })
     maskScale.addEventListener("mouseleave",e=>{
       maskState = !maskState
+        let maskSizes = 40
+        gsap.to(mask,{
+    duration:.35,
+    ease:"expo.out",
+    maskSize:"40px",
+    webkitMaskSize:"40px",
   })
+    })
 
 
-  let maskSizes = maskState ? 400 : 40  
 mask.addEventListener("mousemove",e=>{
-    const mX =e.clientX
-    const mY =e.clientY
+    const mX =(e.clientX-(maskSizes/2))
+    const mY (e.clientY-(maskSizes/2))
 gsap.to(mask,{
     maskPosition:`${mX}px ${mY}px`,
     webkitMaskPosition:`${mX}px ${mY}px`,
