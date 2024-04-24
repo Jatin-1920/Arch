@@ -871,9 +871,13 @@ h1{
     text-align:center;
 }
 .mask-content{
-    max-width:50rem;
+    width:100%;
     position: absolute;
+    height:100%;
     font-size:var(--h2-text);  
+}
+.mask-content p{
+    max-width:50rem;
 }
 .mask{
     color:white;
