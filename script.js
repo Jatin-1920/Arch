@@ -177,8 +177,8 @@ gsap.to(mask,{
   maskScale.addEventListener("mouseenter",e=>{
       maskState = !maskState
       gsap.to(mask,{
-          maskSize:`${maskSizes}px`,
-    WebkitMaskSize:`${maskSizes}px`,
+          maskSize:"400px",
+    WebkitMaskSize:"400px",,
           duration:.35,
     ease:"expo.out",
       })
@@ -186,8 +186,8 @@ gsap.to(mask,{
     maskScale.addEventListener("mouseleave",e=>{
       maskState = !maskState
         gsap.to(mask,{
-          maskSize:`${maskSizes}px`,
-    WebkitMaskSize:`${maskSizes}px`,
+          maskSize:"40px",
+    WebkitMaskSize:"40px",
             duration:.35,
     ease:"expo.out",
       })
