@@ -954,6 +954,7 @@ h1{
 .formLog{
     display:flex;
     flex-direction:column;
+    position:relative;
 }
 .formLog>*{
     flex:1;
