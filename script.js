@@ -161,7 +161,7 @@ const paralxImg =  e.querySelector("img")
 
  let mask=select(".mask")
 let maskState = false
-let maskSizes = maskState ? 400 : 40
+
 
 
 
@@ -184,23 +184,14 @@ mask.addEventListener("mouseenter",e=>{
 
   maskScale.addEventListener("mouseenter",e=>{
       maskState = !maskState
-      gsap.to(mask,{
-          maskSize:"400px",
-    webkitMaskSize:"400px",
-          duration:.35,
-    ease:"expo.out",
-      })
+      
     })
     maskScale.addEventListener("mouseleave",e=>{
       maskState = !maskState
-        gsap.to(mask,{
-          maskSize:"40px",
-    webkitMaskSize:"40px",
-            duration:.35,
-    ease:"expo.out",
-      })
   })
-    
+
+
+  let maskSizes = maskState ? 400 : 40  
 mask.addEventListener("mousemove",e=>{
     const mX =e.clientX
     const mY =e.clientY
@@ -209,6 +200,8 @@ gsap.to(mask,{
     webkitMaskPosition:`${mX}px ${mY}px`,
     duration:1,
     ease:"expo.out",
+    maskSize:`${maskSizes}px`,
+    webkitMaskSize:`${maskSizes}px`,
 })
 })
 
