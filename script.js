@@ -202,8 +202,9 @@ mask.addEventListener("mouseenter",e=>{
   })
     
 mask.addEventListener("mousemove",e=>{
-    const mX =e.clientX -(maskSizes/2)
-    const mY =e.clientY-(maskSizes/2)
+    const msk = e.style.maskSize
+    const mX =e.clientX - (msk/2)
+    const mY =e.clientY-(msk/2)
 gsap.to(mask,{
     maskPosition:`${mX}px ${mY}px`,
     webkitMaskPosition:`${mX}px ${mY}px`,
