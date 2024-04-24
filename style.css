@@ -893,7 +893,7 @@ h1{
 }
 .formContainer{
    width:42vw;
-    height:0vh;
+    height:42vh;
     padding:1rem;
     position: fixed;
     overflow:clip;
