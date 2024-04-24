@@ -159,7 +159,7 @@ const paralxImg =  e.querySelector("img")
 })
 
 
- const mask=select(".mask")
+ let mask=select(".mask")
 let maskState = false
 let maskSizes = maskState ? 400 : 40
 mask.addEventListener("mousemove",e=>{
