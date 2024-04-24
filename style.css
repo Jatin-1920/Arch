@@ -893,9 +893,10 @@ h1{
 }
 .formContainer{
    width:42vw;
-    height:42vh;
+    height:0vh;
     padding:1rem;
     position: fixed;
+    overflow:clip;
     background: indianred;
     text-align:center;
     top:50%;
