@@ -83,7 +83,7 @@ formTl.to(".formContainer",0,{
     amount:0.045,
   },
   ease:"power3.inOut"
-   },"-=.5").from([name,email,formdiv],{
+   }).from([name,email,formdiv],{
   opacity:0,
   duration:1,
   stagger:{
