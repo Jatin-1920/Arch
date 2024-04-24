@@ -906,6 +906,7 @@ h1{
     top:50%;
     left:50%;
     display:none;
+    z-index:200;
     transform:translate(-50%,-50%);
 }
 .form{
@@ -959,6 +960,7 @@ h1{
     align-items:center;
     gap:2rem;
     padding-top:10vh;
+    padding-inline:.25rem;
 }
 
 .formcont p{
@@ -992,6 +994,7 @@ background:inherit;
     color:black;
     position:fixed;
     top:50%;
+    z-index:200;
     left:0;
     display:grid;
     place-items:center;
