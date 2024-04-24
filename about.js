@@ -66,10 +66,11 @@ const formTl = gsap.timeline({paused:true})
 formTl.to(".formContainer",0,{
     display:"block",
   }).from(".formContainer",{
-  height:0,
+  scaleY:0,
       duration:1,
-    ease:"power3.inOut"
-}).from([fline1,fline5,fline2],{
+    ease:"power3.inOut",
+  transformOrigin:"top"
+},0).from([fline1,fline5,fline2],{
   height:0,
   duration:1,
   stagger:0.1,
