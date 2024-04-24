@@ -95,6 +95,10 @@ movie.forEach(movie=>{
   }) 
 })
 
+const h1s = document.querySelectorAll("h1")
+h1s.forEach(h=>{
+    h.classList.add("h1")
+})
 const hs = document.querySelectorAll(".h1")
 hs.forEach(li=>{
     
