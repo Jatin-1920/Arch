@@ -92,10 +92,12 @@ formTl.to(".formContainer",0,{
   ease:"power2.inOut"
    })
 const formbtn = document.querySelector(".formbtn")
-
+const formbtnP = formbtn.querySelector(".formbtn p")
 let formState = false
 function switchForm(){
   formState = !formState
+    formbtnP.innerHTML = formState ? "Close" :"Open"
+  
   if(formState){
     formTl.play()
   } else{
