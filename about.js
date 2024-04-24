@@ -91,6 +91,6 @@ formtl.to(".formContainer",{
   ease:"power3.inOut"
    })
 const formbtn = document.querySelector(".formbtn")
-formbtn.addEventListener("click",{
+formbtn.addEventListener("click",()=>{
   formtl.play()
 })
