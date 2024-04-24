@@ -62,8 +62,8 @@ const name = slec("#name")
 const formdiv = slec(".formlogdiv")
 
 
-const formtl = gsap.timeline({paused:true})
-formtl.to(".formContainer",{
+const formTl = gsap.timeline({paused:true})
+formTl.to(".formContainer",{
     display:"block",
     height:"42vh",
       duration:.5,
@@ -91,6 +91,14 @@ formtl.to(".formContainer",{
   ease:"power3.inOut"
    })
 const formbtn = document.querySelector(".formbtn")
-formbtn.addEventListener("click",()=>{
-  formtl.play()
-})
+
+const formState = false
+function switchForm(){
+  formState = !formState
+  if(formState){
+    formTl.play()
+  } else{
+    formTl.reverse()
+  }
+}
+  formbtn.addEventListener("click", switchForm)
