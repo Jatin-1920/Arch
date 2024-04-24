@@ -64,11 +64,12 @@ const formdiv = slec(".formlogdiv")
 
 const formTl = gsap.timeline({paused:true})
 formTl.to(".formContainer",{
-    display:"block",
-    height:"42vh",
+    display:"flex",
+  }).from(".form",{
+  height:"42vh",
       duration:.5,
     ease:"power3.inOut"
-  }).from([fline1,fline2,fline5],{
+  },0).from([fline1,fline2,fline5],{
   height:0,
   duration:.5,
   stagger:{
