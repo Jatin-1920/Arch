@@ -178,7 +178,7 @@ mask.addEventListener("mouseenter",e=>{
       })
   })
 
-      let mskSz = 20
+      let mskSz = 0
     const maskScale = mask.querySelector("p")
   maskScale.addEventListener("mouseenter",e=>{
       gsap.to(mask,{
@@ -196,7 +196,7 @@ mask.addEventListener("mouseenter",e=>{
     maskSize:"40px",
     webkitMaskSize:"40px",
   })
-         mskSz = 20
+         mskSz = 0
     })
 
 
