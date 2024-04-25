@@ -737,7 +737,7 @@ h1{
     height:120vh;
     overflow:clip;
     position:relative;
-    clip-path:polygon(0 0, 100% 0, 100% 100%,0 100%);
+    
 }
 .galleriesItem{
     height:100%;
@@ -760,7 +760,8 @@ h1{
     left:50%;
     display: grid;
     place-items:center;
-    transform:translate(-50%,-50%)
+    transform:translate(-50%,-50%);
+    clip-path:rect(auto,auto,auto,auto);
 }
 .vignette img{
     object-fit:cover;
