@@ -645,7 +645,7 @@ h1{
     padding-inline: 2rem;
 }
 .goTop{
-    background:blue;
+    background:black;
     color:white;
     height:3rem;
     width:3rem;
@@ -653,6 +653,7 @@ h1{
     display:grid;
     place-items:center;
     font-size:1rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .archContainer{
