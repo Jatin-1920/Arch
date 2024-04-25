@@ -1011,6 +1011,10 @@ background:inherit;
 .abtservice-container{
     min-height:100vh;
 }
+.abtservice-container p{
+    font-size:var(--p1-text);
+    margin-top:2rem;
+}
 @media (max-width:1001px){
 .warn{
     display:grid;
