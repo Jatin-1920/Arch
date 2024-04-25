@@ -737,7 +737,7 @@ h1{
     height:120vh;
     overflow:clip;
     position:relative;
-    clip-path:rect(auto,auto,auto,auto);
+    clip:rect(auto,auto,auto,auto);
 }
 .galleriesItem{
     height:100%;
