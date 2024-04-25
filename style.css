@@ -633,7 +633,12 @@ h1{
     background:var(--bg-3);
     border-radius:1rem;
     padding-block:var(--brg-heading);
+    transition:all .35s ease-in-out;
 }
+.footlink a:hover {
+    background:black;
+    color:white;
+} 
 .botFooter{
     display:flex;
     height:100%;
