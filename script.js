@@ -1,4 +1,4 @@
-gsap.registerPlugin(ScrollTrigger,Flip)
+gsap.registerPlugin(ScrollTrigger)
 const select= (e) => document.querySelector(e)
 const selectAll= (e) => document.querySelectorAll(e)
 
