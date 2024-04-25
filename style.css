@@ -872,6 +872,9 @@ h1{
     width:100%;
     position:relative;
     display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align: center;
 }
 .mask-content{
     width:100%;
