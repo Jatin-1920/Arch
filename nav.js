@@ -11,7 +11,7 @@ const lenis = new Lenis({
     wheelMultiplier: 0.7,
     infinite: false,
     autoResize: true,
-    normalizeWheel:false
+    normalizeWheel:true
   });
 
 
